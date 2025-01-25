@@ -1,10 +1,10 @@
-export default {
-    // ...
-    theme: {
-      extend: {
-        backgroundImage: {
-          'paper-warehouse': "url('https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2023/02/paper-warehouse-background.png.webp')",
-        },
-      },
-    },
-  };
+module.exports = {
+  content: [
+    './src/**/*.{js,jsx,ts,tsx}', // Adjust based on your file structure
+    './public/index.html',
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
