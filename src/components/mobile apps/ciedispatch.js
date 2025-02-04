@@ -41,7 +41,7 @@ function Ciedispatch() {
             <div className="h-full relative bg-cover bg-center  " style={{ backgroundImage: `url(https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2022/12/truck-driver-with-app.png.webp)` }}>
                 <div className='absolute inset-0 bg-black opacity-50'></div>
                 <div className="text-center relative  py-40  ">
-                    <h1 className="lg:text-7xl md:text-5xl sm:text-4xl text-white font-bold leading-tight">happy vaghasiya </h1>
+                    <h1 className="lg:text-7xl md:text-5xl sm:text-4xl text-white font-bold leading-tight">happy </h1>
                     <h1 className="lg:text-xl text-white py-3 leading-tight">Keep your Drivers Connected to the Office</h1>
                     <div className='my-5'>
                         <a href='#' className="text-white bg-red-600 hover:bg-red-700 px-4 py-3  font-bold text-base ">Download Brochure<i class="fa-solid fa-arrow-right ps-3 pt-1"></i></a>
