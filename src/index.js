@@ -113,7 +113,7 @@ root.render(
     {/* <Document /> */}
     {/* <Binventory /> */}
     {/* <Bself /> */}
-    <App />
+    {/* <App /> */}
   </React.StrictMode>
 );
 

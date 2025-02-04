@@ -2,7 +2,7 @@ import { Row, Col, Container } from 'react-bootstrap';
 import React from "react";
 import Appstore from '../../assets/img/appstore.png';
 import Googleplay from '../../assets/img/googleplay.png';
-import Ciemobilelarge from '../../assets/img/cieMobile-large.png';
+import Ciemobilelarge from '../../assets/img/ciemobile-large.png';
 import YouTube from 'react-youtube';
 
 function Ciemobile() {
