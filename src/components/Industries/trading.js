@@ -53,7 +53,7 @@ function Trading() {
                     <div className="absolute inset-0 bg-black bg-opacity-50"></div>
                     <div className="relative ps-32 py-40">
                         <h1 className="lg:text-7xl py-4 md:text-5xl sm:text-4xl text-white font-bold lh-xs">Pulp and Paper Trading<br />Software</h1>
-                        <button className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 mt-4 leading-tight">Download Brochure <i class="fa-solid fa-arrow-right ps-2"></i></button>
+                        <a href={'/Bscrap'}><button className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 mt-4 leading-tight">Download Brochure <i class="fa-solid fa-arrow-right ps-2"></i></button></a>
                     </div>
                 </div>
                 <img src="https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2023/02/pulp-paper-client-logos-1.png.webp" className='w-100 img-fluid px-20 py-4 bg-light' />
@@ -153,7 +153,7 @@ function Trading() {
             <div className='text-center py-32'>
                 <h1 className='lg:text-4xl md:text-3xl sm:text-3xl font-bold'>Want to see a full list of features?</h1>
                 <h1 className='lg:text-4xl md:text-3xl sm:text-3xl font-bold text-red-600 py-3'>Download our pulp & paper <br />trading software brochure</h1>
-                <a href={'/Btrading'}><button className='bg-red-600 hover:bg-red-700 px-4 mt-2 py-3 text-white font-bold'>Download Brochure <i class="fa-solid fa-arrow-right ps-3 pt-1"></i></button></a>
+                <a href={'/Bscrap'}><button className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 mt-4 leading-tight">Download Brochure <i class="fa-solid fa-arrow-right ps-2"></i></button></a>
             </div>
 
             <div className='bg-light pt-20'>
