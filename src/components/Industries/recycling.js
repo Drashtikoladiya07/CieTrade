@@ -134,7 +134,7 @@ function Recycling() {
                             <li className='list-disc text-gray-500 text-lg'>Generates driver tickets and route sheets.</li>
                             <li className='list-disc text-gray-500 text-lg'>Monitors performance to meet service level demands.</li>
                             <li className='list-disc text-gray-500 text-lg'>Features optional mobile dispatch app for drivers.</li>
-                            <a href=''><button className='text-red-600 hover:text-red-700 font-bold pt-3'>learn More <i class="fa-solid fa-arrow-right ms-2 px-2 p-1 text-xs bg-red-600 text-white rounded-full"></i></button></a>
+                            <a href={'/Ciedispatch'}><button className='text-red-600 hover:text-red-700 font-bold pt-3'>learn More <i class="fa-solid fa-arrow-right ms-2 px-2 p-1 text-xs bg-red-600 text-white rounded-full"></i></button></a>
                         </ul>
                     </Col>
                     <Col lg={6} md={6} sm={12} className='py-5'>
@@ -144,7 +144,7 @@ function Recycling() {
                             <li className='list-disc text-gray-500 text-lg'>Track material in real-time by warehouse, lot, raw/finished goods and more.</li>
                             <li className='list-disc text-gray-500 text-lg'>Custom barcode labels and scanning support improves identification and accuracy of material movements, pack and pick, stock identification and cycle counts.</li>
                             <li className='list-disc text-gray-500 text-lg'>Values material with at a landed cost, capitalizing freight, storage & processing costs.</li>
-                            <a href=''><button className='text-red-600 hover:text-red-700 font-bold pt-3'>learn More <i class="fa-solid fa-arrow-right ms-2 px-2 p-1 text-xs bg-red-600 text-white rounded-full"></i></button></a>
+                            <a href={'/InventoryManagement'}><button className='text-red-600 hover:text-red-700 font-bold pt-3'>learn More <i class="fa-solid fa-arrow-right ms-2 px-2 p-1 text-xs bg-red-600 text-white rounded-full"></i></button></a>
                         </ul>
                     </Col>
                     <Col lg={6} md={6} sm={12} className='py-5'>
@@ -163,7 +163,7 @@ function Recycling() {
                             <li className='list-disc text-gray-500 text-lg'>Generates all of the specialized reports you need to manage daily activity and business performance.</li>
                             <li className='list-disc text-gray-500 text-lg'>Advanced reports include: gross profit by customer, supplier, product and more, tonnage and pricing trends, order matching and fulfillment, settlement statements, commissions and more.</li>
                             <li className='list-disc text-gray-500 text-lg'>Integrated Self-Service Portal provides your customers and recycling partners with on-demand access and visibility to recovered material, shipments, pricing, payments, documents and more.</li>
-                            <a href=''><button className='text-red-600 hover:text-red-700 font-bold pt-3'>learn More <i class="fa-solid fa-arrow-right ms-2 px-2 p-1 text-xs bg-red-600 text-white rounded-full"></i></button></a>
+                            <a href={'/SelfServices'}><button className='text-red-600 hover:text-red-700 font-bold pt-3'>learn More <i class="fa-solid fa-arrow-right ms-2 px-2 p-1 text-xs bg-red-600 text-white rounded-full"></i></button></a>
                         </ul>
                     </Col>
                 </Row>
@@ -200,7 +200,7 @@ function Recycling() {
                                 <h1 className='font-bold text-red-600 text-xl pt-3'>{item.head}</h1>
                                 <h1 className='font-bold text-3xl py-3'>{item.title}</h1>
                                 <p className='text-gray-500 text-lg'>{item.p}</p>
-                                <a href=''><button className='text-red-600 hover:text-red-700 font-bold pt-3'>learn More <i class="fa-solid fa-arrow-right ms-2 px-2 p-1 text-xs bg-red-600 text-white rounded-full"></i></button></a>
+                                <a href={item.id}><button className='text-red-600 hover:text-red-700 font-bold pt-3'>learn More <i class="fa-solid fa-arrow-right ms-2 px-2 p-1 text-xs bg-red-600 text-white rounded-full"></i></button></a>
                             </Col>
                         ))}
                     </Row>
