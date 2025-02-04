@@ -14,14 +14,7 @@ import YouTube from 'react-youtube';
 
 function Cielocationn() {
     const [activeIndex, setActiveIndex] = useState(null);
-    const opts = {
-        height: '390',
-        width: '1350',
-        playerVars: {
-          autoplay: 1,
-          fs: 1, // Enable fullscreen button
-        },
-      };    
+
     const faqs = [
         {
             question: "What kinds of details can I view for each inventory item through cieLocation?",
@@ -70,11 +63,22 @@ function Cielocationn() {
                     </Col>
                 </Row>
             </Container>
-            
             <Container>
                 <Row>
-                    <Col>
-                        <YouTube videoId="jK6Tft7rzfM" opts={opts}/>
+                    <Col lg={8}>
+                        <YouTube
+                            videoId="jK6Tft7rzfM"
+                            className="w-full"
+                            opts={{
+                                width: 1300,
+                                height: 680,
+                                playerVars: {
+                                    modestbranding: 1,
+                                    controls: 1,
+                                    fs: 1,  // Enable fullscreen
+                                }
+                            }}
+                        />
                     </Col>
                 </Row>
             </Container>
@@ -110,7 +114,7 @@ function Cielocationn() {
             <div className='g-0 p-20 bg-light '>
                 <Row>
                     <Col lg={6} className='py-5'>
-                        <h6 className='lg:text-5xl md:4xl sm:text-3xl font-bold py-3 lh-sm'>Physical Stock & Cycle Count​</h6>
+                        <h6 className='lg:text-5xl md:4xl sm:text-3xl font-bold py-3 lh-sm'>Physical Stock & Cycle Count</h6>
                         <div className='flex py-2'><h6 className='text-xl text-gray-500 '>Allows warehouse staff to scan existing inventory or even add missing inventory items found at a warehouse location to conduct and streamline stock and cycle counts.</h6></div>
                     </Col>
                     <Col lg={6}><center><img src={Add} className='w-4/5'></img></center></Col>

@@ -53,7 +53,7 @@ function Trading() {
                     <div className="absolute inset-0 bg-black bg-opacity-50"></div>
                     <div className="relative ps-32 py-40">
                         <h1 className="lg:text-7xl py-4 md:text-5xl sm:text-4xl text-white font-bold lh-xs">Pulp and Paper Trading<br />Software</h1>
-                        <a href={'/Bscrap'}><button className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 mt-4 leading-tight">Download Brochure <i class="fa-solid fa-arrow-right ps-2"></i></button></a>
+                        <a href={'/Btrading'}><button className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 mt-4 leading-tight">Download Brochure <i class="fa-solid fa-arrow-right ps-2"></i></button></a>
                     </div>
                 </div>
                 <img src="https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2023/02/pulp-paper-client-logos-1.png.webp" className='w-100 img-fluid px-20 py-4 bg-light' />
@@ -115,7 +115,7 @@ function Trading() {
                             <li className='list-disc text-gray-500 text-lg'>Track material in real-time by warehouse, lot and more.</li>
                             <li className='list-disc text-gray-500 text-lg'>Custom barcode labels and scanning support improves identification and accuracy of material movements, pack and pick, stock identification and cycle counts.</li>
                             <li className='list-disc text-gray-500 text-lg'>Values material with at a landed cost, capitalizing freight and storage costs.</li>
-                            <a href=''><button className='text-red-600 hover:text-red-700 font-bold pt-3'>learn More <i class="fa-solid fa-arrow-right ms-2 px-2 p-1 text-xs bg-red-600 text-white rounded-full"></i></button></a>
+                            <a href={'/InventoryManagement'}><button className='text-red-600 hover:text-red-700 font-bold pt-3'>learn More <i class="fa-solid fa-arrow-right ms-2 px-2 p-1 text-xs bg-red-600 text-white rounded-full"></i></button></a>
                         </ul>
                     </Col>
                     <Col lg={6} md={6} sm={12} className='py-5'>
@@ -144,7 +144,7 @@ function Trading() {
                             <li className='list-disc text-gray-500 text-lg'>Generates all of the specialized, Excel friendly reports and multilevel drill-down inquiries you need to manage daily activity and business performance.</li>
                             <li className='list-disc text-gray-500 text-lg'>Advanced reports include: gross profit by customer, supplier, product and more, tonnage and pricing trends, order matching and fulfillment, settlement statements, commissions and much more.</li>
                             <li className='list-disc text-gray-500 text-lg'>Integrated Self-Service Portal provides your customers and trading partners with on-demand access and visibility to shipments, pricing, payments, documents and more.</li>
-                            <a href=''><button className='text-red-600 hover:text-red-700 font-bold pt-3'>learn More <i class="fa-solid fa-arrow-right ms-2 px-2 p-1 text-xs bg-red-600 text-white rounded-full"></i></button></a>
+                            <a href={'/SelfServices'}><button className='text-red-600 hover:text-red-700 font-bold pt-3'>learn More <i class="fa-solid fa-arrow-right ms-2 px-2 p-1 text-xs bg-red-600 text-white rounded-full"></i></button></a>
                         </ul>
                     </Col>
                 </Row>
@@ -153,7 +153,7 @@ function Trading() {
             <div className='text-center py-32'>
                 <h1 className='lg:text-4xl md:text-3xl sm:text-3xl font-bold'>Want to see a full list of features?</h1>
                 <h1 className='lg:text-4xl md:text-3xl sm:text-3xl font-bold text-red-600 py-3'>Download our pulp & paper <br />trading software brochure</h1>
-                <a href={'/Bscrap'}><button className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 mt-4 leading-tight">Download Brochure <i class="fa-solid fa-arrow-right ps-2"></i></button></a>
+                <a href={'/Btrading'}><button className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 mt-4 leading-tight">Download Brochure <i class="fa-solid fa-arrow-right ps-2"></i></button></a>
             </div>
 
             <div className='bg-light pt-20'>
@@ -166,7 +166,7 @@ function Trading() {
                                 <h1 className='font-bold text-red-600 text-xl pt-3'>{item.head}</h1>
                                 <h1 className='font-bold text-3xl py-3'>{item.title}</h1>
                                 <p className='text-gray-500 text-lg'>{item.p}</p>
-                                <a href=''><button className='text-red-600 hover:text-red-700 font-bold pt-3'>learn More <i class="fa-solid fa-arrow-right ms-2 px-2 p-1 text-xs bg-red-600 text-white rounded-full"></i></button></a>
+                                <a href={item.id}><button className='text-red-600 hover:text-red-700 font-bold pt-3'>learn More <i class="fa-solid fa-arrow-right ms-2 px-2 p-1 text-xs bg-red-600 text-white rounded-full"></i></button></a>
                             </Col>
                         ))}
                     </Row>
