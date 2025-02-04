@@ -79,7 +79,7 @@ function Home() {
 
             <div className='bg-light'>
                 <Container>
-                    <h1 className='text-center pt-56 text-4xl font-bold'>Happy Vaghasiya</h1>
+                    <h1 className='text-center pt-56 text-4xl font-bold'>Industries We Serve</h1>
                     <Row className="g-0 p-5">
                         {data.industries.map((item, index) => (
                             <Col lg={4} key={index} className="text-center">
