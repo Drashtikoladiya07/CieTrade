@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import sheet from '../../assets/img/sheet1.webp';
 
-function Requstdemo() {
+function Bself() {
     const countryCodes = {
         "India (भारत)": "+91",
         "United States": "+1",
@@ -154,23 +153,24 @@ function Requstdemo() {
     };
 
     return (
-        <div className='bg-light'>
-            <div className="relative bg-cover bg-center h-full" style={{ backgroundImage: `url('https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2024/05/new-demo-4-1.png.webp')` }}>
+        <div>
+            <div className="relative bg-cover bg-center h-full" style={{ backgroundImage: `url('https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2022/05/Mask-Group-30.jpg.webp')` }}>
                 <div className="absolute inset-0 bg-black bg-opacity-50"></div>
                 <div className="relative pt-56 pb-44">
-                    <h1 className="lg:text-7xl py-4 md:text-5xl sm:text-4xl text-white text-center font-bold lh-xs">Request a Demo</h1>
-                    <p className="lg:text-2xl md:text-2xl sm:text-xl text-white text-center">To learn how cieTrade can help streamline your business operations, increase profitability <br />and more, contact us for a free consultation or no-obligation demo.</p>
+                    <h1 className="lg:text-7xl py-4 md:text-5xl sm:text-4xl text-white text-center font-bold lh-xs">Download Our Brochure</h1>
+                    <p className="lg:text-2xl md:text-2xl sm:text-xl text-white text-center">Looking to learn about our software features in more detail?</p>
                 </div>
             </div>
 
             <Container>
                 <Row className='py-20'>
                     <Col lg={6} md={12} sm={12} className=''>
-                        <h1 className='text-5xl font-bold'>Fill out this form and we'll be in touch</h1>
-                        <p className='text-lg py-4 text-gray-500'>Learn how cieTrade can meet the unique needs of your trading or recycling business with an online demonstration tailored to your specific areas of interest.  You’ll see just how quickly cieTrade can provide ROI and transform the productivity and control of your business.</p>
+                        <h1 className='text-5xl font-bold'>Download our self-service portal brochure</h1>
+                        <p className='text-lg py-4 text-gray-500'>Fill in your information to receive an email with a full list of features to read at your convenience.</p>
+                        <img src="https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2022/11/solution-sheet-download-self-service-portal-1.png.webp" alt="sheet" />
                     </Col>
                     <Col lg={6} md={12} sm={12}>
-                        <div className="max-w-4xl mx-auto"><form onSubmit={handleSubmit} className="space-y-4">
+                        <div className="max-w-4xl mx-auto bg-white"><form onSubmit={handleSubmit} className="space-y-4">
                             <div>
                                 <label className="block text-gray-700 font-bold text-xl pb-2">First name<span className="text-red-500">*</span></label>
                                 <input type="text" name="firstName" value={formData.firstName} onChange={handleChange} className="w-full border rounded-md p-2 focus:ring-2" />
@@ -200,7 +200,7 @@ function Requstdemo() {
                                 <label className="block text-gray-700 font-bold text-xl pb-2">Phone number <span className="text-red-500">*</span></label>
                                 <div className="d-flex justify-around">
                                     <select
-                                        className="block w-2/3 me-4 border border-gray-300 text-gray-700 py-2 px-2 rounded-l focus:outline-none"
+                                        className="block w-2/3 me-4 bg-gray-100 border border-gray-300 text-gray-700 py-2 px-2 rounded-l focus:outline-none"
                                         id="country-code"
                                         value={selectedCountry}
                                         onChange={handleCountryChange}
@@ -210,14 +210,14 @@ function Requstdemo() {
                                         ))}
                                     </select>
                                     <input
-                                        className="w-1/4 text-gray-700 border border-gray-300 py-2 px-2 focus:outline-none"
+                                        className="w-1/4 bg-gray-100 text-gray-700 border border-gray-300 py-2 px-2 focus:outline-none"
                                         id="phone-code"
                                         type="text"
                                         value={phoneCode}
                                         readOnly
                                     />
                                     <input
-                                        className="w-2/3 text-gray-700 border border-gray-300 rounded-r py-2 px-4 focus:outline-none"
+                                        className="w-2/3 bg-gray-100 text-gray-700 border border-gray-300 rounded-r py-2 px-4 focus:outline-none"
                                         id="phone-number"
                                         type="text"
                                         placeholder="Enter phone number"
@@ -239,4 +239,4 @@ function Requstdemo() {
     );
 };
 
-export default Requstdemo;
+export default Bself;

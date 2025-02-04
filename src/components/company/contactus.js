@@ -42,7 +42,7 @@ function Contact() {
         }
     };
     return (
-        <div>
+        <div className='bg-light'>
             <div className="relative bg-cover bg-center h-full" style={{ backgroundImage: `url('https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2022/07/2J3A8907-scaled.jpg.webp')` }}>
                 <div className="absolute inset-0 bg-black bg-opacity-50"></div>
                 <div className="relative pt-56 pb-44">
@@ -52,47 +52,43 @@ function Contact() {
             <Container>
                 <Row className='py-20'>
                     <Col lg={8} md={8} sm={12}>
-                        <div className="max-w-4xl mx-auto bg-white">
+                        <div className="max-w-4xl mx-auto">
                             <h2 className="text-4xl font-bold text-gray-900  pb-4">Send Us a Message</h2>
-                            <p className="text-gray-600 pb-6 text-lg">Are you a current cieTrade client? Click <a href="#" className="text-red-600 px-1 font-semibold">here</a>to contact our support team.</p>
+                            <p className="text-gray-600 pb-6 text-lg">Are you a current cieTrade client? Click <a href="#" className="text-red-500 px-1 font-semibold">here</a>to contact our support team.</p>
                             <form onSubmit={handleSubmit} className="space-y-4">
                                 <div className="grid md:grid-cols-2 gap-4">
                                     <div>
-                                        <label className="block text-gray-700 font-bold text-xl pb-2">First name<span className="text-red-600">*</span></label>
+                                        <label className="block text-gray-700 font-bold text-xl pb-2">First name<span className="text-red-500">*</span></label>
                                         <input type="text" name="firstName" value={formData.firstName} onChange={handleChange} className="w-full border rounded-md p-2 focus:ring-2" />
-                                        {errors.firstName && (<p className="text-red-600 text-sm">{errors.firstName}</p>)}
+                                        {errors.firstName && (<p className="text-red-500 text-sm">{errors.firstName}</p>)}
                                     </div>
                                     <div>
-                                        <label className="block text-gray-700 font-bold text-xl pb-2">Last name <span className="text-red-600">*</span></label>
+                                        <label className="block text-gray-700 font-bold text-xl pb-2">Last name <span className="text-red-500">*</span></label>
                                         <input type="text" name="lastName" value={formData.lastName} onChange={handleChange} className="w-full border rounded-md p-2 focus:ring-2" />
-                                        {errors.lastName && (<p className="text-red-600 text-sm">{errors.lastName}</p>)}
+                                        {errors.lastName && (<p className="text-red-500 text-sm">{errors.lastName}</p>)}
                                     </div>
                                 </div>
                                 <div>
-                                    <label className="block text-gray-700 font-bold text-xl pb-2">Company name <span className="text-red-600">*</span></label>
+                                    <label className="block text-gray-700 font-bold text-xl pb-2">Company name <span className="text-red-500">*</span></label>
                                     <input type="text" name="companyName" value={formData.companyName} onChange={handleChange} className="w-full border rounded-md p-2 focus:ring-2" />
-                                    {errors.companyName && (<p className="text-red-600 text-sm">{errors.companyName}</p>)}
+                                    {errors.companyName && (<p className="text-red-500 text-sm">{errors.companyName}</p>)}
                                 </div>
                                 <div className="grid md:grid-cols-2 gap-4">
                                     <div>
-                                        <label className="block text-gray-700 font-bold text-xl pb-2">Email <span className="text-red-600">*</span></label>
+                                        <label className="block text-gray-700 font-bold text-xl pb-2">Email <span className="text-red-500">*</span></label>
                                         <input type="email" name="email" value={formData.email} onChange={handleChange} className="w-full border rounded-md p-2 focus:ring-2" />
-                                        {errors.email && (<p className="text-red-600 text-sm">{errors.email}</p>)}
+                                        {errors.email && (<p className="text-red-500 text-sm">{errors.email}</p>)}
                                     </div>
                                     <div>
-                                        <label className="block text-gray-700 font-bold text-xl pb-2">Phone number <span className="text-red-600">*</span></label>
+                                        <label className="block text-gray-700 font-bold text-xl pb-2">Phone number <span className="text-red-500">*</span></label>
                                         <input type="tel" name="phoneNumber" value={formData.phoneNumber} onChange={handleChange} className="w-full border rounded-md p-2 focus:ring-2" />
-                                        {errors.phoneNumber && (<p className="text-red-600 text-sm">{errors.phoneNumber}</p>)}
+                                        {errors.phoneNumber && (<p className="text-red-500 text-sm">{errors.phoneNumber}</p>)}
                                     </div>
                                 </div>
                                 <div>
-                                    <label className="block text-gray-700 font-bold text-xl pb-2">Message <span className="text-red-600">*</span></label>
+                                    <label className="block text-gray-700 font-bold text-xl pb-2">Message <span className="text-red-500">*</span></label>
                                     <textarea name="message" value={formData.message} onChange={handleChange} className="w-full border rounded-md p-2 focus:ring-2" rows="2"></textarea>
-                                    {errors.message && (<p className="text-red-600 text-sm">{errors.message}</p>)}
-                                </div>
-                                <div className="flex justify-center">
-                                    <div className="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY" data-callback={() => setCaptchaVerified(true)}></div>
-                                    {errors.captcha && (<p className="text-red-600 text-sm mt-2">{errors.captcha}</p>)}
+                                    {errors.message && (<p className="text-red-500 text-sm">{errors.message}</p>)}
                                 </div>
                                 <div class="hs_recaptcha hs-recaptcha field hs-form-field"><div class="input"><div class="grecaptcha-badge" data-style="inline" ><div class="grecaptcha-logo"><iframe title="reCAPTCHA" width="256" height="60" role="presentation" name="a-dsb6ord88tr" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.google.com/recaptcha/enterprise/anchor?ar=1&amp;k=6Ld_ad8ZAAAAAAqr0ePo1dUfAi0m4KPkCMQYwPPm&amp;co=aHR0cHM6Ly93d3cuY2lldHJhZGUuY29tOjQ0Mw..&amp;hl=en&amp;v=p09oe8YIFfKgcnqQ9m9k4aiB&amp;size=invisible&amp;badge=inline&amp;cb=94pixmf9s6qw"></iframe></div><div class="grecaptcha-error"></div></div></div></div>
                                 <div className="">

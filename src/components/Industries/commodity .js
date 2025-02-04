@@ -25,8 +25,8 @@ function Commodity() {
             { title: "Gross Profit & Commissions", l1: "Calculates the projected profitability of every brokerage trade.", l2: "Calculates profit at multiple levels including by customer, supplier, product, sales representative and more.", l3: "Generates commissions based on user-definable formulas and multiple payment methods.", l4: "Supports internal interest calculations for cost of payment spreads." },
         ],
         Tool: [
-            { img: laptop, head: "WEB APPLICATIONS", title: "Self-Service Portal", p: "cieTrade’s self-service portal gives supply chain partners 24/7 on-demand access and visibility to recovered material, pricing, shipments, payments, documents and more." },
-            { img: mobile, head: "MOBILE APPS", title: "cieDispatch", p: "cieTrade’s mobile reporting app provides sales reps and managers with real-time access to your cieTrade account information and key management reports from the road or anywhere else." },
+            { img: laptop, head: "WEB APPLICATIONS", title: "Self-Service Portal", p: "cieTrade’s self-service portal gives supply chain partners 24/7 on-demand access and visibility to recovered material, pricing, shipments, payments, documents and more.", id: "SelfServices" },
+            { img: mobile, head: "MOBILE APPS", title: "cieDispatch", p: "cieTrade’s mobile reporting app provides sales reps and managers with real-time access to your cieTrade account information and key management reports from the road or anywhere else.", id: "Ciemobile" },
         ],
     };
     const faqs = [
@@ -57,7 +57,7 @@ function Commodity() {
                     <div className="absolute inset-0 bg-black bg-opacity-50"></div>
                     <div className="relative ps-32 py-40">
                         <h1 className="lg:text-7xl py-4 md:text-5xl sm:text-4xl text-white font-bold lh-xs">Commodity Brokerage <br />Software</h1>
-                        <button className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 mt-4 leading-tight">Download Brochure <i class="fa-solid fa-arrow-right ps-2"></i></button>
+                        <a href={'/Bcommodity'}><button className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 mt-4 leading-tight">Download Brochure <i class="fa-solid fa-arrow-right ps-2"></i></button></a>
                     </div>
                 </div>
                 <img src="https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2023/02/commodity-brokerage-client-logos-DARK.png.webp" className='w-100 img-fluid px-20 py-4 bg-light' />
@@ -139,7 +139,7 @@ function Commodity() {
                             <li className='list-disc text-gray-500 text-lg'>Generates all of the specialized, Excel friendly reports and multilevel drill-down inquiries you need to manage daily activity and business performance.</li>
                             <li className='list-disc text-gray-500 text-lg'>Advanced reports include: gross profit at multiple levers, tonnage and pricing trends, order matching and fulfillment, settlement statements and more.</li>
                             <li className='list-disc text-gray-500 text-lg'>Integrated Self-Service Portal provides your customers and supply chain partners with on-demand access and visibility to shipments, pricing, payments, documents and more.</li>
-                            <a href=''><button className='text-red-600 hover:text-red-700 font-bold pt-3'>learn More <i class="fa-solid fa-arrow-right ms-2 px-2 p-1 text-xs bg-red-600 text-white rounded-full"></i></button></a>
+                            <a href={'/SelfServices'}><button className='text-red-600 hover:text-red-700 font-bold pt-3'>learn More <i class="fa-solid fa-arrow-right ms-2 px-2 p-1 text-xs bg-red-600 text-white rounded-full"></i></button></a>
                         </ul>
                     </Col>
                 </Row>
@@ -148,7 +148,7 @@ function Commodity() {
             <div className='text-center py-32'>
                 <h1 className='lg:text-4xl md:text-3xl sm:text-3xl font-bold'>Want to see a full list of features?</h1>
                 <h1 className='lg:text-4xl md:text-3xl sm:text-3xl font-bold text-red-600 py-3'>Download our commodity <br />brokerage  software brochure</h1>
-                <button className='bg-red-600 hover:bg-red-700 px-4 mt-2 py-3 text-white font-bold'>Download Brochure <i class="fa-solid fa-arrow-right ps-3 pt-1"></i></button>
+                <a href={'/Bcommodity'}><button className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 mt-4 leading-tight">Download Brochure <i class="fa-solid fa-arrow-right ps-2"></i></button></a>
             </div>
 
             <div className='bg-light pt-20'>
@@ -161,7 +161,7 @@ function Commodity() {
                                 <h1 className='font-bold text-red-600 text-xl pt-3'>{item.head}</h1>
                                 <h1 className='font-bold text-3xl py-3'>{item.title}</h1>
                                 <p className='text-gray-500 text-lg'>{item.p}</p>
-                                <a href=''><button className='text-red-600 hover:text-red-700 font-bold pt-3'>learn More <i class="fa-solid fa-arrow-right ms-2 px-2 p-1 text-xs bg-red-600 text-white rounded-full"></i></button></a>
+                                <a href={item.id}><button className='text-red-600 hover:text-red-700 font-bold pt-3'>learn More <i class="fa-solid fa-arrow-right ms-2 px-2 p-1 text-xs bg-red-600 text-white rounded-full"></i></button></a>
                             </Col>
                         ))}
                     </Row>

@@ -8,11 +8,13 @@ const Navbar = () => {
         {
             name: "Features",
             options: [
-                { title: "Inventory Management", id: "/inventory" },
+                { title: "Inventory Management", id: "/InventoryManagement" },
+                { title: "Dispatch Management", id: "/Management" },
                 { title: "Booking and Container Management", id: "/Booking" },
-                { title: "Self-Service Portal", id: "/portal" },
-                { title: "Mobile App", id: "/mobile-app" },
-                { title: "Accounting Integration", id: "/accounting" },
+                { title: "Document Management", id: "/Document" },
+                { title: "Self-Service Portal", id: "/SelfServices" },
+                { title: "Mobile App", id: "/Mobileapps" },
+                { title: "Accounting Integration", id: "/Accounting" },
             ],
         },
         {
@@ -32,20 +34,20 @@ const Navbar = () => {
         {
             name: "Company",
             options: [
-                { title: "About Us", id: "/about" },
-                { title: "Our Clients", id: "/clients" },
-                { title: "Our Partners", id: "/partners" },
-                { title: "Contact Us", id: "/contact" },
+                { title: "About Us", id: "/Aboutus" },
+                { title: "Our Clients", id: "/Ourclients" },
+                { title: "Our Partners", id: "/Ourpartners" },
+                { title: "Contact Us", id: "/Contact" },
             ],
         },
         {
             name: "Resources",
             options: [
-                { title: "FAQ", id: "/faq" },
-                { title: "Training & Support", id: "/training" },
-                { title: "News & Events", id: "/news" },
-                { title: "Brochures", id: "/brochures" },
-                { title: "Blog", id: "/blog" },
+                { title: "FAQ", id: "/Faqs" },
+                { title: "Training & Support", id: "/Trainning" },
+                { title: "News & Events", id: "/News" },
+                { title: "Brochures", id: "/Brochures" },
+                { title: "Blog", id: "/Blog" },
             ],
         },
     ];
@@ -92,7 +94,7 @@ const Navbar = () => {
                             </div>
                         ))}
                         <a
-                            href={"/requestdemo"}
+                            href={"/Requestdemo"}
                             className="hover:text-red-600 bg-red-600 hover:bg-white px-4 ms-2 py-2 d-flex align-items-center"
                         >
                             Request Demo <i className="fa-solid fa-arrow-right ps-3 pt-1"></i>

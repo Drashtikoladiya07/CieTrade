@@ -21,8 +21,8 @@ function Plant() {
             { img: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjI0MHB4IiBoZWlnaHQ9IjI0MHB4IiB2aWV3Qm94PSIxOTAuNTIyIDE5NC40NjggMjQwIDI0MCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZmlsbD0iI0Q2MEYzMCIgZD0iTTE5MC44NDIsMzYzLjM0OWMwLjY2OC0yLjcyOCwxLjM2NC01LjQzOSwxLjk5MS04LjE2N2MyLjYzMy0xMS4yNzgsNy45MjUtMjEuMTU1LDE2LjAzNy0yOS4zNzIgYzE0Ljg0OC0xNS4wMjIsMjkuNjgxLTMwLjA3LDQ0LjgyMy00NC43OTdjMjcuMDIyLTI2LjI3Myw3MS41NjQtMjMuMTA2LDk0LjQ5Nyw2LjQwMWMyLjIwNSwyLjgzMywyLjY3Myw0LjYzNy0wLjI5NCw3LjM5MSBjLTYuMzM2LDUuODY3LTEyLjI2OCwxMi4xNzQtMTguNjU2LDE4LjU5Yy0xLjAyOS0xLjY0NS0xLjg0NC0yLjk4MS0yLjY5OS00LjMwNGMtMTEuNjk0LTE4LjAxNS0zNi41MzgtMjEuMTAyLTUxLjkyLTYuMTM0IGMtMTQuNzgsMTQuMzgxLTI5LjM2MSwyOC45ODctNDMuNzUzLDQzLjc1NGMtMTIuOTksMTMuMzM4LTEyLjYyOSwzNC4xODYsMC40MjcsNDcuMTc0YzEzLjA0MywxMi45NzgsMzMuNzMxLDEzLjA5OSw0Ny4yMTUsMC4yMTYgYzQuMjEtNC4wMjIsNy42MzItMTAuMTk3LDEyLjU2My0xMS43NDljNC43MzEtMS40ODEsMTAuOTE4LDEuODMyLDE2LjQ5MiwyLjg2MWMzLjI2MSwwLjYwMiw2LjU3NiwwLjk4OCw5Ljg4OSwxLjE3NiBjMy4zMTQsMC4yLDYuNjQyLDAuMDQxLDEwLjgxMiwwLjA0MWMtMS4xMSwxLjQ1NS0xLjczNywyLjQ4NC0yLjU1MiwzLjMxNGMtOC42ODgsOC43MjYtMTcuMzM0LDE3LjQ3OS0yNi4xMTUsMjYuMDk5IGMtOS42NjIsOS40NzUtMjEuMjIxLDE1LjI0OS0zNC42MjUsMTcuMzQ3Yy0xLjEyMywwLjE3NC0yLjE3OSwwLjY2OC0zLjI3NCwxLjAxNmMtNC42NjQsMC05LjMxNSwwLTEzLjk3OSwwIGMtMC44OTYtMC4zNDgtMS43NjQtMC44NjktMi43LTEuMDE2Yy0yNi41MTQtNC41MDQtNDYuMzMzLTIzLjEyLTUyLjQ0LTQ5LjI4NmMtMC41MjEtMi4yMi0xLjE3Ni00LjM5Ni0xLjc2NC02LjU4OSBDMTkwLjg0MiwzNzIuNjYzLDE5MC44NDIsMzY3Ljk5OSwxOTAuODQyLDM2My4zNDl6Ij48L3BhdGg+PHBhdGggZmlsbD0iI0Q2MEYzMCIgZD0iTTI5NS40MDIsMjQxLjA1NGM5LjM4MS05LjgwOSwxOS4xMS0yMS44MjIsMzAuNjcxLTMxLjcxMmMyNS40NzItMjEuODExLDY0LjE2LTE4LjY4Myw4Ny4wMTMsNS45MzQgYzIzLjAzOSwyNC44MTcsMjIuODkyLDYzLjQ2NS0wLjY1NSw4Ny42OTRjLTE0LjgzNCwxNS4yNzYtMjkuODY5LDMwLjM1LTQ1LjE3LDQ1LjE1OGMtMjYuODYyLDI1Ljk5My03MS4zNzgsMjIuNzMxLTk0LjE2My02LjQ5NiBjLTIuNDQ2LTMuMTI2LTIuNDk5LTQuOTg0LDAuNDgxLTcuNzYzYzYuMzA4LTUuODY4LDEyLjI0MS0xMi4xNDgsMTguNTM2LTE4LjQ3YzYuNjAyLDEyLjIyOSwxNi4yNjQsMTkuMzY0LDI5LjkyMSwyMC4wMDYgYzkuNTgyLDAuNDU1LDE3Ljk4OC0yLjksMjQuODE2LTkuNjc2YzE0LjQwOC0xNC4yODYsMjguODE0LTI4LjU4NSw0My4wNDctNDMuMDQ1YzEzLjMxLTEzLjUyNCwxMy4yNzEtMzQuMzczLDAuMTYtNDcuNTQ5IGMtMTMuMDk4LTEzLjE3Ny0zMy45NTktMTMuMjU3LTQ3LjU2My0wLjEzNGMtMy43MTUsMy41ODMtNy4yMTgsNy4zNzctMTEuMDEzLDEwLjg1MmMtMS4wMjksMC45MzYtMi45MTIsMS43MTEtNC4xOTYsMS40ODMgQzMxNi4xMzEsMjQ1LjI3OCwzMDUuMDIzLDI0Mi45NzksMjk1LjQwMiwyNDEuMDU0eiI+PC9wYXRoPjwvc3ZnPg==", head: "Seamlessly Connects With Accounting", p: "Saves time and minimizes errors by synchronizing master data and transaction postings without the use of manual batch files that can easily lead to reconciliation headaches." },
         ],
         Tool: [
-            { img: laptop, head: "WEB APPLICATIONS", title: "Self-Service Portal", p: "cieTrade’s self-service portal gives customers and supply chain partners 24/7 on-demand access and visibility to recovered material, pricing, shipments, payments, documents and more." },
-            { img: mobile, head: "MOBILE APPS", title: "ciePhoto", p: "cieTrade’s inventory scanning app helps your warehouse quickly check and edit inventory, confirm inventory availability and minimize time spent with stock and cycle counts.F" },
+            { img: laptop, head: "WEB APPLICATIONS", title: "Self-Service Portal", p: "cieTrade’s self-service portal gives customers and supply chain partners 24/7 on-demand access and visibility to recovered material, pricing, shipments, payments, documents and more.", id: "SelfServices" },
+            { img: mobile, head: "MOBILE APPS", title: "ciePhoto", p: "cieTrade’s inventory scanning app helps your warehouse quickly check and edit inventory, confirm inventory availability and minimize time spent with stock and cycle counts.F", id: "Ciephoto" },
         ],
     };
     const faqs = [
@@ -57,7 +57,7 @@ function Plant() {
                     <div className="absolute inset-0 bg-black bg-opacity-50"></div>
                     <div className="relative ps-32 py-40">
                         <h1 className="lg:text-7xl py-4 md:text-5xl sm:text-4xl text-white font-bold lh-xs">Recycling Plant <br />Software</h1>
-                        <button className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 mt-4 leading-tight">Download Brochure <i class="fa-solid fa-arrow-right ps-2"></i></button>
+                        <a href={'/Bplant'}><button className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 mt-4 leading-tight">Download Brochure <i class="fa-solid fa-arrow-right ps-2"></i></button></a>
                     </div>
                 </div>
                 <img src="https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2023/02/recycling-plants-client-logos-1.png.webp" className='w-100 img-fluid px-20 py-4 bg-light' />
@@ -111,7 +111,7 @@ function Plant() {
                             <li className='list-disc text-gray-500 text-lg'>Allows negative inventory positions and simplifies adjustments to match physicals.</li>
                             <li className='list-disc text-gray-500 text-lg'>Custom barcode labels and scanning support improves identification and accuracy of material movements, pack and pick, stock identification and cycle counts.</li>
                             <li className='list-disc text-gray-500 text-lg'>Values material with at a landed cost, capitalizing freight, storage & processing costs.</li>
-                            <a href=''><button className='text-red-600 hover:text-red-700 font-bold pt-3'>learn More <i class="fa-solid fa-arrow-right ms-2 px-2 p-1 text-xs bg-red-600 text-white rounded-full"></i></button></a>
+                            <a href={'/InventoryManagement'}><button className='text-red-600 hover:text-red-700 font-bold pt-3'>learn More <i class="fa-solid fa-arrow-right ms-2 px-2 p-1 text-xs bg-red-600 text-white rounded-full"></i></button></a>
                         </ul>
                     </Col>
                     <Col lg={6} md={6} sm={12} className='py-5'>
@@ -122,7 +122,7 @@ function Plant() {
                             <li className='list-disc text-gray-500 text-lg'>Generates driver tickets and route sheets.</li>
                             <li className='list-disc text-gray-500 text-lg'>Monitors performance to meet service level demands.</li>
                             <li className='list-disc text-gray-500 text-lg'>Features optional mobile dispatch app for drivers.</li>
-                            <a href=''><button className='text-red-600 hover:text-red-700 font-bold pt-3'>learn More <i class="fa-solid fa-arrow-right ms-2 px-2 p-1 text-xs bg-red-600 text-white rounded-full"></i></button></a>
+                            <a href={'/Ciedispatch'}><button className='text-red-600 hover:text-red-700 font-bold pt-3'>learn More <i class="fa-solid fa-arrow-right ms-2 px-2 p-1 text-xs bg-red-600 text-white rounded-full"></i></button></a>
                         </ul>
                     </Col>
                     <Col lg={6} md={6} sm={12} className='py-5'>
@@ -150,7 +150,7 @@ function Plant() {
                             <li className='list-disc text-gray-500 text-lg'>Generates all of the specialized, Excel friendly reports and multilevel drill-down inquiries you need to manage daily activity and business performance.</li>
                             <li className='list-disc text-gray-500 text-lg'>Advanced reports include: gross profit by customer, supplier, product and more, tonnage and pricing trends, order matching and fulfillment, settlement statements, commissions and much more.</li>
                             <li className='list-disc text-gray-500 text-lg'>Integrated Self-Service Portal provides your customers and supply chain partners with on-demand access and visibility to recovered material, shipments, pricing, payments, documents and more.</li>
-                            <a href=''><button className='text-red-600 hover:text-red-700 font-bold pt-3'>learn More <i class="fa-solid fa-arrow-right ms-2 px-2 p-1 text-xs bg-red-600 text-white rounded-full"></i></button></a>
+                            <a href={'/SelfServices'}><button className='text-red-600 hover:text-red-700 font-bold pt-3'>learn More <i class="fa-solid fa-arrow-right ms-2 px-2 p-1 text-xs bg-red-600 text-white rounded-full"></i></button></a>
                         </ul>
                     </Col>
                 </Row>
@@ -159,7 +159,7 @@ function Plant() {
             <div className='text-center py-32'>
                 <h1 className='lg:text-4xl md:text-3xl sm:text-3xl font-bold'>Want to see a full list of features?</h1>
                 <h1 className='lg:text-4xl md:text-3xl sm:text-3xl font-bold text-red-600 py-3'>Download our recycling plant<br />Software brochure</h1>
-                <button className='bg-red-600 hover:bg-red-700 px-4 mt-2 py-3 text-white font-bold'>Download Brochure <i class="fa-solid fa-arrow-right ps-3 pt-1"></i></button>
+                <a href={'/Bplant'}><button className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 mt-4 leading-tight">Download Brochure <i class="fa-solid fa-arrow-right ps-2"></i></button></a>
             </div>
 
             <div className='bg-light pt-20'>
@@ -172,7 +172,7 @@ function Plant() {
                                 <h1 className='font-bold text-red-600 text-xl pt-3'>{item.head}</h1>
                                 <h1 className='font-bold text-3xl py-3'>{item.title}</h1>
                                 <p className='text-gray-500 text-lg'>{item.p}</p>
-                                <a href=''><button className='text-red-600 hover:text-red-700 font-bold pt-3'>learn More <i class="fa-solid fa-arrow-right ms-2 px-2 p-1 text-xs bg-red-600 text-white rounded-full"></i></button></a>
+                                <a href={item.id}><button className='text-red-600 hover:text-red-700 font-bold pt-3'>learn More <i class="fa-solid fa-arrow-right ms-2 px-2 p-1 text-xs bg-red-600 text-white rounded-full"></i></button></a>
                             </Col>
                         ))}
                     </Row>

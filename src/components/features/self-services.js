@@ -7,9 +7,6 @@ import Ciedispatchtwophones from '../../assets/img/ciedtwophones1.png.webp';
 import Ciedispatch from '../../assets/img/cieportal-two-phones.png.webp';
 import YouTube from 'react-youtube';
 
-
-
-
 function SelfServices() {
     const [activeIndex, setActiveIndex] = useState(null);
 
@@ -38,34 +35,31 @@ function SelfServices() {
     };
     return (
         <div>
-            <div className="h-full relative bg-cover   " style={{ backgroundImage: `url(https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2022/05/Mask-Group-30.jpg.webp)` }}>
+            <div className="h-full relative bg-cover" style={{ backgroundImage: `url(https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2022/05/Mask-Group-30.jpg.webp)` }}>
                 <div className='absolute inset-0 bg-black opacity-50'></div>
-                <div className="text-center relative  py-40  ">
+                <div className="text-center relative  pb-40 pt-56">
                     <h1 className="lg:text-7xl md:text-5xl sm:text-4xl text-white font-bold leading-tight">Self-Service Portal</h1>
                     <h1 className="lg:text-xl text-white py-3 leading-tight">Empower your customers and vendors with a 24/7 digital support center</h1>
                     <div className='my-5'>
-                        <a href='#' className="text-white bg-red-600 hover:bg-red-700 px-4 py-3  font-bold text-base ">Download Brochure<i class="fa-solid fa-arrow-right ps-3 pt-1"></i></a>
+                        <a href={'/Bself'} className="text-white bg-red-600 hover:bg-red-700 px-4 py-3  font-bold text-base ">Download Brochure<i class="fa-solid fa-arrow-right ps-3 pt-1"></i></a>
                     </div>
 
                 </div>
             </div>
 
             <Container>
-                <Row className='g-0 py-20'>
+                <Row className='py-20'>
                     <Col lg={6}>
                         <YouTube videoId="lq8selkqAtE" />
                     </Col>
-                    <Col lg={6}>
+                    <Col lg={6} className='px-4'>
                         <h6 className='lg:text-4xl md:text-3xl sm:text-2xl font-bold'>Reduce call volume, decrease operating costs & improve customer service</h6>
-                        <h6 className='text-gray-600 text-lg  py-5'>ciePortal is a single service web portal that integrates seamlessly with your cieTrade system. It provides your customers with secure and immediate access to their service, payments, pricing information and more from anywhere. It helps save time and adds value to your relationship with your customers and recycling partners, while minimizing requests to your back office.</h6>
-                        <div className='my-5'>
-                            <a href='#' className="text-white bg-red-600 hover:bg-red-700 px-4 py-3  font-bold text-base ">Download Brochure<i class="fa-solid fa-arrow-right ps-3 pt-1"></i></a>
-                        </div>
+                        <h6 className='text-gray-600 text-lg py-4'>ciePortal is a single service web portal that integrates seamlessly with your cieTrade system. It provides your customers with secure and immediate access to their service, payments, pricing information and more from anywhere. It helps save time and adds value to your relationship with your customers and recycling partners, while minimizing requests to your back office.</h6>
                     </Col>
                 </Row>
             </Container>
 
-            <div className='bg-gray-900 text-center py-5 my-20'>
+            <div className='bg-zinc-800 text-center py-5 my-20'>
                 <i class="fa-solid fa-quote-left text-white bg-red-600 p-1 rounded-full px-2 text-2xl"></i>
                 <h6 className='text-white text-xl py-3 lh-base'>We have partnered with cieTrade for over 10 years as an early adopter of their software. The introduction<br />of their integrated web portal has proven critical in meeting the needs of our trading partners and has far<br />surpassed our expectations.</h6>
                 <h6 className='text-white text-xl py-1'>Noah Goodman, President</h6>
@@ -117,7 +111,7 @@ function SelfServices() {
                 <h1 className='lg:text-4xl md:text-3xl sm:text-2xl font-bold lh-base text-center py-2'>Want to see a full list of features? </h1>
                 <h1 className='lg:text-4xl md:text-3xl sm:text-2xl font-bold lh-base text-center text-red-600 '>Download our self-service </h1>
                 <h1 className='lg:text-4xl md:text-3xl sm:text-2xl font-bold lh-base text-center text-red-600'>portal brochure</h1>
-                <div className='py-5'> <center><a href='#' className="text-white bg-red-600 hover:bg-red-700 px-4 py-3  font-bold text-base ">Download Brochure<i class="fa-solid fa-arrow-right ps-3 pt-1"></i></a></center></div>
+                <div className='py-5'> <center><a href={'/Bself'} className="text-white bg-red-600 hover:bg-red-700 px-4 py-3  font-bold text-base ">Download Brochure<i class="fa-solid fa-arrow-right ps-3 pt-1"></i></a></center></div>
             </Container>
             <Container>
                 <Row className='py-10'>
@@ -125,16 +119,16 @@ function SelfServices() {
                     <Col lg={6} className='py-3' >
                         <center><img src={Ciedispatchtwophones} className='w-2/3'></img></center>
                         <h1 className='font-bold text-red-600 text-xl pt-3'>MOBILE APPS</h1>
-                        <h1 className='font-bold  text-3xl py-2'>cieLocation</h1>
+                        <h1 className='font-bold  text-3xl py-2'>cieMobile</h1>
                         <h6 className='text-gray-600 text-lg py-3'>cieTrade’s mobile reporting app provides sales reps and managers with real-time access to cieTrade account information and key management reports from the road or anywhere else.</h6>
-                        <div className='py-3'> <a href='#' className="text-red-600 font-bold text-base py-1 ">Learn More<i class="fa-solid fa-arrow-right text-white bg-red-600 text-sm px-1 rounded-3xl ms-2"></i></a></div>
+                        <div className='py-3'> <a href={'/Ciemobile'} className="text-red-600 font-bold text-base py-1 ">Learn More<i class="fa-solid fa-arrow-right text-white bg-red-600 text-sm px-1 rounded-3xl ms-2"></i></a></div>
                     </Col>
                     <Col lg={6} className='py-3'>
                         <center><img src={Ciedispatch} className='w-2/3'></img></center>
                         <h1 className='font-bold text-red-600 text-xl pt-3'>MOBILE APPS</h1>
-                        <h1 className='font-bold  text-3xl py-2'>cieLocation</h1>
+                        <h1 className='font-bold  text-3xl py-2'>cieDispatch</h1>
                         <h6 className='text-gray-600 text-lg py-3'>cieDispatch lets your drivers retrieve a list of assigned tickets, get directions to service locations, update job status, record notes, and even capture photos.</h6>
-                        <div className='py-3'> <a href='#' className="text-red-600 font-bold lg:text-base md:text-center sm:text-center">Learn More<i class="fa-solid fa-arrow-right text-white bg-red-600 text-sm px-1 rounded-3xl ms-2"></i></a></div>
+                        <div className='py-3'> <a href={'/Ciedispatch'} className="text-red-600 font-bold lg:text-base md:text-center sm:text-center">Learn More<i class="fa-solid fa-arrow-right text-white bg-red-600 text-sm px-1 rounded-3xl ms-2"></i></a></div>
                     </Col>
                 </Row>
             </Container>

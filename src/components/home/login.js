@@ -8,10 +8,10 @@ function Login() {
     const [isForgotPassword, setIsForgotPassword] = useState(false);
 
     return (
-        <div>
+        <div className="bg-light">
             <h1 className="bg-black">.<br/>.<br/>.<br/>.<br/>.</h1>
             <div className="text-center w-96 mx-auto text-gray-500 justify-center pt-20">
-                <div className="bg-white">
+                <div>
                     <img src="https://www.cietrade.net/Images/cieTradeNetLogoLogin.png" alt="" />
                     {isForgotPassword ? (
                         <div>

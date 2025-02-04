@@ -10,9 +10,9 @@ function Brochures() {
             { img: "https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2024/04/iStock_000002343884_Full-1024x683.jpg.webp", title: "International Trade", id: "Binternational" },
             { img: "https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2024/04/shutterstock_2007074588-1-1024x684.jpg.webp", title: "Paper Merchants", id: "Bmerchant" },
             { img: "https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2024/04/plastics-new-1024x683.png.webp", title: "Plastics Recycling", id: "Brecycling" },
-            { img: "https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2024/04/pulp-paper-new-1024x683.png.webp", title: "Pulp and Paper Trading", id: "Btrading" },
+            { img: "https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2024/04/pulp-paper-new-1024x683.png.webp", title: "Pulp and Paper Trading", id: "Bscrap" },
             { img: "https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2024/04/recycling-plant-new-1024x683.png.webp", title: "Recycling Plants", id: "Bplant" },
-            { img: "https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2024/04/dreamstime_m_18381774-1-1024x683.jpg.webp", title: "Scrap Metal Recycling", id: "Bscrap" },
+            { img: "https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2024/04/dreamstime_m_18381774-1-1024x683.jpg.webp", title: "Scrap Metal Recycling", id: "Btrading" },
             { img: "https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2024/04/waste-dumpsters-large-1-1024x683.png.webp", title: "Waste Brokerage", id: "Bbrokerage" },
         ],
     };

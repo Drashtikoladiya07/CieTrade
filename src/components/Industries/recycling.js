@@ -27,8 +27,8 @@ function Recycling() {
             { title: "Dispatch Management", ll1: "Manages on-demand, scheduled, one-time and recurring service requests for equipment drop-offs, pickups, switches and more.", ll2: "Supports multi-stop pickups, bale routes and municipal stream allocations.", ll3: "Generates driver tickets and route sheets.", ll4: "Monitors performance to meet service level demands.", ll5: "Features optional mobile dispatch app for drivers." },
         ],
         Tool: [
-            { img: mobile1, head: "MOBILE APPS", title: "cieLocation", p: "cieTrade’s inventory scanning app helps your warehouse quickly check and edit inventory, confirm inventory availability and minimize time spent with stock and cycle counts." },
-            { img: mobile2, head: "MOBILE APPS", title: "ciePhoto", p: "ciePhoto replaces your existing digital camera and allows users to take photos of outbound export containers or to document quality issues on received loads." },
+            { img: mobile1, head: "MOBILE APPS", title: "cieLocation", p: "cieTrade’s inventory scanning app helps your warehouse quickly check and edit inventory, confirm inventory availability and minimize time spent with stock and cycle counts.", id: "Cielocation" },
+            { img: mobile2, head: "MOBILE APPS", title: "ciePhoto", p: "ciePhoto replaces your existing digital camera and allows users to take photos of outbound export containers or to document quality issues on received loads.", id: "Ciephoto" },
         ],
     };
     const faqs = [
@@ -69,7 +69,7 @@ function Recycling() {
                     <div className="relative ps-32 py-40">
                         <h1 className="lg:text-7xl py-4 md:text-5xl sm:text-4xl text-white font-bold">Plastic Recycling<br />Software</h1>
                         <p className="text-white">cieTrade’s cloud software for the plastic recycling industry helps plastic recyclers drive efficiency, <br />improve inventory control, increase material traceability and more.</p>
-                        <button className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 mt-4 leading-tight">Download Brochure <i class="fa-solid fa-arrow-right ps-2"></i></button>
+                        <a href={'/Brecycling'}><button className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 mt-4 leading-tight">Download Brochure <i class="fa-solid fa-arrow-right ps-2"></i></button></a>
                     </div>
                 </div>
                 <img src="https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2023/10/plastics-client-logos-3.png.webp" className='w-100 img-fluid px-20 py-4 bg-light' />
@@ -172,7 +172,7 @@ function Recycling() {
             <div className='text-center py-32'>
                 <h1 className='lg:text-4xl md:text-3xl sm:text-3xl font-bold'>Want to see a full list of features?</h1>
                 <h1 className='lg:text-4xl md:text-3xl sm:text-3xl font-bold text-red-600 py-3'>Download our plastic <br />commodities software brochure</h1>
-                <button className='bg-red-600 hover:bg-red-700 px-4 mt-2 py-3 text-white font-bold'>Download Brochure <i class="fa-solid fa-arrow-right ps-3 pt-1"></i></button>
+                <a href={'/Brecycling'}><button className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 mt-4 leading-tight">Download Brochure <i class="fa-solid fa-arrow-right ps-2"></i></button></a>
             </div>
 
             <div className='bg-zinc-800 py-20'>
@@ -181,7 +181,7 @@ function Recycling() {
                         <Col lg={6} md={6} sm={12}>
                             <h1 className='text-white text-4xl font-bold'>See what other plastic recyclers have to say about cieTrade</h1>
                             <p className='text-white text-lg py-4'>As a rapidly growing plastics recycling business, <a href='https://apjrecycling.com/' className='text-red-600 hover:text-red-700'>AP&J Recycling</a> needed an industry-specific solution to be able to manage their operation. Learn how cieTrade helped eliminate manual spreadsheets, improve inventory tracking and increase accuracy of COGS.</p>
-                            <button className='bg-red-600 hover:bg-red-700 px-4 mt-2 py-3 text-white font-bold'>See More success tories <i class="fa-solid fa-arrow-right ps-3 pt-1"></i></button>
+                            <a href={'/Ourclients'}><button className='bg-red-600 hover:bg-red-700 px-4 mt-2 py-3 text-white font-bold'>See More success tories <i class="fa-solid fa-arrow-right ps-3 pt-1"></i></button></a>
                         </Col>
                         <Col lg={6} md={6} sm={12}>
                             <Youtube videoId="mehip29GhNI" className='w-full img-fluid' />

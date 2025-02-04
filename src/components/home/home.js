@@ -44,16 +44,16 @@ function Home() {
             { i1: "https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2023/01/shutterstock_146583215-scaled-630.jpg.webp", i2: "https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2022/08/White-Paper-Tigers-Logo.png.webp", p: "Having started with a custom solution, The Paper Tigers quickly began to realize the redundancies and loss of productivity. Learn how cieTrade helped grow their business while reducing operational costs by 35-40%.", }
         ],
         mobile: [
-            { name: "Brokerage", p: "Helps your warehouse check and edit inventory, confirm availability and perform stock and cycle counts." },
-            { name: "clickBale", p: "Mobile app that helps keep track of your baled inventory directly from the warehouse or scrap yard." },
-            { name: "cieDispatch", p: "Mobile app for drivers to view and complete dispatched loads while staying in contact with the back office." },
-            { name: "cieMobile", p: "Mobile CRM Platform that provides access to account information and key business reports from anywhere." },
-            { name: "ciePhoto", p: "Productivity app that captures & manages photos for export shipments and material quality claims." },
+            { name: "cieLocation", p: "Helps your warehouse check and edit inventory, confirm availability and perform stock and cycle counts.", id: "CieLocationn" },
+            { name: "clickBale", p: "Mobile app that helps keep track of your baled inventory directly from the warehouse or scrap yard.", id: "ClickBale" },
+            { name: "cieDispatch", p: "Mobile app for drivers to view and complete dispatched loads while staying in contact with the back office.", id: "Ciedispatch" },
+            { name: "cieMobile", p: "Mobile CRM Platform that provides access to account information and key business reports from anywhere.", id: "Ciemobile" },
+            { name: "ciePhoto", p: "Productivity app that captures & manages photos for export shipments and material quality claims.", id: "Ciephoto" },
         ],
         Events: [
-            { img: "https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2023/10/Plastics-Recycling-World-Expo-News-Events-Page.png.webp", head: "Past Events", title: "Visit us at the Plastics Recycling World Expo 2024 in Cleveland, OH", p1: "October 21, 2024", p2: "Join us for the annual Plastics Recycling World Expo at the Huntington Convention Center where we will be showcasing our Modern Cloud Software for Plastics ..." },
-            { img: "https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2024/10/cieMobile-2.0-updated.png.webp", head: "Press Releases", title: "cieTrade Launches Updated Mobile Reporting app, cieMobile", p1: "October 9, 2024", p2: "Updated cieMobile app helps recyclers and exporters be productive and work from anywhere. Norwalk, CT — October 9th — cieTrade Systems, Inc., a global leader in ..." },
-            { img: "https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2024/09/Booking-ETA-PR-WEB-IMAGE.png.webp", head: "Press Releases", title: "cieTrade Launches an Automated Booking ETA Update Service for Logistics Management", p1: "September 25, 2024", p2: "New automated booking ETA update service makes logistics management more efficient for exporters. Norwalk, CT — September 25th — cieTrade Systems Inc., a leader in ..." },
+            { img: "https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2023/10/Plastics-Recycling-World-Expo-News-Events-Page.png.webp", head: "Past Events", title: "Visit us at the Plastics Recycling World Expo 2024 in Cleveland, OH", p1: "October 21, 2024", p2: "Join us for the annual Plastics Recycling World Expo at the Huntington Convention Center where we will be showcasing our Modern Cloud Software for Plastics ...", id: "Pastevent" },
+            { img: "https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2024/10/cieMobile-2.0-updated.png.webp", head: "Press Releases", title: "cieTrade Launches Updated Mobile Reporting app, cieMobile", p1: "October 9, 2024", p2: "Updated cieMobile app helps recyclers and exporters be productive and work from anywhere. Norwalk, CT — October 9th — cieTrade Systems, Inc., a global leader in ...", id: "Pressreleases" },
+            { img: "https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2024/09/Booking-ETA-PR-WEB-IMAGE.png.webp", head: "Press Releases", title: "cieTrade Launches an Automated Booking ETA Update Service for Logistics Management", p1: "September 25, 2024", p2: "New automated booking ETA update service makes logistics management more efficient for exporters. Norwalk, CT — September 25th — cieTrade Systems Inc., a leader in ...", id: "Pressreleases" },
         ],
     };
     const items = [
@@ -133,7 +133,7 @@ function Home() {
                         <h1 className='text-xl text-uppercase text-red-600 font-bold'>Self-Service Portal</h1>
                         <h1 className='text-3xl font-bold pe-20 py-3'>Advance customer service, minimize office requests, and reduce operating costs.</h1>
                         <p className='pb-2 text-gray-500 text-lg'>cieTrade’s self-service portal gives customers and supply chain partners 24/7 on-demand access and visibility to recovered material, pricing, shipments, payments, documents and much more.</p>
-                        <button className='bg-red-600 hover:bg-red-700 px-4 mt-2 py-3 text-white font-bold'>See Features <i class="fa-solid fa-arrow-right ps-3 pt-1"></i></button>
+                        <a href={'/SelfServices'}><button className='bg-red-600 hover:bg-red-700 px-4 mt-2 py-3 text-white font-bold'>See Features <i class="fa-solid fa-arrow-right ps-3 pt-1"></i></button></a>
                     </Col>
                 </Row>
             </Container>
@@ -146,7 +146,7 @@ function Home() {
                             <h1 className='text-3xl font-bold pe-40 py-3'>Our mobile apps save time and keep your team connected.</h1>
                             {data.mobile.map((item, index) => (
                                 <div key={index}>
-                                    <a href='#'><h1 className='text-lg font-bold text-red-600'>{item.name}</h1></a>
+                                    <a href={item.id}><h1 className='text-lg font-bold text-red-600'>{item.name}</h1></a>
                                     <p className='pb-2 text-gray-500 text-lg pe-5'>{item.p}</p>
                                 </div>
                             ))}
@@ -192,7 +192,7 @@ function Home() {
                                 <div key={index} className='pb-4'>
                                     <img src={item.img} className='img-fluid w-full pt-5' />
                                     <div className='p-3 px-4'>
-                                        <a href='#'><h1 className='text-uppercase text-red-600 text-xs font-bold pe-14 pt-3'>{item.head}</h1></a>
+                                        <a href={item.id}><h1 className='text-uppercase text-red-600 text-xs font-bold pe-14 pt-3'>{item.head}</h1></a>
                                         <a href='#'><h1 className='text-2xl font-bold py-2'>{item.title}</h1></a>
                                         <p className='text-gray-500 text-xs'>{item.p1}</p>
                                         <p className='text-gray-500 text-lg py-4'>{item.p2}</p>

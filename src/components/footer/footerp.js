@@ -36,10 +36,10 @@ function FooterP() {
                         </Col>
                         <Col lg={3} md={12} className='list-none py-3'>
                             <h6 className='text-white font-semibold text-xl'>Solutions</h6>
-                            <a href={'/'}><li className='text-neutral-500 text-lg leading-8 hover:text-red-600'>Inventory Management</li></a>
-                            <a href={'/'}><li className='text-neutral-500 text-lg leading-8 hover:text-red-600'>Self-Service Portal</li></a>
-                            <a href={'/'}><li className='text-neutral-500 text-lg leading-8 hover:text-red-600'>Mobile Apps</li></a>
-                            <a href={'/'}><li className='text-neutral-500 text-lg leading-8 hover:text-red-600'>Accounting Integration</li></a>
+                            <a href={'/InventoryManagement'}><li className='text-neutral-500 text-lg leading-8 hover:text-red-600'>Inventory Management</li></a>
+                            <a href={'/SelfServices'}><li className='text-neutral-500 text-lg leading-8 hover:text-red-600'>Self-Service Portal</li></a>
+                            <a href={'/Mobileapps'}><li className='text-neutral-500 text-lg leading-8 hover:text-red-600'>Mobile Apps</li></a>
+                            <a href={'/Accounting'}><li className='text-neutral-500 text-lg leading-8 hover:text-red-600'>Accounting Integration</li></a>
                         </Col>
                         <Col lg={3} md={12} className='list-none py-3'>
                             <h6 className='text-white font-semibold text-xl'>Industries</h6>
@@ -55,21 +55,21 @@ function FooterP() {
                         </Col>
                         <Col lg={2} md={12} className='list-none py-3'>
                             <h6 className='text-white font-semibold text-xl'>Company</h6>
-                            <a href={'/'}> <li className='text-neutral-500 text-lg leading-8 hover:text-red-600'>About Us</li></a>
+                            <a href={'/Aboutus'}> <li className='text-neutral-500 text-lg leading-8 hover:text-red-600'>About Us</li></a>
                             <a href={'/WhyCietrade'}> <li className='text-neutral-500 text-lg leading-8 hover:text-red-600'>Why cieTrade</li></a>
                             <a href={'/Ourstory'}> <li className='text-neutral-500 text-lg leading-8 hover:text-red-600'>Our Story</li></a>
                             <a href={'/Contact'}> <li className='text-neutral-500 text-lg leading-8 hover:text-red-600'>Contact Us</li></a>
-                            <a href={'/'}> <li className='text-neutral-500 text-lg leading-8 hover:text-red-600'>News & Events</li></a>
-                            <a href={'/'}> <li className='text-neutral-500 text-lg leading-8 hover:text-red-600'>Blog</li></a>
+                            <a href={'/News'}> <li className='text-neutral-500 text-lg leading-8 hover:text-red-600'>News & Events</li></a>
+                            <a href={'/Blog'}> <li className='text-neutral-500 text-lg leading-8 hover:text-red-600'>Blog</li></a>
                             <a href={'/Privacypolicy'}> <li className='text-neutral-500 text-lg leading-8 hover:text-red-600'>Privacy Policy</li></a>
                             <a href={'/Terms'}> <li className='text-neutral-500 text-lg leading-8 hover:text-red-600'>Terms of Service</li></a>
                         </Col>
                         <Col lg={2} md={12} className='list-none py-3'>
                             <h6 className='text-white font-semibold text-xl'>Help Desk</h6>
                             <a href='tel:1-203-323-0074'><li className='text-neutral-500 text-lg leading-8 hover:text-red-600'>1-203-323-0074</li></a>
-                            <a href={'/'}><li className='text-neutral-500 text-lg leading-8 hover:text-red-600'>cietrade.freshdesk.com</li></a>
-                            <a href={'/'}><li className='text-neutral-500 text-lg leading-8 hover:text-red-600'>Training and Support</li></a>
-                            <a href={'/'}><li className='text-neutral-500 text-lg leading-8 hover:text-red-600'>FAQ</li></a>
+                            <a href={'/SupportLogin'}><li className='text-neutral-500 text-lg leading-8 hover:text-red-600'>cietrade.freshdesk.com</li></a>
+                            <a href={'/Trainning'}><li className='text-neutral-500 text-lg leading-8 hover:text-red-600'>Training and Support</li></a>
+                            <a href={'/Faqs'}><li className='text-neutral-500 text-lg leading-8 hover:text-red-600'>FAQ</li></a>
                             <a href={'/'}><li className='text-neutral-500 text-lg leading-8 hover:text-red-600'>Sitemap</li></a>
                             <a href="https://www.linkedin.com/company/cietrade-systems-inc-/"><i class="fa-brands fa-linkedin text-2xl pt-2 pe-3 hover:text-cyan-600"></i></a>
                             <a href="https://www.youtube.com/user/cieTrade"><i class="fa-brands fa-youtube text-2xl pt-2 hover:text-red-600"></i></a>
