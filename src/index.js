@@ -99,7 +99,7 @@ root.render(
     {/* <SelfServices /> */}
     {/* <Ciedispatch /> */}
     {/* <Cielocationn /> */}
-    <Ciemobile />
+    {/* <Ciemobile /> */}
     {/* <Ciephoto /> */}
     {/* <Clickbale /> */}
     {/* <Blog /> */}

@@ -15,6 +15,7 @@ import { useState } from "react";
 function Cielocationn() {
     const [activeIndex, setActiveIndex] = useState(null);
 
+
     const faqs = [
         {
             question: "What kinds of details can I view for each inventory item through cieLocation?",
@@ -102,7 +103,7 @@ function Cielocationn() {
             <div className='g-0 p-20 bg-light '>
                 <Row>
                     <Col lg={6} className='py-5'>
-                        <h6 className='lg:text-5xl md:4xl sm:text-3xl font-bold py-3 lh-sm'>Physical Stock & Cycle Count​</h6>
+                        <h6 className='lg:text-5xl md:4xl sm:text-3xl font-bold py-3 lh-sm'>Physical Stock & Cycle Count</h6>
                         <div className='flex py-2'><h6 className='text-xl text-gray-500 '>Allows warehouse staff to scan existing inventory or even add missing inventory items found at a warehouse location to conduct and streamline stock and cycle counts.</h6></div>
                     </Col>
                     <Col lg={6}><center><img src={Add} className='w-4/5'></img></center></Col>

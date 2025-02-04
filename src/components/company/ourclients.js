@@ -10,9 +10,9 @@ import Commercialplasticscase from '../../assets/img/CommercialPlasticscase.png'
 function Ourclients() {
     return (
         <div>
-            <div className="h-full relative bg-cover bg-center  " style={{ backgroundImage: `url(https://i.ytimg.com/vi/oBY6wR2FAqk/maxresdefault.jpg)` }}>
+            <div className="h-full relative bg-cover bg-center" style={{ backgroundImage: `url(https://i.ytimg.com/vi/oBY6wR2FAqk/maxresdefault.jpg)` }}>
                 <div className='absolute inset-0 bg-black opacity-50'></div>
-                <div className="text-center relative  py-40  ">
+                <div className="text-center relative  pb-40 pt-56">
                     <h1 className="lg:text-7xl md:text-5xl sm:text-4xl text-white font-bold leading-tight">Our Clients</h1>
                     <h1 className="lg:text-xl text-white py-3 leading-tight">cieTrade has a diverse worldwide customer base that’s transacted billions in goods and <br />shipped hundreds of thousands of containers on our software. Our clients include many of<br /> the leading trading houses, scrap exporters, and recycling plants. cieTrade’s flexible design<br /> has also attracted waste brokers and national accounts consolidators looking to avoid<br /> using spreadsheets or expensive custom systems.</h1>
                 </div>
@@ -21,28 +21,28 @@ function Ourclients() {
             <Container>
                 <Row className='g-0 py-20'>
                     <Col lg={6}>
-                        <YouTube videoId="mwtsCFbxXa4" />
+                        <YouTube videoId="mwtsCFbxXa4" className=''/>
                     </Col>
                     <Col lg={6} >
                         <h6 className=' font-bold text-2xl text-red-600 py-2'>SUCCESS STORY</h6>
                         <h6 className='text-lg lg:text-5xl md:text-3xl sm:text-2xl font-bold py-3'>Wasteology</h6>
                         <h6 className='text-gray-600 text-xl '>Learn how Wasteology, a waste and recycling services broker, eliminated double-entry, streamlined dispatch management and improved their billing process with cieTrade’s industry-specific software, tailored to meet evolving needs as their operation scales.</h6>
                         <div className='py-14'>
-                            <a href='#' className="text-white bg-red-600 hover:bg-red-700 px-4 py-4  font-bold text-lg ">Watch Success Story<i class="fa-solid fa-arrow-right ps-3 pt-1"></i></a>
+                            <a href='https://youtu.be/mwtsCFbxXa4' className="text-white bg-red-600 hover:bg-red-700 px-4 py-4  font-bold text-lg ">Watch Success Story<i class="fa-solid fa-arrow-right ps-3 pt-1"></i></a>
                         </div>
                     </Col>
                 </Row>
 
                 <Row className='g-0 py-20'>
                     <Col lg={6}>
-                        <YouTube videoId="mehip29GhNI" />
+                        <YouTube videoId="mehip29GhNI" className=''/>
                     </Col>
                     <Col lg={6} >
                         <h6 className=' font-bold text-2xl text-red-600 py-2'>SUCCESS STORY</h6>
                         <h6 className='text-lg lg:text-5xl md:text-3xl sm:text-2xl font-bold py-3'>AP&J Recycling</h6>
                         <h6 className='text-gray-600 text-xl '>As a rapidly growing plastics recycling business, AP&J Recycling needed an industry-specific solution to be able to manage their operation. Learn how cieTrade helped eliminate manual spreadsheets, improve inventory tracking and increase accuracy of COGS.</h6>
                         <div className='py-14'>
-                            <a href='#' className="text-white bg-red-600 hover:bg-red-700 px-4 py-4  font-bold text-lg ">Watch Success Story<i class="fa-solid fa-arrow-right ps-3 pt-1"></i></a>
+                            <a href='https://youtu.be/mehip29GhNI' className="text-white bg-red-600 hover:bg-red-700 px-4 py-4  font-bold text-lg ">Watch Success Story<i class="fa-solid fa-arrow-right ps-3 pt-1"></i></a>
                         </div>
                     </Col>
                 </Row>
@@ -81,7 +81,7 @@ function Ourclients() {
                 </Row>
                 <Row className='g-0 py-20'>
                     <Col lg={6}>
-                        <YouTube videoId="oBY6wR2FAqk" />
+                        <YouTube videoId="oBY6wR2FAqk" className=''/>
                     </Col>
                     <Col lg={6} >
                         <h6 className=' font-bold text-2xl text-red-600 py-2'>SUCCESS STORY</h6>
@@ -94,7 +94,7 @@ function Ourclients() {
                 </Row>
                 <Row className='g-0 py-20'>
                     <Col lg={6}>
-                        <YouTube videoId="yxcsJQlRxAk" />
+                        <YouTube videoId="yxcsJQlRxAk" className=''/>
                     </Col>
                     <Col lg={6} >
                         <h6 className=' font-bold text-2xl text-red-600 py-2'>SUCCESS STORY</h6>
