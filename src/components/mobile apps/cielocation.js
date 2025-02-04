@@ -9,12 +9,19 @@ import Add from '../../assets/img/add.png';
 import Selfservice from '../../assets/img/self-service.png';
 import Ciedispatchh from '../../assets/img/ciedispatch.png';
 import { useState } from "react";
-// import YouTube from 'react-youtube';
+import YouTube from 'react-youtube';
 
 
 function Cielocationn() {
     const [activeIndex, setActiveIndex] = useState(null);
-
+    const opts = {
+        height: '390',
+        width: '1350',
+        playerVars: {
+          autoplay: 1,
+          fs: 1, // Enable fullscreen button
+        },
+      };    
     const faqs = [
         {
             question: "What kinds of details can I view for each inventory item through cieLocation?",
@@ -63,13 +70,14 @@ function Cielocationn() {
                     </Col>
                 </Row>
             </Container>
-            {/* <Container>
+            
+            <Container>
                 <Row>
-                    <Col lg={8}>
-                            <YouTube videoId="jK6Tft7rzfM" className='w-full' />
+                    <Col>
+                        <YouTube videoId="jK6Tft7rzfM" opts={opts}/>
                     </Col>
                 </Row>
-            </Container> */}
+            </Container>
 
             <Container>
                 <Row className='g-0 p-20 '>
@@ -140,7 +148,7 @@ function Cielocationn() {
                     <Container>
                         <Row>
                             <h1 className='lg:text-4xl md:text-3xl sm:text-2xl font-bold lh-base text-center py-4'>Additional Tools</h1>
-                            
+
                             <Col lg={6} >
                                 <center><img src={Selfservice} className='w-full py-2'></img></center>
                                 <h1 className='font-bold text-red-600 text-xl pt-3'>WEB APPLICATIONS</h1>
@@ -155,7 +163,7 @@ function Cielocationn() {
                                 <h6 className='text-gray-600 text-lg py-3'>cieDispatch is a free mobile app that lets your drivers retrieve a list of assigned tickets, get directions to service locations, update job status, record notes, and even capture photos.</h6>
                                 <div className='py-3'> <a href='#' className="text-red-600 font-bold lg:text-base md:text-center sm:text-center">Learn More<i class="fa-solid fa-arrow-right text-white bg-red-600 text-sm px-1 rounded-3xl ms-2"></i></a></div>
                             </Col>
-                    
+
                         </Row>
 
                     </Container>
