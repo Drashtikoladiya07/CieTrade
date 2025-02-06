@@ -19,16 +19,16 @@ function Management() {
             answer: "Yes. Dispatch tickets can be easily generated from a customers schedule, allowing you to track completed services at their sites. Additionally scale tickets, photos, or bin sensor readings can be attached to the tickets so you can pass them along to your customer. The dispatch board can work for anyone who has their own drivers, manages third party haulers, or is tracking their customers services.",
         },
     ];
-
+    const toggleFAQ = (index) => {
+        setActiveIndex(activeIndex === index ? null : index);
+    };
     const data = {
         Tool: [
             { img: mobile1, head: "MOBILE APPS", title: "cieDispatch", p: "cieDispatch is a free mobile app that lets your drivers retrieve a list of assigned tickets, get directions to service locations, update job status, record notes, and even capture photos.", id: "Ciedispatch" },
             { img: mobile2, head: "MOBILE APPS", title: "cieMobile", p: "cieTrade’s mobile reporting app provides sales reps and managers with real-time access to cieTrade account information and key management reports from the road or anywhere else.", id: "Ciemobile" },
         ],
-    };
-    const toggleFAQ = (index) => {
-        setActiveIndex(activeIndex === index ? null : index);
-    };
+    }
+
 
     return (
         <div className='text-white'>
@@ -132,21 +132,22 @@ function Management() {
                 <div className='pt-5'><center><a href={'/Binventory'} className="bg-red-600 hover:bg-red-700 p-3 font-bold text-base ">Request Demo<i class="fa-solid fa-arrow-right ps-3 pt-1"></i></a></center></div>
             </div>
 
-            <Container className='lg:px-12'>
-                <h1 className='text-4xl text-center font-bold'>Additional Tools</h1>
-                <Row>
-                    {data.Tool.map((item, index) => (
-                        <Col lg={6} md={6} sm={12} className='py-5' key={index}>
-                            <img src={item.img} alt="" className='w-full img-fluid' />
-                            <h1 className='font-bold text-red-600 text-xl pt-3'>{item.head}</h1>
-                            <h1 className='font-bold text-3xl text-black py-3'>{item.title}</h1>
-                            <p className='text-gray-500 text-lg'>{item.p}</p>
-                            <a href={item.id}><button className='text-red-600 hover:text-red-700 font-bold pt-3'>learn More <i class="fa-solid fa-arrow-right ms-2 px-2 p-1 text-xs bg-red-600 text-white rounded-full"></i></button></a>
-                        </Col>
-                    ))}
-                </Row>
-            </Container>
+
             <div className='bg-light py-5'>
+                <Container className='lg:px-12'>
+                    <h1 className='text-4xl text-center font-bold'>Additional Tools</h1>
+                    <Row>
+                        {data.Tool.map((item, index) => (
+                            <Col lg={6} md={6} sm={12} className='py-5' key={index}>
+                                <img src={item.img} alt="" className='w-full img-fluid' />
+                                <h1 className='font-bold text-red-600 text-xl pt-3'>{item.head}</h1>
+                                <h1 className='font-bold text-3xl text-black py-3'>{item.title}</h1>
+                                <p className='text-gray-500 text-lg'>{item.p}</p>
+                                <a href={item.id}><button className='text-red-600 hover:text-red-700 font-bold pt-3'>learn More <i class="fa-solid fa-arrow-right ms-2 px-2 p-1 text-xs bg-red-600 text-white rounded-full"></i></button></a>
+                            </Col>
+                        ))}
+                    </Row>
+                </Container>
                 <div className="max-w-7xl mx-auto p-4 ">
                     <h1 className="text-4xl font-bold text-black text-center mb-8">FAQ</h1>
                     <div className="space-y-6">

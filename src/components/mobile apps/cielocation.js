@@ -15,7 +15,6 @@ import { useState } from "react";
 function Cielocationn() {
     const [activeIndex, setActiveIndex] = useState(null);
 
-
     const faqs = [
         {
             question: "What kinds of details can I view for each inventory item through cieLocation?",
@@ -77,7 +76,7 @@ function Cielocationn() {
                     <Col lg={6}><center><img src={Converting} className='w-4/5'></img></center></Col>
                     <Col lg={6} className='py-5'>
                         <h6 className='lg:text-5xl md:4xl sm:text-3xl font-bold py-3 lh-sm'>Stock Confirmation Checks</h6>
-                        <div className='flex py-2'><h6 className='text-xl text-gray-500 '>Input a Converting Job, Receiving Ticket or Shipping Ticket number to retrieve a list of the materials scheduled to be consumed, brought in or shipped out. Items can easily be marked as Found, Not Found, or Unconfirmed, making it easier to match requested inventory with what is actually available.</h6></div>
+                        <div className='py-2'><h6 className='text-xl text-gray-500 '>Input a Converting Job, Receiving Ticket or Shipping Ticket number to retrieve a list of the materials scheduled to be consumed, brought in or shipped out. Items can easily be marked as Found, Not Found, or Unconfirmed, making it easier to match requested inventory with what is actually available.</h6></div>
                     </Col>
                 </Row>
             </Container>
@@ -86,7 +85,7 @@ function Cielocationn() {
                 <Row>
                     <Col lg={6} className='py-5'>
                         <h6 className='lg:text-5xl md:4xl sm:text-3xl font-bold py-3 lh-sm'>Scan & Identify Items</h6>
-                        <div className='flex py-2'><h6 className='text-xl text-gray-500 '>Search for material using the inventory item number, serial number or by quickly scanning the inventory barcode label to quickly pull up key information such as the product name, quantity, warehouse location and more.</h6></div>
+                        <div className='py-2'><h6 className='text-xl text-gray-500 '>Search for material using the inventory item number, serial number or by quickly scanning the inventory barcode label to quickly pull up key information such as the product name, quantity, warehouse location and more.</h6></div>
                     </Col>
                     <Col lg={6}><center><img src={Scan} className='w-4/5'></img></center></Col>
                 </Row>
@@ -96,7 +95,7 @@ function Cielocationn() {
                     <Col lg={6}><center><img src={Relocate} className='w-4/5'></img></center></Col>
                     <Col lg={6} className='py-5'>
                         <h6 className='lg:text-5xl md:4xl sm:text-3xl font-bold py-3 lh-sm'>Quickly Relocate Inventory</h6>
-                        <div className='flex py-2'><h6 className='text-xl text-gray-500 '>Users can easily move inventory from one location to another and register these movements directly on the app, instantly updating the inventory location for your back-office in your cieTrade account.</h6></div>
+                        <div className='py-2'><h6 className='text-xl text-gray-500 '>Users can easily move inventory from one location to another and register these movements directly on the app, instantly updating the inventory location for your back-office in your cieTrade account.</h6></div>
                     </Col>
                 </Row>
             </Container>
@@ -104,12 +103,12 @@ function Cielocationn() {
                 <Row>
                     <Col lg={6} className='py-5'>
                         <h6 className='lg:text-5xl md:4xl sm:text-3xl font-bold py-3 lh-sm'>Physical Stock & Cycle Count</h6>
-                        <div className='flex py-2'><h6 className='text-xl text-gray-500 '>Allows warehouse staff to scan existing inventory or even add missing inventory items found at a warehouse location to conduct and streamline stock and cycle counts.</h6></div>
+                        <div className=' py-2'><h6 className='text-xl text-gray-500 '>Allows warehouse staff to scan existing inventory or even add missing inventory items found at a warehouse location to conduct and streamline stock and cycle counts.</h6></div>
                     </Col>
                     <Col lg={6}><center><img src={Add} className='w-4/5'></img></center></Col>
                 </Row>
             </div>
-            <div className='bg-gray-900'>
+            <div className='bg-zinc-800'>
                 <Container >
                     <Row className='py-4'>
                         <h1 className='lg:text-5xl md:text-3xl sm:text-2xl font-bold lh-base text-center text-white py-4'>Key Features </h1>
@@ -141,7 +140,6 @@ function Cielocationn() {
                     <Container>
                         <Row>
                             <h1 className='lg:text-4xl md:text-3xl sm:text-2xl font-bold lh-base text-center py-4'>Additional Tools</h1>
-                            
                             <Col lg={6} >
                                 <center><img src={Selfservice} className='w-full py-2'></img></center>
                                 <h1 className='font-bold text-red-600 text-xl pt-3'>WEB APPLICATIONS</h1>
