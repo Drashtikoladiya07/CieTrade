@@ -56,6 +56,7 @@ import Management from './components/features/management';
 import Document from './components/features/document';
 import Binventory from './components/brochures/b-inventory';
 import Bself from './components/brochures/b-self';
+import Readthepost from './components/home/readthepost';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -113,7 +114,8 @@ root.render(
     {/* <Document /> */}
     {/* <Binventory /> */}
     {/* <Bself /> */}
-    {/* <App /> */}
+    {/* <Readthepost /> */}
+    <App />
   </React.StrictMode>
 );
 

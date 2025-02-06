@@ -46,40 +46,35 @@ function Blog() {
     };
 
     return (
-        <div>
-            <div className="h-full relative bg-cover" style={{ backgroundImage: `url(https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2022/07/shutterstock_1916506628-scaled.jpg.webp)` }}>
+        <div className="bg-light">
+            <div className="h-full relative bg-cover bg-center" style={{ backgroundImage: `url(https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2022/07/shutterstock_1916506628-scaled.jpg.webp)` }}>
                 <div className='absolute inset-0 bg-black opacity-50'></div>
-                <div className="text-center relative py-40">
+                <div className="text-center relative pb-40 pt-56">
                     <h1 className="lg:text-7xl md:text-5xl sm:text-4xl text-white font-bold leading-tight">Blog</h1>
                     <h1 className="lg:text-xl text-white py-3 leading-tight">Read about industry insights, best practices, latest releases and more</h1>
                 </div>
             </div>
             <Container>
-                <Row>
+                <Row className="py-5">
                     {currentItems.map((item, index) => (
-                        <Col lg={12} className='py-10' key={index}>
+                        <Col lg={12} className='py-5' key={index}>
                             <Row>
                                 <Col lg={6}>
                                     <img src={item.img} alt="" className='w-full' />
                                 </Col>
                                 <Col lg={6}>
-                                    <h1 className='text-xl font-bold text-red-600'>{item.title}</h1>
-                                    <h1 className='text-5xl py-3 font-bold lh-sm'>{item.label}</h1>
-                                    <h1 className='text-xl text-gray-400'><i className="fa-solid fa-calendar pe-2"></i>{item.date}</h1>
-                                    <h1 className='text-xl text-gray-500 py-3'>{item.description}</h1>
-                                    <div className="py-5">
-                                        <a href='#' className="text-white bg-red-600 hover:bg-red-700 py-4 font-bold px-3">Read More<i className="fa-solid fa-arrow-right ps-1 pt-1 "></i></a>
-                                    </div>
+                                    <h1 className="text-xl font-bold text-red-600">{item.title}</h1>
+                                    <h1 className="text-4xl py-3 font-bold lh-sm">{item.label}</h1>
+                                    <h1 className="text-gray-400"><i className="fa-solid fa-calendar pe-2"></i>{item.date}</h1>
+                                    <h1 className="text-lg text-gray-500 py-2">{item.description}</h1>
+                                    <div className="pt-4"><a href="#" className="text-white bg-red-600 hover:bg-red-700 p-3 font-bold">Request Demo<i className="fa-solid fa-arrow-right ps-1 pt-1"></i></a></div>
                                 </Col>
                             </Row>
                         </Col>
                     ))}
                 </Row>
 
-                {/* Pagination Buttons */}
-               {/* Pagination Buttons */}
-               <div className="text-center py-4 border-none">
-                    {/* Previous Button */}
+                <div className="text-center border-none">
                     <Button
                         className="text-red-600 hover:text-gray-500 text-lg font-semibold"
                         variant="transparent border-0"
@@ -89,7 +84,6 @@ function Blog() {
                         Previous
                     </Button>
 
-                    {/* Page Number Buttons */}
                     {Array.from({ length: totalPages }, (_, i) => (
                         <Button
                             key={i}
@@ -101,7 +95,6 @@ function Blog() {
                         </Button>
                     ))}
 
-                    {/* Next Button */}
                     <Button
                         className="text-red-600 hover:text-gray-500 text-lg font-semibold"
                         variant="transparent border-0"
