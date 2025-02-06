@@ -15,7 +15,6 @@ import Plasticrecycling from '../../assets/img/plasticsrecycling.png';
 import Freightview from '../../assets/img/Freightview.png';
 import Untitled from '../../assets/img/Untitled.png';
 import Bookingportal from '../../assets/img/bookingportal.png';
-import pprc from '../../assets/img/PPRC.png';
 import Scrap from '../../assets/img/scrap.png';
 import Isrigolf from '../../assets/img/ISRIGolf.png';
 import Isri2023 from '../../assets/img/ISRI2023.png';
@@ -105,7 +104,7 @@ function News() {
                     </Button>
 
                     {Array.from({ length: totalPages }, (_, i) => (
-                        <Button
+                        <Button 
                             key={i}
                             variant={currentPage === i + 1 ? "text-gray-500" : "text-red-600 hover:text-gray-500"}
                             onClick={() => setCurrentPage(i + 1)}

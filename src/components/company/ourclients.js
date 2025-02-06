@@ -106,11 +106,11 @@ function Ourclients() {
                         <YouTube videoId="yxcsJQlRxAk" opts={{ width: 600, height: 300, }} />
                     </Col>
                     <Col lg={6} >
-                        <h6 className='font-bold text-xl text-red-600'>SUCCESS STORY</h6>
-                        <h6 className='lg:text-4xl md:text-3xl sm:text-2xl font-bold py-3'>The Paper Tigers</h6>
-                        <h6 className='text-gray-600 text-lg'>Having started with a custom solution, The Paper Tigers quickly began to realize the redundancies and loss of productivity. Learn how cieTrade helped grow their business while reducing operational costs by 35-40%.</h6>
-                        <div className='pt-10'>
-                            <a href="https://youtu.be/yxcsJQlRxAk" className="text-white bg-red-600 hover:bg-red-700 px-4 py-3 font-bold text-lg ">Watch Success Story<i class="fa-solid fa-arrow-right ps-3 pt-1"></i></a>
+                        <h6 className=' font-bold text-2xl text-red-600 py-2'>SUCCESS STORY</h6>
+                        <h6 className='text-lg lg:text-5xl md:text-3xl sm:text-2xl font-bold py-3'>The Paper Tigers</h6>
+                        <h6 className='text-gray-600 text-xl '>Having started with a custom solution, The Paper Tigers quickly began to realize the redundancies and loss of productivity. Learn how cieTrade helped grow their business while reducing operational costs by 35-40%.</h6>
+                        <div className='py-14'>
+                            <a href='#' className="text-white bg-red-600 hover:bg-red-700 px-4 py-4  font-bold text-lg ">Watch Success Story<i class="fa-solid fa-arrow-right ps-3 pt-1"></i></a>
                         </div>
                     </Col>
                 </Row>
