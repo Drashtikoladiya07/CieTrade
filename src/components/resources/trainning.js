@@ -17,7 +17,7 @@ function Trainning() {
 
         ],
     }
-        const [activeIndex, setActiveIndex] = useState(null);
+    const [activeIndex, setActiveIndex] = useState(null);
     const faqs = [
         {
             question: "What are some common roadblocks during the implementation process?",
@@ -43,16 +43,16 @@ function Trainning() {
             question: "Will I receive a live person when I call in?",
             answer: "Yes, as long as you call within normal office hours, Monday – Friday 9:00AM to 6:00PM ET, a support team member is here. We can also arrange non business-hour meetings upon request if you are located internationally.",
         },
-       
+
     ];
     const toggleFAQ = (index) => {
         setActiveIndex(activeIndex === index ? null : index);
     };
     return (
         <div>
-            <div className="h-full relative bg-cover   " style={{ backgroundImage: `url(https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2023/03/support-team-at-desks-blur.png.webp)` }}>
+            <div className="h-full relative bg-cover" style={{ backgroundImage: `url(https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2023/03/support-team-at-desks-blur.png.webp)` }}>
                 <div className='absolute inset-0 bg-black opacity-50'></div>
-                <div className="text-center relative  py-40  ">
+                <div className="text-center relative pb-40 pt-56">
                     <h1 className="lg:text-7xl md:text-5xl sm:text-4xl text-white font-bold leading-tight">Training & Support</h1>
                     <h1 className="lg:text-xl text-white py-3 leading-tight">Let us help you be successful</h1>
                 </div>
@@ -60,30 +60,30 @@ function Trainning() {
             </div>
 
             <Container>
-                <Row className='g-0 p-20 px-10'>
-                    <Col lg={6}><center><img src={Office} className='w-4/5 '></img></center></Col>
-                    <Col lg={6} className=' px-10'>
-                        <h6 className='lg:text-5xl md:4xl sm:text-3xl font-bold py-3'>Help when you need it</h6>
-                        <div className='flex py-2'><h6 className='text-xl text-gray-500 '>We provide a comprehensive package of professional services, training and support options with one thing in mind— your success. Our support team brings a wealth of experience and best practices from the trading, waste and recycling industries to quickly get you up and running and help ensure that you get continuous value from your investment in cieTrade.</h6></div>
-                        <div className='py-3'><h6 className='text-gray-500 text-xl font-bold'>Join a Support Session</h6>
-                            <h6 className='text-red-600 text-xl'><a href='https://www.zoho.com/assist/join/'></a>join.zoho.com</h6></div>
-                        <div className='py-3'><h6 className='text-gray-500 text-xl font-bold'>Email us a Question</h6>
-                            <h6 className='text-red-600 text-xl'><a href=''></a>Contact Us</h6></div>
-                        <div className='py-3'><h6 className='text-gray-500 text-xl font-bold'>Call our Support Team</h6>
-                            <h6 className='text-red-600 text-xl'><a href=''></a>203-323-0074</h6></div>
-                        <h6 className='text-gray-500 text-xl font-bold'>Open Monday – Friday 9:00AM – 6:00PM ET.</h6>
+                <Row className='p-20 px-10'>
+                    <Col lg={6}><img src={Office} className='w-full h-5/6'></img></Col>
+                    <Col lg={6} className='px-10 text-lg'>
+                        <h6 className='lg:text-4xl md:text-3xl sm:text-2xl font-bold pb-3'>Help when you need it</h6>
+                        <h6 className='text-gray-500 py-3'>We provide a comprehensive package of professional services, training and support options with one thing in mind— your success. Our support team brings a wealth of experience and best practices from the trading, waste and recycling industries to quickly get you up and running and help ensure that you get continuous value from your investment in cieTrade.</h6>
+                        <h6 className='text-gray-500 font-bold pt-3'>Join a Support Session</h6>
+                        <h6 className='text-red-600 text-xl pb-3'><a href='https://join.zoho.com/'>join.zoho.com</a></h6>
+                        <h6 className='text-gray-500 font-bold pt-3'>Email us a Question</h6>
+                        <h6 className='text-red-600 text-xl pb-3'><a href='https://www.cietrade.com/training-support-contact-us/'>Contact Us</a></h6>
+                        <h6 className='text-gray-500 font-bold pt-3'>Call our Support Team</h6>
+                        <h6 className='text-red-600 text-xl pb-3'>203-323-0074</h6>
+                        <h6 className='text-gray-500 font-bold'>Open Monday – Friday 9:00AM – 6:00PM ET.</h6>
                     </Col>
                 </Row>
             </Container>
             <Container>
                 <Row>
-                    <h1 className="lg:text-7xl md:text-5xl sm:text-4xl text-white font-bold leading-tight">Meet Our Support Team</h1>
+                    <h1 className="lg:text-5xl md:text-5xl sm:text-4xl text-center font-bold leading-tight">Meet Our Support Team</h1>
                     {data.Supportteam.map((item, index) => (
                         <Col lg={3} key={index} className='py-20 px-10'>
-                            <center><img src={item.img} className='h-48'></img></center>
-                            <h6 className='text-3xl font-bold py-3'>{item.name}</h6>
-                            <div className='flex py-2'><h6 className='text-xl text-gray-500 '>{item.work}</h6></div>
-                            <a href='https://www.linkedin.com/in/brittneekindzierski/'> <i class="fa-brands fa-linkedin text-blue-700 text-2xl"></i></a>
+                            <img src={item.img} className='h-48'></img>
+                            <h6 className='text-xl text-gray-500 font-bold pt-3'>{item.name}</h6>
+                            <h6 className='text-gray-500 pt-2 pb-4'>{item.work}</h6>
+                            <a href='https://www.linkedin.com/in/brittneekindzierski/'> <i class="fa-brands fa-linkedin text-blue-500  text-2xl"></i></a>
                         </Col>
                     ))}
                 </Row>
@@ -92,23 +92,23 @@ function Trainning() {
 
             <div className='bg-light'>
                 <Container>
-                    <Row className='g-0  py-36'>
-                        <Col lg={6} className=' '>
-                            <h6 className='lg:text-5xl md:4xl sm:text-3xl font-bold py-3 px-5'>Online & Onsite Training</h6>
-                            <div className=' py-2'><h6 className='text-lg text-gray-500 px-5 '>Our online training programs are tailored to the specific needs of your business and are packed with live demonstrations, participant interactivity, reinforcement discussions and hands-on exercises to jump-start your team’s performance and drive results. On-site training services are also available upon request for a professional service fee to ramp up your training sessions and educate your user community.</h6></div>
+                    <Row className='py-20'>
+                        <Col lg={6}>
+                            <h6 className='lg:text-4xl md:4xl sm:text-3xl font-bold py-3'>Online & Onsite Training</h6>
+                            <div className=' py-2'><h6 className='text-lg text-gray-600'>Our online training programs are tailored to the specific needs of your business and are packed with live demonstrations, participant interactivity, reinforcement discussions and hands-on exercises to jump-start your team’s performance and drive results. On-site training services are also available upon request for a professional service fee to ramp up your training sessions and educate your user community.</h6></div>
                         </Col>
-                        <Col lg={6} className=' '>
-                            <h6 className='lg:text-5xl md:4xl sm:text-3xl font-bold py-3 px-5'>Dedicated Support Team</h6>
-                            <div className=' py-2'><h6 className='text-lg text-gray-500  px-5'>Each cieTrade client is setup with their own support team members that are knowledgeable about their account and help oversee and prioritize cases and conduct training. cieTrade clients also receive unlimited access to our knowledge base to quickly access help articles and answer questions.</h6></div>
+                        <Col lg={6}>
+                            <h6 className='lg:text-4xl md:4xl sm:text-3xl font-bold py-3'>Dedicated Support Team</h6>
+                            <div className=' py-2'><h6 className='text-lg text-gray-500 '>Each cieTrade client is setup with their own support team members that are knowledgeable about their account and help oversee and prioritize cases and conduct training. cieTrade clients also receive unlimited access to our knowledge base to quickly access help articles and answer questions.</h6></div>
                         </Col>
                     </Row>
                 </Container>
             </div>
 
-            <div className='bg-gray-900'>
+            <div className='bg-zinc-800'>
                 <Container >
-                    <Row className='py-20'>
-                        <h1 className='lg:text-5xl md:text-3xl sm:text-2xl font-bold lh-base text-center text-white pb-5'>Key Features </h1>
+                    <Row className='py-16'>
+                        <h1 className='lg:text-5xl md:text-3xl sm:text-2xl font-bold lh-base text-center text-white pb-5'>Support Portal Features</h1>
                         <Col lg={6}>
                             <div className='flex py-3'><i class="fa-solid fa-check text-red-600 font-extrabold text-2xl pe-3"></i><h6 className='text-lg text-white font-semibold '>Search the knowledgebase and watch step by step training videos</h6></div>
                             <div className='flex py-3'><i class="fa-solid fa-check text-red-600 font-extrabold text-2xl pe-3"></i><h6 className='text-lg text-white font-semibold '> Create cases for support requests and track ticket status</h6></div>
