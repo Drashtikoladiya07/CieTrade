@@ -1,11 +1,42 @@
 import { Row, Col, Container } from 'react-bootstrap';
-import React from "react";
+import { useState } from "react";
 import Appstore from '../../assets/img/appstore.png';
 import Googleplay from '../../assets/img/googleplay.png';
 import Ciemobilelarge from '../../assets/img/ciemobile-large.png';
-import YouTube from 'react-youtube';
-
+import Ciedispatch from '../../assets/img/ciedispatch.png';
+import Cietwophone from '../../assets/img/cieportal-two-phones.png.webp';
+//  YouTube from 'react-yout
 function Ciemobile() {
+    const [activeIndex, setActiveIndex] = useState(null);
+
+    const faqs = [
+        {
+            question: "Does cieMobile provide real-time information from my cieTrade account?",
+            answer: "Yes, since cieMobile is fully integrated with your cieTrade account, your data is automatically synced and you can view real-time, up to date information and reporting directly from your account.",
+        },
+        {
+            question: "What kind of information can I view in cieMobile?",
+            answer: "cieMobile provides access to account specific information and reports such as contracts and orders, pricing, purchase and sales history, shipping activity, A/R and more.",
+        },
+        {
+            question: "Can I restrict information by user?",
+            answer: "Yes, cieMobile can restrict users to view only their own orders and transactions. Data is also further guarded with individual user logins and permissions managed directly from your cieTrade account.",    
+        },
+        {
+            question: "Is my business information stored on my phone?",
+            answer: "No, cieMobile safeguards your business data and never stores business information on your mobile device.",
+        },
+    ];
+
+    const toggleFAQ = (index) => {
+        setActiveIndex(activeIndex === index ? null : index);
+    };
+    const data = {
+        Tool: [
+            { img: Ciedispatch, head: "MOBILE APPS", title: "cieDispatch", p: "cieDispatch is a free mobile app that lets your drivers retrieve a list of assigned tickets, get directions to service locations, update job status, record notes, and even capture photos.", id: "Ciedispatch" },
+            { img: Cietwophone, head: "MOBILE APPS", title: "cieMobile", p: "cieTrade’s mobile reporting app provides sales reps and managers with real-time access to cieTrade account information and key management reports from the road or anywhere else.", id: "Ciemobile" },
+        ],
+    }
     return (
         <div>
             <div className="h-full relative bg-cover bg-center  " style={{ backgroundImage: `url(https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2022/08/2022-08-04_10h16_35-e1659622939307.png.webp)` }}>
@@ -20,10 +51,10 @@ function Ciemobile() {
             </div>
             <Container>
                 <Row className='g-0 p-20 lg:px-10 md:px-10 sm:px-10'>
-                    <Col lg={6}><center><img src={Ciemobilelarge} className='w-full py-5 '></img></center></Col>
+                    <Col lg={6}><center><img src={Ciemobilelarge} className='w-4/5 py-5 '></img></center></Col>
                     <Col lg={6} className='py-10'>
-                        <h6 className='lg:text-5xl md:4xl sm:text-3xl font-bold py-3 lh-sm'>Help drivers track service requests, capture activity and provide instant status updates from anywhere.</h6>
-                        <div className=' py-2'><h6 className='text-xl text-gray-500 '><span className='font-bold text-red-600'>cieDispatch </span> is a free mobile app that lets your drivers retrieve a list of assigned tickets, get directions to service locations, update job status, record notes, and even capture photos. Information is instantly updated in your existing cieTrade account, saving time and making it easier to manage services while eliminating double-entry.</h6></div>
+                        <h6 className='lg:text-5xl md:4xl sm:text-3xl font-bold py-3 lh-sm'>Obtain instant access to cieTrade business data from the road or anywhere else.</h6>
+                        <div className=' py-2'><h6 className='text-xl text-gray-500 '><span className='font-bold text-red-600'>cieMobile  </span> provides sales reps and managers with real-time access to cieTrade® account information and key management reports from the road or anywhere else. It is compatible with all versions of cieTrade and can be easily activated for any client’s system without any additional software or network configurations.</h6></div>
                         <div className='flex py-2'>
                             <a href='https://apps.apple.com/us/app/cielocation/id1314428136'> <img src={Appstore} className='w-60'></img></a>
                             <a href='https://play.google.com/store/apps/details?id=com.cietradesystems.cieLocation&hl=en_US&gl=US'><img src={Googleplay} className='w-60 '></img></a>
@@ -31,8 +62,124 @@ function Ciemobile() {
                     </Col>
                 </Row>
             </Container>
+            <div className='bg-zinc-800 text-center py-4'>
+                <i class="fa-solid fa-quote-left text-white bg-red-500 p-1 rounded-full px-2 text-2xl"></i>
+                <h6 className='text-white text-xl py-3 lh-base'>cieDispatch allows our drivers to instantly view their schedules and communicate important details about<br /> each pick-up to our back-office. It’s helped us create a seamless scheduling process and improve customer <br />service to our accounts.                </h6>
+                <h6 className='text-white text-xl '>Mel Tamsiti, Director of Sales Enablement</h6>
+                <center><img src="https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2023/02/highlander-logo-290-x-70-with-white.png.webp" alt="Norkol" className='img-fluid pt-2' /></center>
+            </div>
+            <Container>
+                <Row className=''>
+                    <Col lg={6}><img src="https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2024/10/ciemobile-order-management-w-drop.png.webp" className=''></img></Col>
+                    <Col lg={6} className='py-20'>
+                        <h6 className='lg:text-4xl md:text-3xl sm:text-2xl text-black font-bold py-4'>
+                            Manage your orders from anywhere</h6>
+                        <div className='flex py-2'><i class="fa-solid fa-check text-red-600 font-extrabold text-xl pe-3"></i><h6 className='text-lg text-gray-500'>Create, edit and delete purchase and sales orders directly from your mobile device.</h6></div>
+                        <div className='flex py-2'><i class="fa-solid fa-check text-red-600 font-extrabold text-xl pe-3"></i><h6 className='text-lg text-gray-500'>View order details including order date, payment terms, shipping terms, sales rep and more.</h6></div>
+                    </Col>
+                </Row>
+            </Container>
+            <Container>
+                <Row className=''>
+                    <Col lg={6} className='content-center'>
+                        <h6 className='lg:text-4xl md:text-3xl sm:text-2xl text-black font-bold py-4'>Keep records updated and accurate</h6>
+                        <div className='flex py-2'><i class="fa-solid fa-check text-red-600 font-extrabold text-xl pe-3"></i><h6 className='text-lg text-gray-500'>View account and contact details including locations, credit limits, notes and more.</h6></div>
+                        <div className='flex py-2'><i class="fa-solid fa-check text-red-600 font-extrabold text-xl pe-3"></i><h6 className='text-lg text-gray-500'>Create and edit contact information directly from your mobile device.</h6></div>
+                    </Col>
+                    <Col lg={6}><img src="https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2024/10/ciemobile-manage-contacts-w-drop.png.webp" className=''></img></Col>
+                </Row>
+            </Container>
+            <Container>
+                <Row className=''>
+                    <Col lg={6}><img src="https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2024/10/cieMobile-document-sharing.png.webp" className=''></img></Col>
+                    <Col lg={6} className='content-center'>
+                        <h6 className='lg:text-4xl md:text-3xl sm:text-2xl text-black font-bold py-4'>Instantly share order documents</h6>
+                        <div className='flex py-2'><i class="fa-solid fa-check text-red-600 font-extrabold text-xl pe-3"></i><h6 className='text-lg text-gray-500'>Generate custom branded documents.</h6></div>
+                        <div className='flex py-2'><i class="fa-solid fa-check text-red-600 font-extrabold text-xl pe-3"></i><h6 className='text-lg text-gray-500'>Send purchase and sales order documents directly from your mobile device.</h6></div>
+                    </Col>
+                </Row>
+            </Container>
+            <Container>
+                <Row className=''>
+                    <Col lg={6} className='content-center'>
+                        <h6 className='lg:text-4xl md:text-3xl sm:text-2xl text-black font-bold py-4'>Obtain instant reports</h6>
+                        <div className='flex py-2'><i class="fa-solid fa-check text-red-600 font-extrabold text-xl pe-3"></i><h6 className='text-lg text-gray-500'>Get visibility into key business metrics directly from your mobile device.</h6></div>
+                        <div className='flex py-2'><i class="fa-solid fa-check text-red-600 font-extrabold text-xl pe-3"></i><h6 className='text-lg text-gray-500'>View sales and purchase orders, open receivables, open shipments and more.</h6></div>
+                    </Col>
+                    <Col lg={6}><img src="https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2024/10/ciemobile-reports-w-drop.png.webp" className=''></img></Col>
+                </Row>
+            </Container>
+            <div className='bg-zinc-800'>
+                <Container>
+                    <Row className='py-5'>
+                        <h1 className='lg:text-5xl md:text-3xl sm:text-2xl font-bold lh-base text-center text-white pb-5'>Key Features </h1>
+                        <Col lg={6}>
+                            <div className='flex py-3'><i class="fa-solid fa-check text-red-600 font-extrabold text-xl pe-3"></i><h6 className='text-base text-white font-semibold '> Provides “real-time” up-to-the-moment information and reporting directly from your cieTrade system.</h6></div>
+                            <div className='flex py-3'><i class="fa-solid fa-check text-red-600 font-extrabold text-xl pe-3"></i><h6 className='text-base text-white font-semibold '> Includes a Dashboard feature and drill down reports on key business activity.</h6></div>
+                            <div className='flex py-3'><i class="fa-solid fa-check text-red-600 font-extrabold text-xl pe-3"></i><h6 className='text-base text-white font-semibold '> Access key reports such as A/R, Sales,Purchases, Tonnage shipped, and more.</h6></div>
+                            <div className='flex py-3'><i class="fa-solid fa-check text-red-600 font-extrabold text-xl pe-3"></i><h6 className='text-base text-white font-semibold '> Provides account specific information such as contracts & orders, pricing, purchase and sales history, shipping activity, and more.</h6></div>
+                            <div className='flex py-3'><i class="fa-solid fa-check text-red-600 font-extrabold text-xl pe-3"></i><h6 className='text-base text-white font-semibold '> Customer address book lets you make calls, send emails or get driving directions.</h6></div>
+                        </Col>
+                        <Col lg={6}>
+                            <div className='flex py-3'><i class="fa-solid fa-check text-red-600 font-extrabold text-xl pe-3"></i><h6 className='text-base text-white font-semibold '>Quickly find and retrieve any Worksheet or Scale Ticket in cieTrade right from your smart phone.Can be viewed from workstations, smartphones or tablets.</h6></div>
+                            <div className='flex py-3'><i class="fa-solid fa-check text-red-600 font-extrabold text-xl pe-3"></i><h6 className='text-base text-white font-semibold '>Supports reporting by department or in consolidation.</h6></div>
+                            <div className='flex py-3'><i class="fa-solid fa-check text-red-600 font-extrabold text-xl pe-3"></i><h6 className='text-base text-white font-semibold '>View scale tickets, shipments and brokerage trades with the same level of detail as in cieTrade.</h6></div>
+                            <div className='flex py-3'><i class="fa-solid fa-check text-red-600 font-extrabold text-xl pe-3"></i><h6 className='text-base text-white font-semibold '>Safeguards data with individual user logins and permissions managed directly from cieTrade.</h6></div>
+                            <div className='flex py-3'><i class="fa-solid fa-check text-red-600 font-extrabold text-xl pe-3"></i><h6 className='text-base text-white font-semibold '>Never stores business information on your mobile device.</h6></div>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+            <Container className='py-24'>
+                <h1 className='lg:text-4xl md:text-3xl sm:text-2xl font-bold lh-base text-center py-2'>Want to see a full list of features? </h1>
+                <h1 className='lg:text-4xl md:text-3xl sm:text-2xl font-bold lh-base text-center text-red-600 '>Download our </h1>
+                <h1 className='lg:text-4xl md:text-3xl sm:text-2xl font-bold lh-base text-center text-red-600'>cieMobile brochure</h1>
+                <div className='py-5'> <center><a href='#' className="text-white bg-red-600 hover:bg-red-700 px-4 py-3  font-bold text-base ">Download Brochure<i class="fa-solid fa-arrow-right ps-3 pt-1"></i></a></center></div>
+            </Container>
+            <div className='bg-light'>
+                <div className='py-5'>
+                    <Container>
+                        <Row>
+                            <h1 className='lg:text-4xl md:text-3xl sm:text-2xl font-bold lh-base text-center py-4'>Additional Tools</h1>
+                            <Col lg={6} >
+                                <center><img src="https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2023/02/self-service-portal.png.webp" className='w-full py-2'></img></center>
+                                <h1 className='font-bold text-red-600 text-xl pt-3'>WEB APPLICATIONS</h1>
+                                <h1 className='font-bold  text-3xl py-2'>Self-Service Portal</h1>
+                                <h6 className='text-gray-600 text-lg py-3'>cieTrade’s self-service portal gives supply chain partners 24/7 on-demand access and visibility to recovered material, pricing, shipments, payments, documents and more.</h6>
+                                <div className='py-3'> <a href='#' className="text-red-600 font-bold text-base py-1 ">Learn More<i class="fa-solid fa-arrow-right text-white bg-red-600 text-sm px-1 rounded-3xl ms-2"></i></a></div>
+                            </Col>
+                            <Col lg={6}>
+                                <center><img src="https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2022/08/ciephoto-phones-1080-x-700.png.webp" className='w-4/5'></img></center>
+                                <h1 className='font-bold text-red-600 text-xl pt-3'>MOBILE APPS</h1>
+                                <h1 className='font-bold  text-3xl py-2'>ciePhoto</h1>
+                                <h6 className='text-gray-600 text-lg py-3'>ciePhoto replaces your existing digital camera and allows users to take photos of outbound export containers or to document quality issues on received loads.</h6>
+                                <div className='py-3'> <a href='#' className="text-red-600 font-bold lg:text-base md:text-center sm:text-center">Learn More<i class="fa-solid fa-arrow-right text-white bg-red-600 text-sm px-1 rounded-3xl ms-2"></i></a></div>
+                            </Col>
+
+                        </Row>
+
+                    </Container>
+                </div >
+                <div className="max-w-5xl mx-auto p-4">
+                    <h1 className="text-3xl font-bold text-center mb-8">FAQ</h1>
+                    <div className="space-y-6">
+                        {faqs.map((faq, index) => (
+                            <div key={index} className={`border-1 transition-all duration-300 py-2 ${activeIndex === index ? "border-red-600 shadow-sm" : "border-gray-300"}`} >
+                                <div className="flex justify-between items-center p-4 cursor-pointer" onClick={() => toggleFAQ(index)} >
+                                    <h2 className={`font-bold text-lg transition-all duration-300 text-xl ${activeIndex === index ? "text-red-600" : "text-gray-500"}`}> {faq.question}</h2>
+                                    <span className={`text-3xl font-bold transition-all duration-300 ${activeIndex === index ? "text-red-600" : "text-gray-500"}`} >
+                                        {activeIndex === index ? "-" : "+"}
+                                    </span>
+                                </div>{activeIndex === index && (
+                                    <div className="p-4 text-gray-600 text-lg ">{faq.answer}</div>
+                                )}
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
+
         </div>
     )
 }
-
 export default Ciemobile;
