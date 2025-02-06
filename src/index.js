@@ -98,11 +98,11 @@ root.render(
     {/* <InventoryManagement /> */}
     {/* <Mobileapps /> */}
     {/* <SelfServices /> */}
-    <Ciedispatch />
-    <Cielocationn />
-    <Ciemobile />
-    <Ciephoto />
-    <Clickbale />
+    {/* <Ciedispatch /> */}
+    {/* <Cielocationn /> */}
+    {/* <Ciemobile /> */}
+    {/* <Ciephoto /> */}
+    {/* <Clickbale /> */}
     {/* <Blog /> */}
     {/* <Faqs /> */}
     {/* <News /> */}
