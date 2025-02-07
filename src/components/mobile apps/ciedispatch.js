@@ -9,7 +9,7 @@ import Capture from '../../assets/img/capture.png';
 import Selfservice from '../../assets/img/self-service.png';
 import Ciemobile from '../../assets/img/ciemobile.png';
 import { useState } from "react";
-// import YouTube from 'react-youtube';
+import YouTube from 'react-youtube';
 
 function Ciedispatch() {
     const [activeIndex, setActiveIndex] = useState(null);
@@ -37,20 +37,20 @@ function Ciedispatch() {
         setActiveIndex(activeIndex === index ? null : index);
     };
     const data = {
-            Tool: [
-                { img:Selfservice, head: "MOBILE APPS", title: "cieDispatch", p: "cieDispatch is a free mobile app that lets your drivers retrieve a list of assigned tickets, get directions to service locations, update job status, record notes, and even capture photos.", id: "Ciedispatch" },
-                { img: Ciemobile, head: "MOBILE APPS", title: "cieMobile", p: "cieTrade’s mobile reporting app provides sales reps and managers with real-time access to cieTrade account information and key management reports from the road or anywhere else.", id: "Ciemobile" },
-            ],
-        }
+        Tool: [
+            { img: Selfservice, head: "MOBILE APPS", title: "cieDispatch", p: "cieDispatch is a free mobile app that lets your drivers retrieve a list of assigned tickets, get directions to service locations, update job status, record notes, and even capture photos.", id: "Ciedispatch" },
+            { img: Ciemobile, head: "MOBILE APPS", title: "cieMobile", p: "cieTrade’s mobile reporting app provides sales reps and managers with real-time access to cieTrade account information and key management reports from the road or anywhere else.", id: "Ciemobile" },
+        ],
+    }
     return (
         <div>
-            <div className="h-full relative bg-cover bg-center  " style={{ backgroundImage: `url(https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2022/12/truck-driver-with-app.png.webp)` }}>
+            <div className="h-full relative bg-cover bg-center " style={{ backgroundImage: `url(https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2022/12/truck-driver-with-app.png.webp)` }}>
                 <div className='absolute inset-0 bg-black opacity-50'></div>
-                <div className="text-center relative  py-40  ">
+                <div className="text-center relative pb-32 pt-56">
                     <h1 className="lg:text-7xl md:text-5xl sm:text-4xl text-white font-bold leading-tight">cieDispatch</h1>
                     <h1 className="lg:text-xl text-white py-3 leading-tight">Keep your Drivers Connected to the Office</h1>
                     <div className='my-5'>
-                        <a href='#' className="text-white bg-red-600 hover:bg-red-700 px-4 py-3  font-bold text-base ">Download Brochure<i class="fa-solid fa-arrow-right ps-3 pt-1"></i></a>
+                        <a href={'/Bciedispatch'} className="text-white bg-red-600 hover:bg-red-700 px-4 py-3  font-bold text-base ">Download Brochure<i class="fa-solid fa-arrow-right ps-3 pt-1"></i></a>
                     </div>
                 </div>
             </div>
@@ -99,8 +99,8 @@ function Ciedispatch() {
                     <h6 className='text-xl text-gray-500 text-center'>Connectivity with your cieTrade account means that each ticket status is updated<br /> in real-time and drivers notes or photos are instantly updated with each dispatch <br />ticket, eliminating manual updates and double-entry of data.</h6>
                 </div>
             </Container>
-            <div className='bg-gray-900'>
-                <Container >
+            <div className='bg-zinc-800'>
+                <Container>
                     <Row className='py-5'>
                         <h1 className='lg:text-5xl md:text-3xl sm:text-2xl font-bold lh-base text-center text-white py-4'>Key Features </h1>
                         <Col lg={6}>
@@ -125,24 +125,24 @@ function Ciedispatch() {
                 <h1 className='lg:text-4xl md:text-3xl sm:text-2xl font-bold lh-base text-center py-2'>Want to see a full list of features? </h1>
                 <h1 className='lg:text-4xl md:text-3xl sm:text-2xl font-bold lh-base text-center text-red-600 '>Download our </h1>
                 <h1 className='lg:text-4xl md:text-3xl sm:text-2xl font-bold lh-base text-center text-red-600'>cieDispatch brochure</h1>
-                <div className='py-5'> <center><a href='#' className="text-white bg-red-600 hover:bg-red-700 px-4 py-3  font-bold text-base ">Download Brochure<i class="fa-solid fa-arrow-right ps-3 pt-1"></i></a></center></div>
+                <div className='py-5'> <center><a href={'/Bciedispatch'} className="text-white bg-red-600 hover:bg-red-700 px-4 py-3  font-bold text-base ">Download Brochure<i class="fa-solid fa-arrow-right ps-3 pt-1"></i></a></center></div>
             </Container>
 
             <div className='bg-light py-5'>
-                       <Container className='lg:px-12'>
-                                <h1 className='text-4xl text-center font-bold'>Additional Tools</h1>
-                                <Row>
-                                    {data.Tool.map((item, index) => (
-                                        <Col lg={6} md={6} sm={12} className='py-5' key={index}>
-                                            <img src={item.img} alt="" className='w-full' />
-                                            <h1 className='font-bold text-red-600 text-xl pt-3'>{item.head}</h1>
-                                            <h1 className='font-bold text-3xl text-black py-3'>{item.title}</h1>
-                                            <p className='text-gray-500 text-lg'>{item.p}</p>
-                                            <a href={item.id}><button className='text-red-600 hover:text-red-700 font-bold pt-3'>learn More <i class="fa-solid fa-arrow-right ms-2 px-2 p-1 text-xs bg-red-600 text-white rounded-full"></i></button></a>
-                                        </Col>
-                                    ))}
-                                </Row>
-                            </Container>
+                <Container className='lg:px-12'>
+                    <h1 className='text-4xl text-center font-bold'>Additional Tools</h1>
+                    <Row>
+                        {data.Tool.map((item, index) => (
+                            <Col lg={6} md={6} sm={12} className='py-5' key={index}>
+                                <img src={item.img} alt="" className='w-full h-80' />
+                                <h1 className='font-bold text-red-600 text-xl pt-3'>{item.head}</h1>
+                                <h1 className='font-bold text-3xl text-black py-3'>{item.title}</h1>
+                                <p className='text-gray-500 text-lg'>{item.p}</p>
+                                <a href={item.id}><button className='text-red-600 hover:text-red-700 font-bold pt-3'>learn More <i class="fa-solid fa-arrow-right ms-2 px-2 p-1 text-xs bg-red-600 text-white rounded-full"></i></button></a>
+                            </Col>
+                        ))}
+                    </Row>
+                </Container>
                 <div className="max-w-5xl mx-auto p-4">
                     <h1 className="text-3xl font-bold text-center mb-8">FAQ</h1>
                     <div className="space-y-6">

@@ -57,6 +57,11 @@ import Document from './components/features/document';
 import Binventory from './components/brochures/b-inventory';
 import Bself from './components/brochures/b-self';
 import Readthepost from './components/home/readthepost';
+import Bciedispatch from './components/brochures/b-ciedispatch';
+import Bcielocation from './components/brochures/b-cielocation';
+import Bclickbale from './components/brochures/b-clickbale';
+import Bciemobile from './components/brochures/b-ciemobile';
+import Bciephoto from './components/brochures/b-ciephoto';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -114,8 +119,13 @@ root.render(
     {/* <Document /> */}
     {/* <Binventory /> */}
     {/* <Bself /> */}
-    {/* <Readthepost /> */}
-    <App />
+    {/* <Bciedispatch /> */}
+    {/* <Bcielocation /> */}
+    {/* <Bclickbale /> */}
+    {/* <Bciemobile /> */}
+    {/* <Bciephoto /> */}
+    <Readthepost />
+    {/* <App /> */}
   </React.StrictMode>
 );
 
