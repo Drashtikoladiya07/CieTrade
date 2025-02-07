@@ -57,6 +57,9 @@ import Document from './components/features/document';
 import Binventory from './components/brochures/b-inventory';
 import Bself from './components/brochures/b-self';
 import Readthepost from './components/home/readthepost';
+import ISustain from './components/company/iSustain';
+import Pasha from './components/company/pasha';
+import Commercial from './components/company/commercial';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -115,7 +118,10 @@ root.render(
     {/* <Binventory /> */}
     {/* <Bself /> */}
     {/* <Readthepost /> */}
-    <App />
+    {/* <ISustain /> */}
+    {/* <Pasha /> */}
+    {/* <App /> */}
+    < Commercial />
   </React.StrictMode>
 );
 
