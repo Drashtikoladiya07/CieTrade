@@ -57,6 +57,9 @@ import Document from './components/features/document';
 import Binventory from './components/brochures/b-inventory';
 import Bself from './components/brochures/b-self';
 import Readthepost from './components/home/readthepost';
+import ISustain from './components/company/iSustain';
+import Pasha from './components/company/pasha';
+import Commercial from './components/company/commercial';
 import Bciedispatch from './components/brochures/b-ciedispatch';
 import Bcielocation from './components/brochures/b-cielocation';
 import Bclickbale from './components/brochures/b-clickbale';
@@ -119,6 +122,7 @@ root.render(
     {/* <Document /> */}
     {/* <Binventory /> */}
     {/* <Bself /> */}
+
     {/* <Bciedispatch /> */}
     {/* <Bcielocation /> */}
     {/* <Bclickbale /> */}
@@ -126,7 +130,13 @@ root.render(
     {/* <Bciephoto /> */}
     <Readthepost />
     {/* <App /> */}
-  </React.StrictMode>
+
+    {/* <Readthepost /> */}
+    {/* <ISustain /> */}
+    {/* <Pasha /> */}
+    {/* <App /> */}
+    < Commercial />
+ </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
