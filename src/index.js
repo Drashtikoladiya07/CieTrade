@@ -127,6 +127,13 @@ root.render(
     {/* <Pasha /> */}
     {/* <App /> */}
     < Commercial />
+    {/* <Bciedispatch /> */}
+    {/* <Bcielocation /> */}
+    {/* <Bclickbale /> */}
+    {/* <Bciemobile /> */}
+    {/* <Bciephoto /> */}
+    <Readthepost />
+    {/* <App /> */}
   </React.StrictMode>
 );
 
