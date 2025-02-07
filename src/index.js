@@ -134,7 +134,13 @@ root.render(
     {/* <Bciephoto /> */}
     <Readthepost />
     {/* <App /> */}
-  </React.StrictMode>
+    {/* <Readthepost /> */}
+    {/* <ISustain /> */}
+    {/* <Pasha /> */}
+    {/* <App /> */}
+    < Commercial />
+ </React.StrictMode>
+
 );
 
 // If you want to start measuring performance in your app, pass a function
