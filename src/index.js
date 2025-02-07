@@ -60,6 +60,11 @@ import Readthepost from './components/home/readthepost';
 import ISustain from './components/company/iSustain';
 import Pasha from './components/company/pasha';
 import Commercial from './components/company/commercial';
+import Bciedispatch from './components/brochures/b-ciedispatch';
+import Bcielocation from './components/brochures/b-cielocation';
+import Bclickbale from './components/brochures/b-clickbale';
+import Bciemobile from './components/brochures/b-ciemobile';
+import Bciephoto from './components/brochures/b-ciephoto';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

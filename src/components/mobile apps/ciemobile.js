@@ -5,7 +5,9 @@ import Googleplay from '../../assets/img/googleplay.png';
 import Ciemobilelarge from '../../assets/img/ciemobile-large.png';
 import Ciedispatch from '../../assets/img/ciedispatch.png';
 import Cietwophone from '../../assets/img/cieportal-two-phones.png.webp';
-//  YouTube from 'react-yout
+import Selfservice from '../../assets/img/self-service.png';
+import Bale5 from '../../assets/img/mobile4.webp';
+
 function Ciemobile() {
     const [activeIndex, setActiveIndex] = useState(null);
 
@@ -20,7 +22,7 @@ function Ciemobile() {
         },
         {
             question: "Can I restrict information by user?",
-            answer: "Yes, cieMobile can restrict users to view only their own orders and transactions. Data is also further guarded with individual user logins and permissions managed directly from your cieTrade account.",    
+            answer: "Yes, cieMobile can restrict users to view only their own orders and transactions. Data is also further guarded with individual user logins and permissions managed directly from your cieTrade account.",
         },
         {
             question: "Is my business information stored on my phone?",
@@ -39,19 +41,19 @@ function Ciemobile() {
     }
     return (
         <div>
-            <div className="h-full relative bg-cover bg-center  " style={{ backgroundImage: `url(https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2022/08/2022-08-04_10h16_35-e1659622939307.png.webp)` }}>
+            <div className="h-full relative bg-cover bg-center" style={{ backgroundImage: `url(https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2022/08/2022-08-04_10h16_35-e1659622939307.png.webp)` }}>
                 <div className='absolute inset-0 bg-black opacity-50'></div>
-                <div className="text-center relative  py-40  ">
+                <div className="text-center relative pb-32 pt-52">
                     <h1 className="lg:text-7xl md:text-5xl sm:text-4xl text-white font-bold leading-tight">cieMobile</h1>
                     <h1 className="lg:text-xl text-white py-3 leading-tight">Take cieTrade’s trading and recycling software to go</h1>
                     <div className='my-5'>
-                        <a href='#' className="text-white bg-red-600 hover:bg-red-700 px-4 py-3  font-bold text-base ">Download Brochure<i class="fa-solid fa-arrow-right ps-3 pt-1"></i></a>
+                        <a href={'/Bciemobile'} className="text-white bg-red-600 hover:bg-red-700 px-4 py-3  font-bold text-base ">Download Brochure<i class="fa-solid fa-arrow-right ps-3 pt-1"></i></a>
                     </div>
                 </div>
             </div>
             <Container>
                 <Row className='g-0 p-20 lg:px-10 md:px-10 sm:px-10'>
-                    <Col lg={6}><center><img src={Ciemobilelarge} className='w-4/5 py-5 '></img></center></Col>
+                    <Col lg={6}><img src={Ciemobilelarge} className='w-full py-5'></img></Col>
                     <Col lg={6} className='py-10'>
                         <h6 className='lg:text-5xl md:4xl sm:text-3xl font-bold py-3 lh-sm'>Obtain instant access to cieTrade business data from the road or anywhere else.</h6>
                         <div className=' py-2'><h6 className='text-xl text-gray-500 '><span className='font-bold text-red-600'>cieMobile  </span> provides sales reps and managers with real-time access to cieTrade® account information and key management reports from the road or anywhere else. It is compatible with all versions of cieTrade and can be easily activated for any client’s system without any additional software or network configurations.</h6></div>
@@ -62,7 +64,7 @@ function Ciemobile() {
                     </Col>
                 </Row>
             </Container>
-            <div className='bg-zinc-800 text-center py-4'>
+            <div className='bg-zinc-800 text-center py-5'>
                 <i class="fa-solid fa-quote-left text-white bg-red-500 p-1 rounded-full px-2 text-2xl"></i>
                 <h6 className='text-white text-xl py-3 lh-base'>cieDispatch allows our drivers to instantly view their schedules and communicate important details about<br /> each pick-up to our back-office. It’s helped us create a seamless scheduling process and improve customer <br />service to our accounts.                </h6>
                 <h6 className='text-white text-xl '>Mel Tamsiti, Director of Sales Enablement</h6>
@@ -134,7 +136,7 @@ function Ciemobile() {
                 <h1 className='lg:text-4xl md:text-3xl sm:text-2xl font-bold lh-base text-center py-2'>Want to see a full list of features? </h1>
                 <h1 className='lg:text-4xl md:text-3xl sm:text-2xl font-bold lh-base text-center text-red-600 '>Download our </h1>
                 <h1 className='lg:text-4xl md:text-3xl sm:text-2xl font-bold lh-base text-center text-red-600'>cieMobile brochure</h1>
-                <div className='py-5'> <center><a href='#' className="text-white bg-red-600 hover:bg-red-700 px-4 py-3  font-bold text-base ">Download Brochure<i class="fa-solid fa-arrow-right ps-3 pt-1"></i></a></center></div>
+                <div className='py-5'> <center><a href={'/Bciemobile'} className="text-white bg-red-600 hover:bg-red-700 px-4 py-3  font-bold text-base ">Download Brochure<i class="fa-solid fa-arrow-right ps-3 pt-1"></i></a></center></div>
             </Container>
             <div className='bg-light'>
                 <div className='py-5'>
@@ -142,18 +144,18 @@ function Ciemobile() {
                         <Row>
                             <h1 className='lg:text-4xl md:text-3xl sm:text-2xl font-bold lh-base text-center py-4'>Additional Tools</h1>
                             <Col lg={6} >
-                                <center><img src="https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2023/02/self-service-portal.png.webp" className='w-full py-2'></img></center>
+                                <img src={Selfservice} className='w-full h-96 py-2' />
                                 <h1 className='font-bold text-red-600 text-xl pt-3'>WEB APPLICATIONS</h1>
                                 <h1 className='font-bold  text-3xl py-2'>Self-Service Portal</h1>
                                 <h6 className='text-gray-600 text-lg py-3'>cieTrade’s self-service portal gives supply chain partners 24/7 on-demand access and visibility to recovered material, pricing, shipments, payments, documents and more.</h6>
-                                <div className='py-3'> <a href='#' className="text-red-600 font-bold text-base py-1 ">Learn More<i class="fa-solid fa-arrow-right text-white bg-red-600 text-sm px-1 rounded-3xl ms-2"></i></a></div>
+                                <div className='py-3'> <a href={'/Selfservices'} className="text-red-600 font-bold text-base py-1 ">Learn More<i class="fa-solid fa-arrow-right text-white bg-red-600 text-sm px-1 rounded-3xl ms-2"></i></a></div>
                             </Col>
                             <Col lg={6}>
-                                <center><img src="https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2022/08/ciephoto-phones-1080-x-700.png.webp" className='w-4/5'></img></center>
+                                <img src={Bale5} className='w-full h-96' />
                                 <h1 className='font-bold text-red-600 text-xl pt-3'>MOBILE APPS</h1>
-                                <h1 className='font-bold  text-3xl py-2'>ciePhoto</h1>
-                                <h6 className='text-gray-600 text-lg py-3'>ciePhoto replaces your existing digital camera and allows users to take photos of outbound export containers or to document quality issues on received loads.</h6>
-                                <div className='py-3'> <a href='#' className="text-red-600 font-bold lg:text-base md:text-center sm:text-center">Learn More<i class="fa-solid fa-arrow-right text-white bg-red-600 text-sm px-1 rounded-3xl ms-2"></i></a></div>
+                                <h1 className='font-bold  text-3xl py-2'>cieMobile</h1>
+                                <h6 className='text-gray-600 text-lg py-3'>cieTrade’s mobile app for Apple mobile devices provides sales reps and managers with real-time access to cieTrade® account information and key management</h6>
+                                <div className='py-3'> <a href={'/Ciemobile'} className="text-red-600 font-bold lg:text-base md:text-center sm:text-center">Learn More<i class="fa-solid fa-arrow-right text-white bg-red-600 text-sm px-1 rounded-3xl ms-2"></i></a></div>
                             </Col>
 
                         </Row>

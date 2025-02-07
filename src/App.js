@@ -53,7 +53,11 @@ import Management from './components/features/management';
 import Document from './components/features/document';
 import Binventory from './components/brochures/b-inventory';
 import Bself from './components/brochures/b-self';
-
+import Bciedispatch from './components/brochures/b-ciedispatch';
+import Bcielocation from './components/brochures/b-cielocation';
+import Bclickbale from './components/brochures/b-clickbale';
+import Bciemobile from './components/brochures/b-ciemobile';
+import Bciephoto from './components/brochures/b-ciephoto';
 
 const App = () => {
   return (
@@ -112,6 +116,11 @@ const App = () => {
         <Route path="/Document" element={<Document />} />
         <Route path="/Binventory" element={<Binventory />} />
         <Route path="/Bself" element={<Bself />} />
+        <Route path="/Bciedispatch" element={<Bciedispatch />} />
+        <Route path="/Bcielocation" element={<Bcielocation />} />
+        <Route path="/Bclickbale" element={<Bclickbale />} />
+        <Route path="/Bciemobile" element={<Bciemobile />} />
+        <Route path="/Bciephoto" element={<Bciephoto />} />
         <Route path="*" element={<div>Page Not Found</div>} />
       </Routes>
       <FooterP />

@@ -2,58 +2,58 @@ import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
 const Navbar = () => {
-    const [hoveredIndex, setHoveredIndex] = useState(null);
-    const [menuOpen, setMenuOpen] = useState(false);
-    const navData = [
-        {
-            name: "Features",
-            options: [
-                { title: "Dispatch Management", id: "/Management" },
-                { title: "Inventory Management", id: "/InventoryManagement" },
-                { title: "Booking and Container Management", id: "/Booking" },
-                { title: "Document Management", id: "/Document" },
-                { title: "Self-Service Portal", id: "/SelfServices" },
-                { title: "Mobile App", id: "/Mobileapps" },
-                { title: "Accounting Integration", id: "/Accounting" },
-            ],
-        },
-        {
-            name: "Industries",
-            options: [
-                { title: "Agricultural Commodities", id: "/Agricultural" },
-                { title: "Commodity Brokerage", id: "/Commodity" },
-                { title: "International Trade", id: "/International" },
-                { title: "Paper Merchants", id: "/Merchant" },
-                { title: "Plastic Recycling", id: "/Recycling" },
-                { title: "Pulp & Paper Trading", id: "/Trading" },
-                { title: "Recycling Plants", id: "/Plant" },
-                { title: "Scrap Metal Recycling", id: "/Scrap" },
-                { title: "Waste Brokerage", id: "/Brokerage" },
-            ],
-        },
-        {
-            name: "Company",
-            options: [
-                { title: "About Us", id: "/Aboutus" },
-                { title: "Our Clients", id: "/Ourclients" },
-                { title: "Our Partners", id: "/Ourpartners" },
-                { title: "Contact Us", id: "/Contact" },
-            ],
-        },
-        {
-            name: "Resources",
-            options: [
-                { title: "FAQ", id: "/Faqs" },
-                { title: "Training & Support", id: "/Trainning" },
-                { title: "News & Events", id: "/News" },
-                { title: "Brochures", id: "/Brochures" },
-                { title: "Blog", id: "/Blog" },
-            ],
-        },
-    ];
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const navData = [
+    {
+      name: "Features",
+      options: [
+        { title: "Dispatch Management", id: "/Management" },
+        { title: "Inventory Management", id: "/InventoryManagement" },
+        { title: "Booking and Container Management", id: "/Booking" },
+        { title: "Document Management", id: "/Document" },
+        { title: "Self-Service Portal", id: "/SelfServices" },
+        { title: "Mobile App", id: "/Mobileapps" },
+        { title: "Accounting Integration", id: "/Accounting" },
+      ],
+    },
+    {
+      name: "Industries",
+      options: [
+        { title: "Agricultural Commodities", id: "/Agricultural" },
+        { title: "Commodity Brokerage", id: "/Commodity" },
+        { title: "International Trade", id: "/International" },
+        { title: "Paper Merchants", id: "/Merchant" },
+        { title: "Plastic Recycling", id: "/Recycling" },
+        { title: "Pulp & Paper Trading", id: "/Trading" },
+        { title: "Recycling Plants", id: "/Plant" },
+        { title: "Scrap Metal Recycling", id: "/Scrap" },
+        { title: "Waste Brokerage", id: "/Brokerage" },
+      ],
+    },
+    {
+      name: "Company",
+      options: [
+        { title: "About Us", id: "/Aboutus" },
+        { title: "Our Clients", id: "/Ourclients" },
+        { title: "Our Partners", id: "/Ourpartners" },
+        { title: "Contact Us", id: "/Contact" },
+      ],
+    },
+    {
+      name: "Resources",
+      options: [
+        { title: "FAQ", id: "/Faqs" },
+        { title: "Training & Support", id: "/Trainning" },
+        { title: "News & Events", id: "/News" },
+        { title: "Brochures", id: "/Brochures" },
+        { title: "Blog", id: "/Blog" },
+      ],
+    },
+  ];
 
-    return (
-        <nav className={`absolute nav-fluid top-0 left-0 right-0 z-10 text-white ${menuOpen ? "bg-dark" : "bg-transparent"}`}>
+  return (
+    <nav className={`absolute nav-fluid top-0 left-0 right-0 z-10 text-white ${menuOpen ? "bg-dark" : "bg-transparent"}`}>
       <Container className="py-3 border-b">
         <Row className="align-items-center justify-content-between">
           <Col lg={3} className="d-flex align-items-center">
@@ -121,7 +121,7 @@ const Navbar = () => {
         </Row>
       </Container>
     </nav>
-    );
+  );
 };
 
 export default Navbar;
