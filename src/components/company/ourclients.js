@@ -21,7 +21,7 @@ function Ourclients() {
         <div>
             <div className="w-full relative bg-cover bg-center" style={{ backgroundImage: `url(https://i.ytimg.com/vi/oBY6wR2FAqk/maxresdefault.jpg)` }}>
                 <div className='absolute inset-0 bg-black opacity-50'></div>
-                <div className="text-center relative  pb-40 pt-56">
+                <div className="text-center relative pb-32 pt-52">
                     <h1 className="lg:text-7xl md:text-5xl sm:text-4xl text-white font-bold leading-tight">Our Clients</h1>
                     <h1 className="lg:text-xl text-white py-3 leading-tight">cieTrade has a diverse worldwide customer base that’s transacted billions in goods and <br />shipped hundreds of thousands of containers on our software. Our clients include many of<br /> the leading trading houses, scrap exporters, and recycling plants. cieTrade’s flexible design<br /> has also attracted waste brokers and national accounts consolidators looking to avoid<br /> using spreadsheets or expensive custom systems.</h1>
                 </div>
