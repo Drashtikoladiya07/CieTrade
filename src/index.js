@@ -126,20 +126,21 @@ root.render(
     {/* <ISustain /> */}
     {/* <Pasha /> */}
     {/* <App /> */}
-    <Commercial />
+    {/* < Commercial /> */}
     {/* <Bciedispatch /> */}
     {/* <Bcielocation /> */}
     {/* <Bclickbale /> */}
     {/* <Bciemobile /> */}
     {/* <Bciephoto /> */}
-    <Readthepost />
+    {/* <Readthepost /> */}
     {/* <App /> */}
     {/* <Readthepost /> */}
     {/* <ISustain /> */}
     {/* <Pasha /> */}
     {/* <App /> */}
-    < Commercial />
+    {/* < Commercial /> */}
   </React.StrictMode>
+
 );
 
 // If you want to start measuring performance in your app, pass a function
