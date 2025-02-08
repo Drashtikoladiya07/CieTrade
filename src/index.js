@@ -68,7 +68,6 @@ import Bciephoto from './components/brochures/b-ciephoto';
 import Visitus from './components/readthepost/visitus';
 import CieTradelaunchesupdated from './components/readthepost/cieTradelaunchesupdated';
 import CieTradelaunchesanautomated from './components/readthepost/cieTradelaunchesanautomated';
-<<<<<<< HEAD
 import Solasvgm from './components/readthepost/solas-vgm';
 import Whattoaskbefore from './components/readthepost/what-to-ask-before';
 import Cietradeofferanew from './components/readthepost/cietradeofferanew';
@@ -77,7 +76,6 @@ import Cietradeonlinecustomerreporting from './components/readthepost/cietrade-o
 import Cietradeatthe2016paper from './components/readthepost/cietrade-at-the-2016-paper';
 import Cietradeintroducesinventory from './components/readthepost/cietrade-introduces-inventory';
 import Redefiningwaste from './components/readthepost/redefining-waste';
-=======
 import VisitcieTrade from './components/readthepost/visitcieTrade';
 import Cietradeatthe2024 from './components/readthepost/cietradeatthe2024';
 import CieTradefeatured from './components/readthepost/cieTradefeatured';
@@ -94,7 +92,14 @@ import Easilysendpacking from './components/readthepost/easilysendpacking';
 import VisitPPRC2023 from './components/readthepost/visitPPRC2023';
 import Visitscrapexpo2023 from './components/readthepost/visitscrapexpo2023';
 import Cietradeatthe2023 from './components/readthepost/cieTradeatthe2023';
->>>>>>> e7d026d63698c598bc0677594d224604779fd2d5
+import Solasvgm from './components/readthepost/solas-vgm';
+import Whattoaskbefore from './components/readthepost/what-to-ask-before';
+import Cietradeofferanew from './components/readthepost/cietradeofferanew';
+import Cietradelaunchescloud from './components/readthepost/cietrade-launches-cloud';
+import Cietradeonlinecustomerreporting from './components/readthepost/cietrade-online-customer-reporting';
+import Cietradeatthe2016paper from './components/readthepost/cietrade-at-the-2016-paper';
+import Cietradeintroducesinventory from './components/readthepost/cietrade-introduces-inventory';
+import Redefiningwaste from './components/readthepost/redefining-waste';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -169,7 +174,6 @@ root.render(
     {/* <Pasha /> */}
     {/* <CieTradelaunchesupdated /> */}
     {/* <CieTradelaunchesanautomated /> */}
-<<<<<<< HEAD
     {/* <Visitus /> */}
     {/* <App /> */}
     {/* < Solasvgm /> */}
@@ -179,10 +183,6 @@ root.render(
     {/* <Cietradeonlinecustomerreporting /> */}
     {/* < Cietradeatthe2016paper /> */}
     {/* <Cietradeintroducesinventory /> */}
-    <Redefiningwaste />
- </React.StrictMode>
-
-=======
     {/* <VisitcieTrade /> */}
     {/* <Cietradeatthe2024 /> */}
     {/* <CieTradefeatured /> */}
@@ -199,9 +199,17 @@ root.render(
     {/* <VisitPPRC2023 /> */}
     {/* <Visitscrapexpo2023 /> */}
     <Cietradeatthe2023 />
+    {/* <Visitus /> */}
     {/* <App /> */}
+    {/* < Solasvgm /> */}
+    {/* <Whattoaskbefore /> */}
+    {/* <Cietradeofferanew /> */}
+    {/* <Cietradelaunchescloud /> */}
+    {/* <Cietradeonlinecustomerreporting /> */}
+    {/* < Cietradeatthe2016paper /> */}
+    {/* <Cietradeintroducesinventory /> */}
+    <Redefiningwaste />
   </React.StrictMode>
->>>>>>> e7d026d63698c598bc0677594d224604779fd2d5
 );
 
 // If you want to start measuring performance in your app, pass a function
