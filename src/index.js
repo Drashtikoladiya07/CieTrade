@@ -68,6 +68,22 @@ import Bciephoto from './components/brochures/b-ciephoto';
 import Visitus from './components/readthepost/visitus';
 import CieTradelaunchesupdated from './components/readthepost/cieTradelaunchesupdated';
 import CieTradelaunchesanautomated from './components/readthepost/cieTradelaunchesanautomated';
+import VisitcieTrade from './components/readthepost/visitcieTrade';
+import Cietradeatthe2024 from './components/readthepost/cietradeatthe2024';
+import CieTradefeatured from './components/readthepost/cieTradefeatured';
+import Checkoutlocation from './components/readthepost/checkoutlocation';
+import Checkoutcustomer from './components/readthepost/checkoutcustomer';
+import VisitPRSE2024 from './components/readthepost/visitPRSE2024';
+import Updatedmobile from './components/readthepost/updatedmobile';
+import VisitISRI2024 from './components/readthepost/visitISRI2024';
+import Visitthe2024 from './components/readthepost/visitthe2024';
+import Visitplasticsrecycling from './components/readthepost/visitplasticsrecycling';
+import CieTradeintroduces from './components/readthepost/cieTradeintroduces';
+import Checkouttradeshow from './components/readthepost/checkouttradeshow';
+import Easilysendpacking from './components/readthepost/easilysendpacking';
+import VisitPPRC2023 from './components/readthepost/visitPPRC2023';
+import Visitscrapexpo2023 from './components/readthepost/visitscrapexpo2023';
+import Cietradeatthe2023 from './components/readthepost/cieTradeatthe2023';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -142,7 +158,23 @@ root.render(
     {/* <Pasha /> */}
     {/* <Visitus /> */}
     {/* <CieTradelaunchesupdated /> */}
-    <CieTradelaunchesanautomated />
+    {/* <CieTradelaunchesanautomated /> */}
+    {/* <VisitcieTrade /> */}
+    {/* <Cietradeatthe2024 /> */}
+    {/* <CieTradefeatured /> */}
+    {/* <Checkoutlocation /> */}
+    {/* <Checkoutcustomer /> */}
+    {/* <VisitPRSE2024 /> */}
+    {/* <Updatedmobile /> */}
+    {/* <VisitISRI2024 /> */}
+    {/* <Visitthe2024 /> */}
+    {/* <Visitplasticsrecycling /> */}
+    {/* <CieTradeintroduces /> */}
+    {/* <Checkouttradeshow /> */}
+    {/* <Easilysendpacking /> */}
+    {/* <VisitPPRC2023 /> */}
+    {/* <Visitscrapexpo2023 /> */}
+    <Cietradeatthe2023 />
     {/* <App /> */}
   </React.StrictMode>
 );
