@@ -132,13 +132,12 @@ root.render(
     {/* <Bclickbale /> */}
     {/* <Bciemobile /> */}
     {/* <Bciephoto /> */}
-    <Readthepost />
+    {/* <Readthepost /> */}
     {/* <App /> */}
     {/* <Readthepost /> */}
     {/* <ISustain /> */}
     {/* <Pasha /> */}
     {/* <App /> */}
-    < Commercial />
  </React.StrictMode>
 
 );
