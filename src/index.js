@@ -68,6 +68,14 @@ import Bciephoto from './components/brochures/b-ciephoto';
 import Visitus from './components/readthepost/visitus';
 import CieTradelaunchesupdated from './components/readthepost/cieTradelaunchesupdated';
 import CieTradelaunchesanautomated from './components/readthepost/cieTradelaunchesanautomated';
+import Solasvgm from './components/readthepost/solas-vgm';
+import Whattoaskbefore from './components/readthepost/what-to-ask-before';
+import Cietradeofferanew from './components/readthepost/cietradeofferanew';
+import Cietradelaunchescloud from './components/readthepost/cietrade-launches-cloud';
+import Cietradeonlinecustomerreporting from './components/readthepost/cietrade-online-customer-reporting';
+import Cietradeatthe2016paper from './components/readthepost/cietrade-at-the-2016-paper';
+import Cietradeintroducesinventory from './components/readthepost/cietrade-introduces-inventory';
+import Redefiningwaste from './components/readthepost/redefining-waste';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -140,10 +148,18 @@ root.render(
     {/* <Readthepost /> */}
     {/* <ISustain /> */}
     {/* <Pasha /> */}
-    {/* <Visitus /> */}
     {/* <CieTradelaunchesupdated /> */}
-    <CieTradelaunchesanautomated />
+    {/* <CieTradelaunchesanautomated /> */}
+    {/* <Visitus /> */}
     {/* <App /> */}
+    {/* < Solasvgm /> */}
+    {/* <Whattoaskbefore /> */}
+    {/* <Cietradeofferanew /> */}
+    {/* <Cietradelaunchescloud /> */}
+    {/* <Cietradeonlinecustomerreporting /> */}
+    {/* < Cietradeatthe2016paper /> */}
+    {/* <Cietradeintroducesinventory /> */}
+    <Redefiningwaste />
  </React.StrictMode>
 
 );
