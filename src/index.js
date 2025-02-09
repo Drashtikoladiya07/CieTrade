@@ -97,7 +97,6 @@ import Accountingintegration from './components/readthepost/accountingintegratio
 import VisitISRI2023 from './components/readthepost/visitISRI2023';
 import Visitatthe2023 from './components/readthepost/visitatthe2023';
 import VisitPPRC2022 from './components/readthepost/visitPPRC2022 ';
-import Keepingyourbusiness from './components/readthepost/keeping-your-business';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
