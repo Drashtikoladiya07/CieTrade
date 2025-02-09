@@ -68,7 +68,7 @@ import Bciephoto from './components/brochures/b-ciephoto';
 import Visitus from './components/readthepost/visitus';
 import CieTradelaunchesupdated from './components/readthepost/cieTradelaunchesupdated';
 import CieTradelaunchesanautomated from './components/readthepost/cieTradelaunchesanautomated';
-import Solasvgm from './components/readthepost/solas-vgm';
+import Solasvgm from './components/readthepost/Solasvgm';
 import Whattoaskbefore from './components/readthepost/what-to-ask-before';
 import Cietradeofferanew from './components/readthepost/cietradeofferanew';
 import Cietradelaunchescloud from './components/readthepost/cietrade-launches-cloud';
@@ -84,7 +84,7 @@ import Checkoutcustomer from './components/readthepost/checkoutcustomer';
 import VisitPRSE2024 from './components/readthepost/visitPRSE2024';
 import Updatedmobile from './components/readthepost/updatedmobile';
 import VisitISRI2024 from './components/readthepost/visitISRI2024';
-import Visitthe2024 from './components/readthepost/visitthe2024';
+import Visitatthe2024 from './components/readthepost/visitatthe2024';
 import Visitplasticsrecycling from './components/readthepost/visitplasticsrecycling';
 import CieTradeintroduces from './components/readthepost/cieTradeintroduces';
 import Checkouttradeshow from './components/readthepost/checkouttradeshow';
@@ -92,14 +92,10 @@ import Easilysendpacking from './components/readthepost/easilysendpacking';
 import VisitPPRC2023 from './components/readthepost/visitPPRC2023';
 import Visitscrapexpo2023 from './components/readthepost/visitscrapexpo2023';
 import Cietradeatthe2023 from './components/readthepost/cieTradeatthe2023';
-import Solasvgm from './components/readthepost/solas-vgm';
-import Whattoaskbefore from './components/readthepost/what-to-ask-before';
-import Cietradeofferanew from './components/readthepost/cietradeofferanew';
-import Cietradelaunchescloud from './components/readthepost/cietrade-launches-cloud';
-import Cietradeonlinecustomerreporting from './components/readthepost/cietrade-online-customer-reporting';
-import Cietradeatthe2016paper from './components/readthepost/cietrade-at-the-2016-paper';
-import Cietradeintroducesinventory from './components/readthepost/cietrade-introduces-inventory';
-import Redefiningwaste from './components/readthepost/redefining-waste';
+import Accountingintegration from './components/readthepost/accountingintegration';
+import VisitISRI2023 from './components/readthepost/visitISRI2023';
+import Visitatthe2023 from './components/readthepost/visitatthe2023';
+import VisitPPRC2022 from './components/readthepost/visitPPRC2022 ';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -176,12 +172,12 @@ root.render(
     {/* <CieTradelaunchesanautomated /> */}
     {/* <Visitus /> */}
     {/* <App /> */}
-    {/* < Solasvgm /> */}
+    {/* <Solasvgm /> */}
     {/* <Whattoaskbefore /> */}
     {/* <Cietradeofferanew /> */}
     {/* <Cietradelaunchescloud /> */}
     {/* <Cietradeonlinecustomerreporting /> */}
-    {/* < Cietradeatthe2016paper /> */}
+    {/* <Cietradeatthe2016paper /> */}
     {/* <Cietradeintroducesinventory /> */}
     {/* <VisitcieTrade /> */}
     {/* <Cietradeatthe2024 /> */}
@@ -191,24 +187,19 @@ root.render(
     {/* <VisitPRSE2024 /> */}
     {/* <Updatedmobile /> */}
     {/* <VisitISRI2024 /> */}
-    {/* <Visitthe2024 /> */}
+    {/* <Visitatthe2024 /> */}
     {/* <Visitplasticsrecycling /> */}
     {/* <CieTradeintroduces /> */}
     {/* <Checkouttradeshow /> */}
     {/* <Easilysendpacking /> */}
     {/* <VisitPPRC2023 /> */}
     {/* <Visitscrapexpo2023 /> */}
-    <Cietradeatthe2023 />
-    {/* <Visitus /> */}
-    {/* <App /> */}
-    {/* < Solasvgm /> */}
-    {/* <Whattoaskbefore /> */}
-    {/* <Cietradeofferanew /> */}
-    {/* <Cietradelaunchescloud /> */}
-    {/* <Cietradeonlinecustomerreporting /> */}
-    {/* < Cietradeatthe2016paper /> */}
-    {/* <Cietradeintroducesinventory /> */}
-    <Redefiningwaste />
+    {/* <Cietradeatthe2023 /> */}
+    {/* <Accountingintegration /> */}
+    {/* <VisitISRI2023 /> */}
+    {/* <Visitatthe2023 /> */}
+    <VisitPPRC2022 />
+    {/* <Redefiningwaste /> */}
   </React.StrictMode>
 );
 
