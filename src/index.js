@@ -92,14 +92,7 @@ import Easilysendpacking from './components/readthepost/easilysendpacking';
 import VisitPPRC2023 from './components/readthepost/visitPPRC2023';
 import Visitscrapexpo2023 from './components/readthepost/visitscrapexpo2023';
 import Cietradeatthe2023 from './components/readthepost/cieTradeatthe2023';
-import Solasvgm from './components/readthepost/solas-vgm';
-import Whattoaskbefore from './components/readthepost/what-to-ask-before';
-import Cietradeofferanew from './components/readthepost/cietradeofferanew';
-import Cietradelaunchescloud from './components/readthepost/cietrade-launches-cloud';
-import Cietradeonlinecustomerreporting from './components/readthepost/cietrade-online-customer-reporting';
-import Cietradeatthe2016paper from './components/readthepost/cietrade-at-the-2016-paper';
-import Cietradeintroducesinventory from './components/readthepost/cietrade-introduces-inventory';
-import Redefiningwaste from './components/readthepost/redefining-waste';
+import Keepingyourbusiness from './components/readthepost/keeping-your-business';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -198,7 +191,7 @@ root.render(
     {/* <Easilysendpacking /> */}
     {/* <VisitPPRC2023 /> */}
     {/* <Visitscrapexpo2023 /> */}
-    <Cietradeatthe2023 />
+    {/* <Cietradeatthe2023 /> */}
     {/* <Visitus /> */}
     {/* <App /> */}
     {/* < Solasvgm /> */}
@@ -208,7 +201,8 @@ root.render(
     {/* <Cietradeonlinecustomerreporting /> */}
     {/* < Cietradeatthe2016paper /> */}
     {/* <Cietradeintroducesinventory /> */}
-    <Redefiningwaste />
+    {/* <Redefiningwaste /> */}
+    <Keepingyourbusiness />
   </React.StrictMode>
 );
 
