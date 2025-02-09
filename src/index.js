@@ -97,6 +97,14 @@ import Accountingintegration from './components/readthepost/accountingintegratio
 import VisitISRI2023 from './components/readthepost/visitISRI2023';
 import Visitatthe2023 from './components/readthepost/visitatthe2023';
 import VisitPPRC2022 from './components/readthepost/visitPPRC2022 ';
+import ISRIwelcomearticle from './components/readthepost/ISRIwelcomearticle';
+import UpdatedcieMobileapp from './components/readthepost/updatedcieMobileapp';
+import Helpingwasterecycling from './components/readthepost/helpingwaste&recycling';
+import CieTradefeaturedinglobal from './components/readthepost/cieTradefeaturedinglobal';
+import Newoceanshipping from './components/readthepost/newoceanshipping';
+import ClickBalebycieTrade from './components/readthepost/clickBalebycieTrade';
+import OurnewciePhotovideo from './components/readthepost/ournewciePhotovideo';
+import CieTradeoffersnewcloud from './components/readthepost/cieTradeoffersnewcloud';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -200,6 +208,14 @@ root.render(
     {/* <Visitatthe2023 /> */}
     {/* <VisitPPRC2022 /> */}
     {/* <Redefiningwaste /> */}
+    {/* <ISRIwelcomearticle /> */}
+    {/* <UpdatedcieMobileapp /> */}
+    {/* <Helpingwasterecycling /> */}
+    {/* <CieTradefeaturedinglobal /> */}
+    {/* <Newoceanshipping /> */}
+    {/* <ClickBalebycieTrade /> */}
+    {/* <OurnewciePhotovideo /> */}
+    {/* <CieTradeoffersnewcloud /> */}
   </React.StrictMode>
 );
 
