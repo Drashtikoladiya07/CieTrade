@@ -193,10 +193,10 @@ function Home() {
                                     <img src={item.img} className='img-fluid w-full pt-5' />
                                     <div className='p-3 px-4'>
                                         <a href={item.id}><h1 className='text-uppercase text-red-600 text-xs font-bold pe-14 pt-3'>{item.head}</h1></a>
-                                        <a href='#'><h1 className='text-2xl font-bold py-2'>{item.title}</h1></a>
+                                        <a href={'/Readthepost'}><h1 className='text-2xl font-bold py-2'>{item.title}</h1></a>
                                         <p className='text-gray-500 text-xs'>{item.p1}</p>
                                         <p className='text-gray-500 text-lg py-4'>{item.p2}</p>
-                                        <button className='text-red-600 hover:text-red-700 font-bold'>Read the Post <i class="fa-solid fa-arrow-right ms-2 px-2 p-1 text-xs bg-red-600 text-white rounded-full"></i></button>
+                                        <a href={'/Readthepost'}><button className='text-red-600 hover:text-red-700 font-bold'>Read the Post <i class="fa-solid fa-arrow-right ms-2 px-2 p-1 text-xs bg-red-600 text-white rounded-full"></i></button></a>
                                     </div>
                                 </div>
                             </Col>

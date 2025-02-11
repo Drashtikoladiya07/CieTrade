@@ -9,13 +9,12 @@ function Redefiningwaste() {
             <Container>
                 <div className="pt-20 lg:px-7 md:px-0 sm:px-0">
                     <h1 className="text-5xl  leading-tight">Redefining Waste Management</h1>
-                    <h2 className="text-red-600 py-2">May 9, 2017 / <a href={'/Pastevent'} className="hover:text-gray-700">Blog</a></h2>
+                    <h2 className="text-red-600 py-2">May 9, 2017 / <a href={'/Blogg'} className="hover:text-gray-700">Blog</a></h2>
                     <p className="text-gray-900 text-2xl py-3 font-semibold">Why the right software is critical to success in the waste management business.</p>
                     <p className="text-gray-500 text-lg py-3">People that come to the waste management business with a background in waste hauling or recycling, often think of it as a service business. So it’s no wonder that choosing business software is often a second-thought. However, with the vast amount of data that needs to be managed, processed, and analyzed, not to mention far greater customer demands, waste management is really more of an information management business.</p>
                     <p className="text-gray-500 text-lg py-3">Unlike waste hauling or recycling, without an effective software platform, it’s nearly impossible to add customers without exponentially increasing your overhead costs, making it much harder to achieve sustaining revenue. And even if you had the staff to maintain data in spreadsheets, you would still not be able to easily produce reports or benchmark analytics without considerable time and effort. </p>
                     <p className="text-gray-500 text-lg py-3">Even for start-ups, leveraging the right business software can quickly generate ROI, not only making it much easier to scale your business, but also instilling best practices and offering credibility with prospective clients that can provide you with a competitive advantage</p>
                     <p className="text-gray-500 text-lg py-3">Here are the top 5 reasons the right software is critical to success in the waste brokerage: </p>
-
                     <p className="text-gray-900 text-lg py-3 font-semibold">1. Managing Accounts & Haulers</p>
                     <p className="text-gray-500 text-lg py-3">With the business volume needed to sustain revenue and growth, waste brokers must ultimately manage and control very large sets of data regarding equipment, haulers, and related service costs for hundreds of customers and their numerous locations, not to mention data management operations such as bulk price or equipment changes, data loading, or extraction. While most of this can be tracked in spreadsheets, the effort of analyzing or successfully sifting through this amount of data puts a considerable strain on you or your back office, and rarely translates into anything meaningful.</p>
                     <p className="text-gray-900 text-lg py-3 font-semibold"> 2.Tracking Services</p>

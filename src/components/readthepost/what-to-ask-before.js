@@ -9,7 +9,7 @@ function Whattoaskbefore() {
             <Container>
                 <div className="pt-20 lg:px-7 md:px-0 sm:px-0">
                     <h1 className="text-5xl  leading-tight">What to Ask Before Purchasing Recycling Software</h1>
-                    <h2 className="text-red-600 py-2">July 5, 2016 / <a href={'/Pastevent'} className="hover:text-gray-700">Past Events</a></h2>
+                    <h2 className="text-red-600 py-2">July 5, 2016 / <a href={'/Blogg'} className="hover:text-gray-700">Blog</a></h2>
                     <p className="text-gray-500 text-lg py-3 italic ">David Haber, President of cieTrade Systems Inc., reviews several worthwhile questions for recyclers to ask when they shop for software.</p>
                     <p className="text-gray-500 text-lg py-3">Faced with competitive markets, volume and quality demands and new shipping regulations, recyclers of recovered fiber and other materials increasingly appreciate the value of operating with specialized business software.</p>
                     <p className="text-gray-500 text-lg py-3">These systems are designed to handle the workflow, business processes, documentation needs and other requirements that are common to recycling companies that collect, pack or broker commodities, helping ownership achieve goals such as increased productivity, improved decision making and greater oversight of their businesses.</p>
