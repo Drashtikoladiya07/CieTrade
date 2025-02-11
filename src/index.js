@@ -97,10 +97,6 @@ import Accountingintegration from './components/readthepost/accountingintegratio
 import VisitISRI2023 from './components/readthepost/visitISRI2023';
 import Visitatthe2023 from './components/readthepost/visitatthe2023';
 import VisitPPRC2022 from './components/readthepost/visitPPRC2022 ';
-import Thingstolookfor from './components/readthepost/10-things-to-look-for';
-import Thehiddencostofrunning from './components/readthepost/the-hidden-cost-of-running';
-import Excitingchangeshappening from './components/readthepost/exciting-changes-happening';
-import Cietradenewservicecontract from './components/readthepost/Cietrade-new-service-contract';
 import ISRIwelcomearticle from './components/readthepost/ISRIwelcomearticle';
 import UpdatedcieMobileapp from './components/readthepost/updatedcieMobileapp';
 import Helpingwasterecycling from './components/readthepost/helpingwaste&recycling';
@@ -113,6 +109,7 @@ import Thingstolookfor from './components/readthepost/10-things-to-look-for';
 import Thehiddencostofrunning from './components/readthepost/the-hidden-cost-of-running';
 import Excitingchangeshappening from './components/readthepost/exciting-changes-happening';
 import Cietradenewservicecontract from './components/readthepost/Cietrade-new-service-contract';
+import Here from './components/company/here';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -148,6 +145,7 @@ root.render(
     {/* <Ourclients /> */}
     {/* <Ourpartners /> */}
     {/* <Contact /> */}
+    {/* <Here /> */}
     {/* <Accounting /> */}
     {/* <Booking /> */}
     {/* <InventoryManagement /> */}
