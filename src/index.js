@@ -109,10 +109,15 @@ import Newoceanshipping from './components/readthepost/newoceanshipping';
 import ClickBalebycieTrade from './components/readthepost/clickBalebycieTrade';
 import OurnewciePhotovideo from './components/readthepost/ournewciePhotovideo';
 import CieTradeoffersnewcloud from './components/readthepost/cieTradeoffersnewcloud';
-import Thingstolookfor from './components/readthepost/10-things-to-look-for';
-import Thehiddencostofrunning from './components/readthepost/the-hidden-cost-of-running';
-import Excitingchangeshappening from './components/readthepost/exciting-changes-happening';
-import Cietradenewservicecontract from './components/readthepost/Cietrade-new-service-contract';
+// import Thingstolookfor from './components/readthepost/10-things-to-look-for';
+// import Thehiddencostofrunning from './components/readthepost/the-hidden-cost-of-running';
+// import Excitingchangeshappening from './components/readthepost/exciting-changes-happening';
+// import Cietradenewservicecontract from './components/readthepost/Cietrade-new-service-contract';
+import Blogg from './components/readthepost/blogg';
+import Productupdate from './components/readthepost/product-update';
+import Newss from './components/readthepost/news';
+import Videos from './components/readthepost/videos';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -234,6 +239,12 @@ root.render(
     {/* <Thehiddencostofrunning /> */}
     {/* < Excitingchangeshappening /> */}
     {/* <Cietradenewservicecontract /> */}
+    {/* < Blogg/> */}
+    {/* < Productupdate /> */}
+    {/* < Newss /> */}
+    <Videos/>
+
+  
   </React.StrictMode>
 );
 
