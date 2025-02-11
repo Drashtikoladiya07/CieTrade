@@ -52,7 +52,7 @@ function CieTradefeatured() {
             <Container>
                 <div className="pt-20 lg:px-7 md:px-0 sm:px-0">
                     <h1 className="text-5xl font-bold leading-tight">cieTrade featured in Metals Recycling Magazine</h1>
-                    <h2 className="text-red-600 py-2">June 24, 2024  / <a href={'/Pastevent'} className="hover:text-gray-700">Past Events</a></h2>
+                    <h2 className="text-red-600 py-2">June 24, 2024  / <a href={'/Newss'} className="hover:text-gray-700">News</a></h2>
                     <p className="text-gray-500 text-lg py-3">In the <a href="https://www.flipsnack.com/BD897F77C6F/metalsrecycling-may-june-2024/full-view.html" className="text-red-600 hover:text-gray-700">latest May/June 2024 issue</a> of MetalsRecycling Magazine, cieTrade’s Marketing Manager, Pamela Prado, shared valuable insight on the advantages of using a specialized business management software to streamline scrap recycling operations.</p>
                     <Slider {...settings}>
                         {data.slider.map((item, index) => (

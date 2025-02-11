@@ -9,7 +9,7 @@ function Keepingyourbusiness() {
             <Container>
                 <div className="pt-20 lg:px-7 md:px-0 sm:px-0">
                     <h1 className="text-5xl  leading-tight">Keeping your Business Software Project from Getting Derailed</h1>
-                    <h2 className="text-red-600 py-2">May 25, 2017 / <a href={'/Pastevent'} className="hover:text-gray-700">Blog</a></h2>
+                    <h2 className="text-red-600 py-2">May 25, 2017 / <a href={'/Blogg'} className="hover:text-gray-700">Blog</a></h2>
                     <p className="text-gray-900 text-2xl py-3 font-semibold">Observations on what to avoid when implementing new business (ERP) software.</p>
                     <p className="text-gray-500 text-lg py-3">Having successfully installed many cieTrade business software solutions over the years I’m often asked by new clients what they can do to help ensure a smooth transition from their old system and minimize potential problems. While the answer partly depends on their particular circumstances and specific business requirements, we’ve also repeatedly encountered a few common problems that can lead to frustration and delays, potentially impacting the success of your business software project.  Here are a few situations you should look to avoid.</p>
                     <p className="text-gray-900 text-lg py-3 font-semibold">1.Weak support from management.</p>

@@ -9,7 +9,7 @@ function Updatedmobile() {
             <Container>
                 <div className="pt-20 lg:px-7 md:px-0 sm:px-0">
                     <h1 className="text-5xl font-bold leading-tight">Updated cieTrade Mobile Dispatch App</h1>
-                    <h2 className="text-red-600 py-2">March 8, 2024 / <a href={'/Pressreleases'} className="hover:text-gray-700">Product Updates</a></h2>
+                    <h2 className="text-red-600 py-2">March 8, 2024 / <a href={'/Productupdate'} className="hover:text-gray-700">Product Updates</a></h2>
                     <center><img src="https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2024/03/WEBSITE-BANNER-DISPATCH.png.webp" className="lg:px-20 md:px-0 sm:px-0 py-3" /></center>
                     <p className="text-gray-500 text-lg py-3">cieDispatch helps drivers track service requests, capture activity and provide instant status updates from anywhere. Our dispatch app allows your drivers retrieve a list of assigned tickets, get directions to service locations, update job status, record notes, and even capture photos. Information is instantly updated in your existing cieTrade account, saving time and making it easier to manage services while eliminating double-entry.</p>
                     <p className="text-gray-500 text-lg py-3">With the updated cieDispatch app we have introduced a few new features these include</p>
