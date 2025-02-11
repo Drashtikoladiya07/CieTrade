@@ -58,6 +58,8 @@ import Bcielocation from './components/brochures/b-cielocation';
 import Bclickbale from './components/brochures/b-clickbale';
 import Bciemobile from './components/brochures/b-ciemobile';
 import Bciephoto from './components/brochures/b-ciephoto';
+import Here from './components/company/here';
+
 
 const App = () => {
   return (
@@ -121,6 +123,7 @@ const App = () => {
         <Route path="/Bclickbale" element={<Bclickbale />} />
         <Route path="/Bciemobile" element={<Bciemobile />} />
         <Route path="/Bciephoto" element={<Bciephoto />} />
+        <Route path="/Here" element={<Here />} />
         <Route path="*" element={<div>Page Not Found</div>} />
       </Routes>
       <FooterP />
