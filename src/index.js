@@ -110,10 +110,6 @@ import Thehiddencostofrunning from './components/readthepost/the-hidden-cost-of-
 import Excitingchangeshappening from './components/readthepost/exciting-changes-happening';
 import Cietradenewservicecontract from './components/readthepost/Cietrade-new-service-contract';
 import Here from './components/company/here';
-// import Thingstolookfor from './components/readthepost/10-things-to-look-for';
-// import Thehiddencostofrunning from './components/readthepost/the-hidden-cost-of-running';
-// import Excitingchangeshappening from './components/readthepost/exciting-changes-happening';
-// import Cietradenewservicecontract from './components/readthepost/Cietrade-new-service-contract';
 import Blogg from './components/readthepost/blogg';
 import Productupdate from './components/readthepost/product-update';
 import Newss from './components/readthepost/news';
@@ -243,7 +239,7 @@ root.render(
     {/* < Blogg/> */}
     {/* < Productupdate /> */}
     {/* < Newss /> */}
-    <Videos/>
+    {/* <Videos/> */}
 
   
   </React.StrictMode>
