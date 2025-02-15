@@ -31,7 +31,7 @@ function Whattoaskbefore() {
                     <p className="text-gray-500 text-lg py-3 font-bold "> 5. How will it provide ROI?</p>
                     <p className="text-gray-500 text-lg py-3">For many recyclers the true cost of introducing business software is not only the license fees or the training costs, but also the commitment of time, dedication of resources and the potential disruption through the implementation process. Thus, it is crucial to consider what kind of return on investment (ROI) you can expect from your new business system.</p>
                     <p className="text-gray-500 text-lg py-3">The following is a list of some typical ROI factors you should look for in any software solution:</p>
-                    <div className="ps-5">
+                    <div className="ps-4">
                         <p className="text-gray-500 text-lg py-2">Eliminating Redundancy – Look for features that can help avoid the use of spreadsheets, manual document preparation or other functions that can involve duplicate data entry or maintenance.</p>
                         <p className="text-gray-500 text-lg py-2">Avoiding Errors – Does the software offer features that can catch user errors like incorrect pricing or weights or overpayments to vendors?</p>
                         <p className="text-gray-500 text-lg py-2">Workflow Features – Are there workflow features or tools that will allow your operation to collaborate better and improve the tracking of critical business activities such as shipping status, booking cutoffs or received mill weights? Also, look for opportunities to tie into data feeds or EDI services to further eliminate manual entry.</p>
@@ -48,7 +48,6 @@ function Whattoaskbefore() {
                     <div className=" border-t border-gray-800 w-80 py-3"></div>
                     <p className="text-gray-500 text-lg py-3">For more information on <a href={'/'} className="text-red-600 hA modified version of this article was recently published in Recycling Today Global Edition.over:text-gray-700 underline">Cietrade</a> or their <a href={'/Plant'} className="text-red-600 hover:text-gray-700 underline">recycling software,</a> contact <a href="https://www.inttra.com/" className="text-red-600 hover:text-gray-700 underline">inquire@cietrade.com</a>or call (203) 323-0074. </p>
                     <p className="text-gray-500 text-lg py-3 italic ">A modified version of this article was recently published in Recycling Today Global Edition.</p>
-
                 </div>
             </Container>
         </div>

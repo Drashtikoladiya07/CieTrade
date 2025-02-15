@@ -15,7 +15,6 @@ function Helpingwasterecycling() {
                     <p className="text-gray-500 text-lg py-3">An increased demand for Environmental, Social, and Governance (ESG) Reporting in recent years correlates with a growing need for reliable data surrounding a company’s environmental and waste stream impact. Environmental metrics include energy and resource consumption, social metrics include employee and customer relations as well as gender and diversity inclusivity, while governance metrics include an organization’s internal dialogue and controls.</p>
                     <p className="text-gray-500 text-lg py-3">Northstar leverages cieTrade’s platform to aggregate data for “all the waste streams [their clients] are producing at all of their facilities” as well as “grades and weights of materials that have been diverted from the waste stream and the form that diversion took.” These reports are then uploaded to an ESG reporting platform to provide companies with a complete picture of their sustainability initiatives.</p>
                     <p className="text-gray-500 text-lg py-3">Read the <a href="https://www.recyclingtoday.com/article/esg-reporting-opportunities-wate-recycling-industry/" className="hover:text-gray-700 text-red-600">full article</a> to learn more.</p>
-
                 </div>
             </Container>
         </div>

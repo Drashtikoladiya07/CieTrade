@@ -158,15 +158,15 @@ function Bcommodity() {
             <div className="relative bg-cover bg-center h-full" style={{ backgroundImage: `url('https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2024/04/commodity-new-1024x683.png.webp')` }}>
                 <div className="absolute inset-0 bg-black bg-opacity-50"></div>
                 <div className="relative pt-56 pb-44">
-                    <h1 className="lg:text-7xl py-4 md:text-5xl sm:text-4xl text-white text-center font-bold lh-xs">Download Our Brochure</h1>
-                    <p className="lg:text-2xl md:text-2xl sm:text-xl text-white text-center">Looking to learn about our software features in more detail?</p>
+                    <h1 className="text-6xl pb-3 text-white text-center font-bold lh-xs">Download Our Brochure</h1>
+                    <p className="text-xl text-white text-center">Looking to learn about our software features in more detail?</p>
                 </div>
             </div>
 
             <Container>
                 <Row className='py-20'>
                     <Col lg={6} md={12} sm={12} className=''>
-                        <h1 className='text-5xl font-bold'>Download our commodity trading software brochure</h1>
+                        <h1 className='text-4xl font-bold'>Download our commodity trading software brochure</h1>
                         <p className='text-lg py-4 text-gray-500'>Fill in your information to receive an email with a full list of features to read at your convenience.</p>
                         <img src={sheet} alt="sheet" />
                     </Col>

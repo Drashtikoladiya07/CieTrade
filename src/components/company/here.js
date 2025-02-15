@@ -46,13 +46,13 @@ function Here() {
             <div className="relative bg-cover bg-center" style={{ backgroundImage: `url('https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2023/03/support-team-at-desks-blur.png.webp')` }}>
                 <div className="absolute inset-0 bg-black bg-opacity-50"></div>
                 <div className="relative pt-64 pb-44">
-                    <h1 className="lg:text-7xl py-4 md:text-5xl sm:text-4xl text-white text-center font-bold lh-xs">Contact our Support Team</h1>
+                    <h1 className="text-6xl text-white text-center font-bold lh-xs">Contact our Support Team</h1>
                 </div>
             </div>
             <Container>
                 <Row className='py-20'>
-                    <div className="">
-                        <h2 className="text-5xl font-bold text-gray-900 leading-snug pb-4">Have a question for our support team? <br />Send us a message below.</h2>
+                    <div className="text-gray-600">
+                        <h2 className="text-5xl font-bold text-gray-900 leading-snug pb-4 lg:pe-72">Have a question for our support team? Send us a message below.</h2>
                         <form onSubmit={handleSubmit} className="space-y-4">
                             <div>
                                 <label className="block text-zinc-500 font-bold text-lg pb-1">Which version of cieTrade are you using?<span className="text-red-600">*</span></label>

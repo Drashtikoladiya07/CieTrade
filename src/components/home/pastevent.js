@@ -53,17 +53,17 @@ function Pastevent() {
             <Container className="lg:px-28 md:px-0 sm:px-0">
                 <Row>
                     {currentItems.map((item, index) => (
-                        <Col lg={12} className='py-10 border-b py-20' key={index}>
+                        <Col lg={12} className='py-10 py-20' key={index}>
                             <Row>
                                 <Col lg={6}>
                                     <img src={item.img} alt="" className='w-full' />
                                 </Col>
                                 <Col lg={6}>
-                                    <h1 className='text-2xl font-semibold lh-sm'>{item.label}</h1>
-                                    <h1 className='text-red-600 pt-1 pb-3'>{item.title}</h1>
-                                    <h1 className='text-gray-500 py-3 leading-6'>{item.description}</h1>
+                                    <h1 className='text-2xl font-semibold lh-sm py-2'>{item.label}</h1>
+                                    <h1 className='text-red-600 pt-1 pb-2'>{item.title}</h1>
+                                    <h1 className='text-gray-500 py-2 leading-6'>{item.description}</h1>
                                     <div className="py-3">
-                                        <a href='#' className="text-white bg-red-600 hover:bg-red-700 py-2 px-3">Read More<i className="fa-solid fa-arrow-right ps-1 pt-1 "></i></a>
+                                        <a href={'/Readthepost'} className="text-white bg-red-600 hover:bg-red-700 py-2 px-3">Read More<i className="fa-solid fa-arrow-right ps-1 pt-1 "></i></a>
                                     </div>
                                 </Col>
                             </Row>
@@ -71,7 +71,7 @@ function Pastevent() {
                     ))}
                 </Row>
 
-                <div className="text-center border-none">
+                <div className="text-center py-4">
                     <Button
                         className="text-red-600 hover:text-gray-500 text-lg font-semibold"
                         variant="transparent border-0"

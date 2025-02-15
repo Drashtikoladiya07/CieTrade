@@ -4,6 +4,7 @@ import YouTube from 'react-youtube';
 import Casestudy from '../../assets/img/casestudypng.webp';
 import Pasharecycling from '../../assets/img/pasharecycling.png';
 import Commercialplasticscase from '../../assets/img/CommercialPlasticscase.png';
+import YoutubeWidget from '../../widgets/youtubeWidget';
 
 function Ourclients() {
 
@@ -22,22 +23,24 @@ function Ourclients() {
             <div className="w-full relative bg-cover bg-center" style={{ backgroundImage: `url(https://i.ytimg.com/vi/oBY6wR2FAqk/maxresdefault.jpg)` }}>
                 <div className='absolute inset-0 bg-black opacity-50'></div>
                 <div className="text-center relative pb-32 pt-52">
-                    <h1 className="lg:text-7xl md:text-5xl sm:text-4xl text-white font-bold leading-tight">Our Clients</h1>
-                    <h1 className="lg:text-xl text-white py-3 leading-tight">cieTrade has a diverse worldwide customer base that’s transacted billions in goods and <br />shipped hundreds of thousands of containers on our software. Our clients include many of<br /> the leading trading houses, scrap exporters, and recycling plants. cieTrade’s flexible design<br /> has also attracted waste brokers and national accounts consolidators looking to avoid<br /> using spreadsheets or expensive custom systems.</h1>
+                    <h1 className="text-6xl text-white font-bold leading-tight">Our Clients</h1>
+                    <h1 className="text-xl text-white py-3 leading-tight lg:px-72">cieTrade has a diverse worldwide customer base that’s transacted billions in goods and shipped hundreds of thousands of containers on our software. Our clients include many of the leading trading houses, scrap exporters, and recycling plants. cieTrade’s flexible design has also attracted waste brokers and national accounts consolidators looking to avoid using spreadsheets or expensive custom systems.</h1>
                 </div>
             </div>
 
             <Container>
                 <Row className='g-0 py-16'>
-                    <Col lg={6}>
+                    {/* <Col lg={6}>
                         <YouTube videoId="mwtsCFbxXa4" opts={{ width: 600, height: 300, }} />
-                    </Col>
+                    </Col> */}
+
+                    <YoutubeWidget videoId={"mwtsCFbxXa4"} />
                     <Col lg={6} >
-                        <h6 className='font-bold text-xl text-red-600'>SUCCESS STORY</h6>
-                        <h6 className='lg:text-4xl md:text-3xl sm:text-2xl font-bold py-3'>Wasteology</h6>
+                        <h6 className='pt-3 font-bold text-xl text-red-600'>SUCCESS STORY</h6>
+                        <h6 className='text-3xl font-bold py-3'>Wasteology</h6>
                         <h6 className='text-gray-600 text-lg'>Learn how Wasteology, a waste and recycling services broker, eliminated double-entry, streamlined dispatch management and improved their billing process with cieTrade’s industry-specific software, tailored to meet evolving needs as their operation scales.</h6>
                         <div className='pt-10'>
-                            <a href='https://youtu.be/mwtsCFbxXa4' className="text-white bg-red-600 hover:bg-red-700 px-4 py-3 font-bold text-lg ">Watch Success Story<i class="fa-solid fa-arrow-right ps-3 pt-1"></i></a>
+                            <a href='https://youtu.be/mwtsCFbxXa4' className="text-white bg-red-600 hover:bg-red-700 px-4 py-3 font-bold">Watch Success Story<i class="fa-solid fa-arrow-right ps-3 pt-1"></i></a>
                         </div>
                     </Col>
                 </Row>
@@ -47,44 +50,44 @@ function Ourclients() {
                         <YouTube videoId="mehip29GhNI" opts={{ width: 600, height: 300, }} />
                     </Col>
                     <Col lg={6} >
-                        <h6 className='font-bold text-xl text-red-600'>SUCCESS STORY</h6>
-                        <h6 className='lg:text-4xl md:text-3xl sm:text-2xl font-bold py-3'>AP&J Recycling</h6>
+                        <h6 className='pt-3 font-bold text-xl text-red-600'>SUCCESS STORY</h6>
+                        <h6 className='text-3xl font-bold py-3'>AP&J Recycling</h6>
                         <h6 className='text-gray-600 text-lg'>As a rapidly growing plastics recycling business, AP&J Recycling needed an industry-specific solution to be able to manage their operation. Learn how cieTrade helped eliminate manual spreadsheets, improve inventory tracking and increase accuracy of COGS.</h6>
                         <div className='pt-10'>
-                            <a href='https://youtu.be/mehip29GhNI' className="text-white bg-red-600 hover:bg-red-700 px-4 py-3 font-bold text-lg ">Watch Success Story<i class="fa-solid fa-arrow-right ps-3 pt-1"></i></a>
+                            <a href='https://youtu.be/mehip29GhNI' className="text-white bg-red-600 hover:bg-red-700 px-4 py-3 font-bold">Watch Success Story<i class="fa-solid fa-arrow-right ps-3 pt-1"></i></a>
                         </div>
                     </Col>
                 </Row>
                 <Row className='g-0 py-16'>
                     <Col lg={6}><img src={Casestudy} className='pe-4 w-full h-80'></img></Col>
                     <Col lg={6} >
-                        <h6 className='font-bold text-xl text-red-600'>CASE STUDY</h6>
-                        <h6 className='lg:text-4xl md:text-3xl sm:text-2xl font-bold py-3'>iSustain Recycling</h6>
+                        <h6 className='pt-3 font-bold text-xl text-red-600'>CASE STUDY</h6>
+                        <h6 className='text-3xl font-bold py-3'>iSustain Recycling</h6>
                         <h6 className='text-gray-600 text-lg'>Prior to using cieTrade, iSustain ran their company solely on manual spreadsheets; however, their team struggled to keep up as the business grew and expanded. Without a proper software system in place, challenges quickly began to arise, prompting iSustain to connect with cieTrade as a solution.</h6>
                         <div className='pt-10'>
-                            <a href='#' className="text-white bg-red-600 hover:bg-red-700 px-4 py-3 font-bold text-lg ">Read The Case Study<i class="fa-solid fa-arrow-right ps-3 pt-1"></i></a>
+                            <a href={'/ISustain'} className="text-white bg-red-600 hover:bg-red-700 px-4 py-3 font-bold">Read The Case Study<i class="fa-solid fa-arrow-right ps-3 pt-1"></i></a>
                         </div>
                     </Col>
                 </Row>
                 <Row className='g-0 py-16'>
                     <Col lg={6}><img src={Pasharecycling} className='pe-4 w-full h-80'></img></Col>
                     <Col lg={6} >
-                        <h6 className='font-bold text-xl text-red-600'>CASE STUDY</h6>
-                        <h6 className='lg:text-4xl md:text-3xl sm:text-2xl font-bold py-3'>Pasha Recycling</h6>
+                        <h6 className='pt-3 font-bold text-xl text-red-600'>CASE STUDY</h6>
+                        <h6 className='text-3xl font-bold py-3'>Pasha Recycling</h6>
                         <h6 className='text-gray-600 text-lg'>In their continued commitment to embrace new technology and introduce leading-edge techniques to speed up and refine their operations, Pasha Recycling sought a comprehensive software that could provide complete traceability throughout their supply chain.</h6>
                         <div className='pt-10'>
-                            <a href='#' className="text-white bg-red-600 hover:bg-red-700 px-4 py-3 font-bold text-lg ">Read The Case Study<i class="fa-solid fa-arrow-right ps-3 pt-1"></i></a>
+                            <a href={'/Pasha'} className="text-white bg-red-600 hover:bg-red-700 px-4 py-3 font-bold">Read The Case Study<i class="fa-solid fa-arrow-right ps-3 pt-1"></i></a>
                         </div>
                     </Col>
                 </Row>
                 <Row className='g-0 py-16'>
                     <Col lg={6}><img src={Commercialplasticscase} className='pe-4 w-full h-80'></img></Col>
                     <Col lg={6} >
-                        <h6 className='font-bold text-xl text-red-600'>CASE STUDY</h6>
-                        <h6 className='lg:text-4xl md:text-3xl sm:text-2xl font-bold py-3'>Commercial Plastics Recycling Inc.</h6>
+                        <h6 className='pt-3 font-bold text-xl text-red-600'>CASE STUDY</h6>
+                        <h6 className='text-3xl font-bold py-3'>Commercial Plastics Recycling Inc.</h6>
                         <h6 className='text-gray-600 text-lg'>Before cieTrade, Commercial Plastics developed its own custom Microsoft Access database to track inventory and manage operations. However, their team soon realized the system wasn’t as efficient as they’d hoped and it’d become difficult and time-consuming to maintain a home-grown program</h6>
                         <div className='pt-10'>
-                            <a href='#' className="text-white bg-red-600 hover:bg-red-700 px-4 py-3 font-bold text-lg ">Read The Case Study<i class="fa-solid fa-arrow-right ps-3 pt-1"></i></a>
+                            <a href={'/Commercial'} className="text-white bg-red-600 hover:bg-red-700 px-4 py-3 font-bold">Read The Case Study<i class="fa-solid fa-arrow-right ps-3 pt-1"></i></a>
                         </div>
                     </Col>
                 </Row>
@@ -93,11 +96,11 @@ function Ourclients() {
                         <YouTube videoId="oBY6wR2FAqk" opts={{ width: 600, height: 300, }} />
                     </Col>
                     <Col lg={6} >
-                        <h6 className='font-bold text-xl text-red-600'>SUCCESS STORY</h6>
-                        <h6 className='lg:text-4xl md:text-3xl sm:text-2xl font-bold py-3'>Canusa Hershman</h6>
+                        <h6 className='pt-3 font-bold text-xl text-red-600'>SUCCESS STORY</h6>
+                        <h6 className='text-3xl font-bold py-3'>Canusa Hershman</h6>
                         <h6 className='text-gray-600 text-lg'>Lack of real-time integration with accounting software proved to be problematic for Canusa Hershman. cieTrade helped by handling transactions faster, allowing them to grow from a domestic to an international trader.</h6>
                         <div className='pt-10'>
-                            <a href="https://youtu.be/oBY6wR2FAqk" className="text-white bg-red-600 hover:bg-red-700 px-4 py-3 font-bold text-lg ">Watch Success Story<i class="fa-solid fa-arrow-right ps-3 pt-1"></i></a>
+                            <a href="https://youtu.be/oBY6wR2FAqk" className="text-white bg-red-600 hover:bg-red-700 px-4 py-3 font-bold">Watch Success Story<i class="fa-solid fa-arrow-right ps-3 pt-1"></i></a>
                         </div>
                     </Col>
                 </Row>
@@ -106,17 +109,17 @@ function Ourclients() {
                         <YouTube videoId="yxcsJQlRxAk" opts={{ width: 600, height: 300, }} />
                     </Col>
                     <Col lg={6} >
-                        <h6 className=' font-bold text-2xl text-red-600 py-2'>SUCCESS STORY</h6>
-                        <h6 className='text-lg lg:text-5xl md:text-3xl sm:text-2xl font-bold py-3'>The Paper Tigers</h6>
-                        <h6 className='text-gray-600 text-xl '>Having started with a custom solution, The Paper Tigers quickly began to realize the redundancies and loss of productivity. Learn how cieTrade helped grow their business while reducing operational costs by 35-40%.</h6>
-                        <div className='py-14'>
-                            <a href='#' className="text-white bg-red-600 hover:bg-red-700 px-4 py-4  font-bold text-lg ">Watch Success Story<i class="fa-solid fa-arrow-right ps-3 pt-1"></i></a>
+                        <h6 className='pt-3 font-bold text-xl text-red-600'>SUCCESS STORY</h6>
+                        <h6 className='text-3xl font-bold py-3'>The Paper Tigers</h6>
+                        <h6 className='text-gray-600 text-lg'>Having started with a custom solution, The Paper Tigers quickly began to realize the redundancies and loss of productivity. Learn how cieTrade helped grow their business while reducing operational costs by 35-40%.</h6>
+                        <div className='py-10'>
+                            <a href="https://youtu.be/yxcsJQlRxAk" className="text-white bg-red-600 hover:bg-red-700 px-4 py-3 font-bold">Watch Success Story<i class="fa-solid fa-arrow-right ps-3 pt-1"></i></a>
                         </div>
                     </Col>
                 </Row>
             </Container>
 
-            <div className='bg-light pt-5'>
+            <div className='bg-light py-5'>
                 <Container className='lg:px-20 md:px-0 sm:px-0'>
                     <h1 className='text-4xl text-center font-bold'>What Our Clients Are Saying</h1>
                     <Row>

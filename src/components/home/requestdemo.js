@@ -157,9 +157,9 @@ function Requstdemo() {
         <div className='bg-light'>
             <div className="relative bg-cover bg-center h-full" style={{ backgroundImage: `url('https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2024/05/new-demo-4-1.png.webp')` }}>
                 <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-                <div className="relative pt-56 pb-44">
-                    <h1 className="lg:text-7xl py-4 md:text-5xl sm:text-4xl text-white text-center font-bold lh-xs">Request a Demo</h1>
-                    <p className="lg:text-2xl md:text-2xl sm:text-xl text-white text-center">To learn how cieTrade can help streamline your business operations, increase profitability <br />and more, contact us for a free consultation or no-obligation demo.</p>
+                <div className="relative pt-56 pb-44 lg:px-60">
+                    <h1 className="text-5xl pb-3 text-white text-center font-bold">Request a Demo</h1>
+                    <p className="text-2xl text-white text-center">To learn how cieTrade can help streamline your business operations, increase profitability and more, contact us for a free consultation or no-obligation demo.</p>
                 </div>
             </div>
 

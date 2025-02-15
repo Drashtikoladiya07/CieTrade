@@ -58,6 +58,9 @@ import Bcielocation from './components/brochures/b-cielocation';
 import Bclickbale from './components/brochures/b-clickbale';
 import Bciemobile from './components/brochures/b-ciemobile';
 import Bciephoto from './components/brochures/b-ciephoto';
+import Pasha from "./components/company/pasha";
+import ISustain from "./components/company/iSustain";
+import Commercial from "./components/company/commercial";
 import Here from './components/company/here';
 import Blogg from './components/readthepost/blogg';
 import Productupdate from './components/readthepost/product-update';
@@ -69,7 +72,6 @@ const App = () => {
   return (
     <Router>
       <Navbar />
-      {/* <Home /> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Agricultural" element={<Agricultural />} />
@@ -127,6 +129,9 @@ const App = () => {
         <Route path="/Bclickbale" element={<Bclickbale />} />
         <Route path="/Bciemobile" element={<Bciemobile />} />
         <Route path="/Bciephoto" element={<Bciephoto />} />
+        <Route path="/Pasha" element={<Pasha />} />
+        <Route path="/Commercial" element={<Commercial />} />
+        <Route path="/ISustain" element={<ISustain />} />
         <Route path="/Here" element={<Here />} />
         <Route path="/Blogg" element={<Blogg />} />
         <Route path="/Productupdate" element={<Productupdate />} />

@@ -22,11 +22,11 @@ function Brochures() {
             <div className="relative bg-cover bg-center h-full" style={{ backgroundImage: `url('https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2024/06/2024-06-25_11h23_20.png.webp')` }}>
                 <div className="absolute inset-0 bg-black bg-opacity-50"></div>
                 <div className="relative text-center pt-56 pb-44">
-                    <h1 className="lg:text-7xl py-4 md:text-5xl sm:text-4xl text-white font-bold">Brochures</h1>
-                    <p className="lg:text-2xl md:text-2xl sm:text-xl text-white">Download our brochures to learn more about our software solutions</p>
+                    <h1 className="text-6xl text-white font-bold pb-2">Brochures</h1>
+                    <p className="text-xl text-white">Download our brochures to learn more about our software solutions</p>
                 </div>
             </div>
-            <Container className='lg:px-10 md:px-0 sm:px-0 py-5'>
+            <Container className='py-5'>
                 <Row>
                     {data.brochures.map((item, index) => (
                         <Col lg={4} md={6} sm={12} key={index} className='py-3'>
