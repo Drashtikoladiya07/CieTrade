@@ -99,7 +99,7 @@ function InventoryManagement() {
                     </Row>
                 </Container>
                 <Container>
-                    <Row className='py-20'>
+                    <Row className='py-12'>
                         <Col lg={6}><img src={Warehouse} alt="ticket" className='w-full img-fluid' /></Col>
                         <Col lg={6} className='align-self-center'>
                             <h1 className='text-4xl font-bold lh-tight pt-3'>Mobile Warehouse Tools </h1>
