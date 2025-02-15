@@ -28,7 +28,6 @@ function Redefiningwaste() {
                     <p className="text-gray-900 text-lg py-3 font-semibold">Conclusion</p>
                     <p className="text-gray-500 text-lg py-3">With massive volumes of data, difficult auditing requirements, and tough customer demands, choosing the right business software platform is vital to success in the waste brokerage business, even for startups. Working with an IT partner that understands the unique industry challenges and that has a proven solution can help minimize project risk and offer an opportunity to leverage their experience to your advantage</p>
                     <p className="text-gray-500 text-lg py-3">cieTrade offers a comprehensive waste management and brokerage solution that’s integral with trading and recycling software. For more information, or to request a one-on-one demo, send us an email at or their <a href={''} className="text-red-600 hover:text-gray-700 underline">support@cietrade.com</a> </p>
-
                 </div>
             </Container>
         </div>

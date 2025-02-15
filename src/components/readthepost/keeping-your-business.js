@@ -27,7 +27,6 @@ function Keepingyourbusiness() {
                     <p className="text-gray-900 text-lg py-3 font-semibold "> 7. Starting with bad data.</p>
                     <p className="text-gray-500 text-lg py-3">Admittedly there’s some work involved with updating and checking the data from your old system before its loaded into the new one. But taking shortcuts or using outdated or incorrect data can impact the usability of the new software now and well into the future. Investing the time to properly cleanup your master data and verify the accuracy of  financials, such as inventory data, will not only help make the new software easy to work with from the start but will also pay dividends by avoiding the headaches of trying to fix these data problems down the road. </p>
                     <p className="text-gray-500 text-lg py-3">For more information on<a href={'/'} className="text-red-600 hover:text-gray-700 underline">Cietrade</a>or their business software, contact<a href={''} className="text-red-600 hover:text-gray-700 underline">inquire@cietrade.com </a>or call (203) 323-0074 </p>
-
                 </div>
             </Container>
         </div>

@@ -36,8 +36,8 @@ function Ciephoto() {
             <div className="h-full relative bg-cover bg-center  " style={{ backgroundImage: `url(https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2022/12/IMG_3760_LG-scaled.jpg.webp)` }}>
                 <div className='absolute inset-0 bg-black opacity-50'></div>
                 <div className="text-center relative pb-32 pt-52">
-                    <h1 className="lg:text-7xl md:text-5xl sm:text-4xl text-white font-bold leading-tight">ciePhoto</h1>
-                    <h1 className="lg:text-xl text-white py-3 leading-tight">Export photos made easy</h1>
+                    <h1 className="text-6xl text-white font-bold leading-tight">ciePhoto</h1>
+                    <h1 className="text-xl text-white py-3 leading-tight">Export photos made easy</h1>
                     <div className='py-4'>
                         <a href={'/Bciephoto'} className="text-white bg-red-600 hover:bg-red-700 px-4 py-3  font-bold text-base ">Download Brochure<i class="fa-solid fa-arrow-right ps-3 pt-1"></i></a>
                     </div>
@@ -45,10 +45,10 @@ function Ciephoto() {
             </div>
 
             <Container>
-                <Row className='p-20'>
+                <Row className='py-20'>
                     <Col lg={6}><img src="https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2022/08/ciephoto-phones.png.webp" className='w-full' /></Col>
                     <Col lg={6}>
-                        <h6 className='lg:text-5xl md:4xl sm:text-3xl font-bold py-3 lh-sm'>Easily capture and manage export container and material quality photos</h6>
+                        <h6 className='text-4xl font-bold py-3 lh-sm'>Easily capture and manage export container and material quality photos</h6>
                         <div className='flex py-2'><h6 className='text-xl text-gray-500 '><span className='font-bold text-red-600'>ciePhoto </span> replaces your existing digital camera and allows users to take photos of outbound export containers or to document quality issues on received loads. The photos are automatically uploaded into the cieTrade database over any internet connection and attached directly to the appropriate load number, eliminating the time consuming task of manually managing hundreds of photos. ciePhoto can also reduce the number of lost photos since the images are uploaded from the device immediately after they are taken.</h6></div>
                         <div className='flex py-2'>
                             <a href='https://apps.apple.com/us/app/cielocation/id1314428136'> <img src={Appstore} className='w-60' /></a>
@@ -59,14 +59,14 @@ function Ciephoto() {
             </Container>
             <div className='bg-zinc-800 text-center py-5'>
                 <i class="fa-solid fa-quote-left text-white bg-red-500 p-1 rounded-full px-2 text-2xl"></i>
-                <h6 className='text-white text-xl py-3 lh-base'>cieDispatch allows our drivers to instantly view their schedules and communicate important details about<br /> each pick-up to our back-office. It’s helped us create a seamless scheduling process and improve customer <br />service to our accounts.</h6>
+                <h6 className='text-white text-xl py-3 leading-tight lg:px-80'>cieDispatch allows our drivers to instantly view their schedules and communicate important details about each pick-up to our back-office. It’s helped us create a seamless scheduling process and improve customer service to our accounts.</h6>
                 <h6 className='text-white text-xl '>Mel Tamsiti, Director of Sales Enablement</h6>
                 <center><img src="https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2023/02/dixie-logo-250-x-80-with-white.png.webp" alt="Norkol" className='img-fluid pt-3' /></center>
             </div>
             <Container>
                 <Row className='py-12'>
                     <Col lg={6} className='content-center'>
-                        <h6 className='lg:text-4xl md:text-3xl sm:text-2xl text-black font-bold py-4'>Takes and Uploads Photos</h6>
+                        <h6 className='text-4xl text-black font-bold py-4'>Takes and Uploads Photos</h6>
                         <div className='py-2'><h6 className='text-lg text-gray-500'>Photos are taken for each inbound trailer or outbound shipping container and are saved with a load or container number. Pictures for each load are then automatically uploaded to a cieTrade cloud where the images are automatically resized and adjusted.</h6></div>
                     </Col>
                     <Col lg={6}><img src="https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2022/08/photo-capture-570-x-570.png.webp" className='w-full' /></Col>
@@ -76,7 +76,7 @@ function Ciephoto() {
                 <Row className='py-12'>
                     <Col lg={6}><img src="https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2022/08/loads-screen-570-x-570.png.webp" className='w-full' /></Col>
                     <Col lg={6} className='content-center'>
-                        <h6 className='lg:text-4xl md:text-3xl sm:text-2xl text-black font-bold py-4'>  Attaches to Load Numbers</h6>
+                        <h6 className='text-4xl text-black font-bold py-4'>  Attaches to Load Numbers</h6>
                         <div className=' py-2'><h6 className='text-lg text-gray-500'>Photos are automatically attached to their corresponding worksheet in cieTrade by matching up the container or load number. .</h6></div>
                     </Col>
                 </Row>
@@ -84,7 +84,7 @@ function Ciephoto() {
             <Container>
                 <Row className='py-12'>
                     <Col lg={6} className='content-center'>
-                        <h6 className='lg:text-4xl md:text-3xl sm:text-2xl text-black font-bold py-4'>Emails to Customers & Suppliers</h6>
+                        <h6 className='text-4xl text-black font-bold py-4'>Emails to Customers & Suppliers</h6>
                         <div className='py-2'><h6 className='text-lg text-gray-500'>The image attachments on loads (worksheets) in cieTrade can be emailed to customers along with booking documentation or to suppliers to handle claims</h6></div>
                     </Col>
                     <Col lg={6}><img src="https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2024/11/worksheet-ciePhoto.png.webp" className='w-full' /></Col>
@@ -93,7 +93,7 @@ function Ciephoto() {
             <div className='bg-zinc-800'>
                 <Container>
                     <Row className='py-5'>
-                        <h1 className='lg:text-5xl md:text-3xl sm:text-2xl font-bold lh-base text-center text-white pb-5'>Key Features </h1>
+                        <h1 className='text-4xl font-bold leading-tight text-center text-white pb-5'>Key Features </h1>
                         <Col lg={6}>
                             <div className='flex py-3'><i class="fa-solid fa-check text-red-600 font-extrabold text-xl pe-3"></i><h6 className='text-base text-white font-semibold '> Eliminates the work involved with manually downloading, editing, and organizing photos into folders.</h6></div>
                             <div className='flex py-3'><i class="fa-solid fa-check text-red-600 font-extrabold text-xl pe-3"></i><h6 className='text-base text-white font-semibold '> Automatically attaches photos to corresponding shipments by load, container, or scale ticket number.</h6></div>
@@ -110,16 +110,15 @@ function Ciephoto() {
                 </Container>
             </div>
             <Container className='py-24'>
-                <h1 className='lg:text-4xl md:text-3xl sm:text-2xl font-bold lh-base text-center py-2'>Want to see a full list of features? </h1>
-                <h1 className='lg:text-4xl md:text-3xl sm:text-2xl font-bold lh-base text-center text-red-600 '>Download our </h1>
-                <h1 className='lg:text-4xl md:text-3xl sm:text-2xl font-bold lh-base text-center text-red-600'>ciePhoto brochure</h1>
-                <div className='py-5'> <center><a href={'/Bciephoto'} className="text-white bg-red-600 hover:bg-red-700 px-4 py-3  font-bold text-base ">Download Brochure<i class="fa-solid fa-arrow-right ps-3 pt-1"></i></a></center></div>
+                <h1 className='text-4xl font-bold leading-tight text-center py-2'>Want to see a full list of features? </h1>
+                <h1 className='text-4xl font-bold leading-tight text-center text-red-600 '>Download our ciePhoto brochure</h1>
+                <div className='py-4'> <center><a href={'/Bciephoto'} className="text-white bg-red-600 hover:bg-red-700 px-4 py-3  font-bold text-base ">Download Brochure<i class="fa-solid fa-arrow-right ps-3 pt-1"></i></a></center></div>
             </Container>
             <div className='bg-light'>
                 <div className='py-5'>
                     <Container>
                         <Row>
-                            <h1 className='lg:text-4xl md:text-3xl sm:text-2xl font-bold lh-base text-center py-4'>Additional Tools</h1>
+                            <h1 className='text-4xl font-bold leading-tight text-center py-4'>Additional Tools</h1>
                             <Col lg={6} >
                                 <img src="https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2023/02/self-service-portal.png.webp" className='w-full py-2' />
                                 <h1 className='font-bold text-red-600 text-xl pt-3'>WEB APPLICATIONS</h1>

@@ -47,20 +47,20 @@ function Ciedispatch() {
             <div className="h-full relative bg-cover bg-center " style={{ backgroundImage: `url(https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2022/12/truck-driver-with-app.png.webp)` }}>
                 <div className='absolute inset-0 bg-black opacity-50'></div>
                 <div className="text-center relative pb-32 pt-56">
-                    <h1 className="lg:text-7xl md:text-5xl sm:text-4xl text-white font-bold leading-tight">cieDispatch</h1>
-                    <h1 className="lg:text-xl text-white py-3 leading-tight">Keep your Drivers Connected to the Office</h1>
-                    <div className='my-5'>
-                        <a href={'/Bciedispatch'} className="text-white bg-red-600 hover:bg-red-700 px-4 py-3  font-bold text-base ">Download Brochure<i class="fa-solid fa-arrow-right ps-3 pt-1"></i></a>
+                    <h1 className="text-6xl text-white font-bold leading-tight">cieDispatch</h1>
+                    <h1 className="text-xl text-white py-3 leading-tight">Keep your Drivers Connected to the Office</h1>
+                    <div className='my-4'>
+                        <a href={'/Bciedispatch'} className="text-white bg-red-600 hover:bg-red-700 px-4 py-3  font-bold text-tight ">Download Brochure<i class="fa-solid fa-arrow-right ps-3 pt-1"></i></a>
                     </div>
                 </div>
             </div>
 
             <Container>
-                <Row className='g-0 p-20 lg:px-10 md:px-10 sm:px-10'>
-                    <Col lg={6}><center><img src={cietwophone} className='w-full py-5 '></img></center></Col>
+                <Row>
+                    <Col lg={6}><img src={cietwophone} className='w-full py-5'></img></Col>
                     <Col lg={6} className='py-10'>
-                        <h6 className='lg:text-5xl md:4xl sm:text-3xl font-bold py-3 lh-sm'>Help drivers track service requests, capture activity and provide instant status updates from anywhere.</h6>
-                        <div className=' py-2'><h6 className='text-xl text-gray-500 '><span className='font-bold text-red-600'>cieDispatch </span> is a free mobile app that lets your drivers retrieve a list of assigned tickets, get directions to service locations, update job status, record notes, and even capture photos. Information is instantly updated in your existing cieTrade account, saving time and making it easier to manage services while eliminating double-entry.</h6></div>
+                        <h6 className='text-4xl font-bold py-3 lh-tight'>Help drivers track service requests, capture activity and provide instant status updates from anywhere.</h6>
+                        <div className='py-2'><h6 className='text-xl text-gray-500 '><span className='font-bold text-red-600'>cieDispatch </span> is a free mobile app that lets your drivers retrieve a list of assigned tickets, get directions to service locations, update job status, record notes, and even capture photos. Information is instantly updated in your existing cieTrade account, saving time and making it easier to manage services while eliminating double-entry.</h6></div>
                         <div className='flex py-2'>
                             <a href='https://apps.apple.com/us/app/cielocation/id1314428136'> <img src={Appstore} className='w-60'></img></a>
                             <a href='https://play.google.com/store/apps/details?id=com.cietradesystems.cieLocation&hl=en_US&gl=US'><img src={Googleplay} className='w-60 '></img></a>
@@ -68,41 +68,40 @@ function Ciedispatch() {
                     </Col>
                 </Row>
             </Container>
-            <div className='bg-gray-900 text-center py-4'>
+            <div className='bg-zinc-800 text-center py-4'>
                 <i class="fa-solid fa-quote-left text-white bg-red-500 p-1 rounded-full px-2 text-2xl"></i>
-                <h6 className='text-white text-xl py-3 lh-base'>cieDispatch allows our drivers to instantly view their schedules and communicate important details about<br /> each pick-up to our back-office. It’s helped us create a seamless scheduling process and improve customer <br />service to our accounts.                </h6>
+                <h6 className='text-white text-xl py-3 lh-tight lg:px-80'>cieDispatch allows our drivers to instantly view their schedules and communicate important details about  each pick-up to our back-office. It’s helped us create a seamless scheduling process and improve customer  service to our accounts.                </h6>
                 <h6 className='text-white text-xl '>Mel Tamsiti, Director of Sales Enablement</h6>
                 <center><img src={Canusage} alt="Norkol" className='img-fluid pt-2' /></center>
             </div>
             <Container>
-                <Row className=' p-20 '>
+                <Row className='py-12'>
                     <Col lg={6} className='content-center'>
-                        <h6 className='lg:text-5xl md:4xl sm:text-3xl font-bold py-3 lh-sm'>Keep Drivers Organized</h6>
+                        <h6 className='text-4xl font-bold py-3 lh-sm'>Keep Drivers Organized</h6>
                         <div className=' py-2'><h6 className='text-xl text-gray-500 '>Eliminates paper dispatch sheets, allowing your drivers to instantly access all of their assigned service calls, see site instructions, and get turn-by-turn directions right from their own mobile device.</h6></div>
                     </Col>
-                    <Col lg={6}><center><img src={Driver} className='w-full'></img></center></Col>
+                    <Col lg={6}><img src={Driver} className='w-full'></img></Col>
                 </Row>
             </Container>
-
-            <div className='p-20 bg-light '>
-                <Row>
-                    <Col lg={6}><center><img src={Capture} className='w-4/5'></img></center></Col>
+            <div className='py-12 bg-light'>
+                <Row className='g-0'>
+                    <Col lg={6}><img src={Capture} className='w-full'></img></Col>
                     <Col lg={6} className='content-center'>
-                        <h6 className='lg:text-5xl md:4xl sm:text-3xl font-bold py-3 lh-sm'>Capture Photos & Notes</h6>
-                        <div className=' py-2'><h6 className='text-xl text-gray-500 '>Lets your drivers easily capture equipment or site photos, signatures, or write comments and explanations of failed services while on location, making it easier for dispatchers to manage and track activity.</h6></div>
+                        <h6 className='text-4xl font-bold py-3 lh-sm'>Capture Photos & Notes</h6>
+                        <div className='py-2'><h6 className='text-xl text-gray-500 '>Lets your drivers easily capture equipment or site photos, signatures, or write comments and explanations of failed services while on location, making it easier for dispatchers to manage and track activity.</h6></div>
                     </Col>
                 </Row>
             </div>
             <Container>
                 <div className='py-24 text-center'>
-                    <h6 className='lg:text-5xl md:4xl sm:text-3xl font-bold py-3 lh-sm'>Obtain Instant Updates</h6>
-                    <h6 className='text-xl text-gray-500 text-center'>Connectivity with your cieTrade account means that each ticket status is updated<br /> in real-time and drivers notes or photos are instantly updated with each dispatch <br />ticket, eliminating manual updates and double-entry of data.</h6>
+                    <h6 className='text-4xl font-bold py-3 lh-sm'>Obtain Instant Updates</h6>
+                    <h6 className='text-xl text-gray-500 text-center lg:px-60'>Connectivity with your cieTrade account means that each ticket status is updated  in real-time and drivers notes or photos are instantly updated with each dispatch  ticket, eliminating manual updates and double-entry of data.</h6>
                 </div>
             </Container>
             <div className='bg-zinc-800'>
                 <Container>
                     <Row className='py-5'>
-                        <h1 className='lg:text-5xl md:text-3xl sm:text-2xl font-bold lh-base text-center text-white py-4'>Key Features </h1>
+                        <h1 className='text-4xl font-bold lh-tight text-center text-white py-4'>Key Features </h1>
                         <Col lg={6}>
                             <div className='flex py-3'><i class="fa-solid fa-check text-red-600 font-extrabold text-2xl pe-3"></i><h6 className='text-lg text-white font-semibold '>Eliminates paper dispatch sheets, manual updates, and double-entry.</h6></div>
                             <div className='flex py-3'><i class="fa-solid fa-check text-red-600 font-extrabold text-2xl pe-3"></i><h6 className='text-lg text-white font-semibold '> Allows drivers to retrieve a list of assigned tickets for both multi-stop routes, bale-routes & “out/back” runs.</h6></div>
@@ -122,10 +121,9 @@ function Ciedispatch() {
             </div>
 
             <Container className='py-24'>
-                <h1 className='lg:text-4xl md:text-3xl sm:text-2xl font-bold lh-base text-center py-2'>Want to see a full list of features? </h1>
-                <h1 className='lg:text-4xl md:text-3xl sm:text-2xl font-bold lh-base text-center text-red-600 '>Download our </h1>
-                <h1 className='lg:text-4xl md:text-3xl sm:text-2xl font-bold lh-base text-center text-red-600'>cieDispatch brochure</h1>
-                <div className='py-5'> <center><a href={'/Bciedispatch'} className="text-white bg-red-600 hover:bg-red-700 px-4 py-3  font-bold text-base ">Download Brochure<i class="fa-solid fa-arrow-right ps-3 pt-1"></i></a></center></div>
+                <h1 className='text-4xl font-bold lh-tight text-center py-2'>Want to see a full list of features? </h1>
+                <h1 className='text-4xl font-bold lh-tight text-center text-red-600'>Download our cieDispatch brochure</h1>
+                <div className='py-4'><center><a href={'/Bciedispatch'} className="text-white bg-red-600 hover:bg-red-700 px-4 py-3  font-bold text-tight ">Download Brochure<i class="fa-solid fa-arrow-right ps-3 pt-1"></i></a></center></div>
             </Container>
 
             <div className='bg-light py-5'>

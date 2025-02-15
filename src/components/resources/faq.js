@@ -62,8 +62,8 @@ function Faqs() {
             <div className="h-full relative bg-cover" style={{ backgroundImage: `url(https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2023/02/2023-02-14_17h47_28.png.webp)` }}>
                 <div className='absolute inset-0 bg-black opacity-50'></div>
                 <div className="text-center relative pb-40 pt-56">
-                    <h1 className="lg:text-7xl md:text-5xl sm:text-4xl text-white font-bold leading-tight">Frequently Asked Questions</h1>
-                    <h1 className="lg:text-xl text-white py-3 leading-tight">Find answers to some common questions about cieTrade</h1>
+                    <h1 className="text-6xl text-white font-bold leading-tight">Frequently Asked Questions</h1>
+                    <h1 className="text-xl text-white py-3 leading-tight">Find answers to some common questions about cieTrade</h1>
                 </div>
 
             </div>

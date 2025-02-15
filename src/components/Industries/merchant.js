@@ -51,18 +51,18 @@ function Merchant() {
             <div>
                 <div className="relative bg-cover h-full" style={{ backgroundImage: `url('https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2022/08/shutterstock_2007074588-scaled.jpg.webp')` }}>
                     <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-                    <div className="relative ps-32 py-40">
-                        <h1 className="lg:text-7xl py-4 md:text-5xl sm:text-4xl text-white font-bold lh-xs">Paper Merchant and <br />Converting Software</h1>
+                    <Container className="relative py-40">
+                        <h1 className="text-6xl text-white font-bold lh-xs">Paper Merchant and <br />Converting Software</h1>
                         <a href={'/Bmerchant'}><button className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 mt-4 leading-tight">Download Brochure <i class="fa-solid fa-arrow-right ps-2"></i></button></a>
-                    </div>
+                    </Container>
                 </div>
-                <img src="https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2023/02/paper-merchants-client-logos-2.png.webp" className='w-100 img-fluid px-20 py-4 bg-light' />
+                <img src="https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2023/02/paper-merchants-client-logos-2.png.webp" className='w-full py-4 bg-light' />
             </div>
 
             <div className='py-5'>
                 <Container>
                     <Row>
-                        <h1 className='lg:text-4xl md:text-4xl sm:text-4xl text-center font-bold py-4'>Benefits of cieTrade's Paper Merchant and Converting Software</h1>
+                        <h1 className='text-4xl text-center font-bold py-4'>Benefits of cieTrade's Paper Merchant and Converting Software</h1>
                         {data.forms.map((item, index) => (
                             <Col lg={4} md={6} sm={12} key={index} className='text-center'>
                                 <div className='p-5 mt-5 hover:shadow-2xl bg-white'>
@@ -77,15 +77,15 @@ function Merchant() {
             </div>
 
             <div className='bg-zinc-800 text-center py-5'>
-                <i class="fa-solid fa-quote-left text-white bg-red-600 p-1 rounded-full px-2 text-2xl"></i>
-                <h6 className='text-white text-xl py-3 lh-base'>Having worked with cieTrade at two different companies over many years, their solution has proved critical <br />to supporting diverse needs and changing requirements in the paper industry. It has allowed us to gain <br />visibility into inventory costs and sales to improve decision making while their integrated mobile apps <br />have streamlined our warehouse operations and reduced errors. Their support team has been extremely <br />responsive in handling issues and requests and providing the technical expertise needed to deliver custom <br />integration solutions.</h6>
+                 <i class="fa-solid fa-quote-left text-white bg-red-600 p-1 rounded-full px-2 text-2xl"></i>
+                <h6 className='text-white text-xl py-3 lh-base lg:px-80'>Having worked with cieTrade at two different companies over many years, their solution has proved critical to supporting diverse needs and changing requirements in the paper industry. It has allowed us to gain visibility into inventory costs and sales to improve decision making while their integrated mobile apps have streamlined our warehouse operations and reduced errors. Their support team has been extremely responsive in handling issues and requests and providing the technical expertise needed to deliver custom integration solutions.</h6>
                 <h6 className='text-white text-xl '>Al Gerrard, Director of Operations</h6>
                 <center><img src={norkol} alt="group" className='h-10/12 img-fluid pt-4' /></center>
             </div>
 
             <Container>
                 <Row>
-                    <h1 className='lg:text-4xl md:text-4xl sm:text-4xl text-center font-bold py-20'>Key Features of cieTrade's Paper Merchant and Converting Software</h1>
+                    <h1 className='text-4xl text-center font-bold py-20'>Key Features of cieTrade's Paper Merchant and Converting Software</h1>
                     <Col lg={6} md={6} sm={12} className='py-5'>
                         <h1 className='font-bold text-2xl'>Pricing & Orders</h1>
                         <ul className='py-3 px-4'>
@@ -151,8 +151,8 @@ function Merchant() {
             </Container>
 
             <div className='text-center py-32'>
-                <h1 className='lg:text-4xl md:text-3xl sm:text-3xl font-bold'>Want to see a full list of features?</h1>
-                <h1 className='lg:text-4xl md:text-3xl sm:text-3xl font-bold text-red-600 py-3'>Download our paper merchant and<br />converting software brochure</h1>
+                <h1 className='text-4xl font-bold'>Want to see a full list of features?</h1>
+                <h1 className='text-4xl font-bold text-red-600 py-3'>Download our paper merchant andconverting software brochure</h1>
                 <a href={'/Bmerchant'}><button className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 mt-4 leading-tight">Download Brochure <i class="fa-solid fa-arrow-right ps-2"></i></button></a>
             </div>
 

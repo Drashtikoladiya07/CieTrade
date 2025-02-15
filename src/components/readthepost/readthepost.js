@@ -65,7 +65,7 @@ function Readthepost() {
         <button
           onClick={() => changePage(-1)}
           disabled={currentPage === 0}
-          className={`mx-5 mb-3 text-red-600 transition-opacity duration-300 ${currentPage === 0 ? 'opacity-0 pointer-events-none' : 'opacity-100'
+          className={`mx-3 mb-3 text-red-600 transition-opacity duration-300 ${currentPage === 0 ? 'opacity-0 pointer-events-none' : 'opacity-100'
             }`}
         >
           <i className="fa-solid fa-arrow-left text-sm px-2"></i> Previous Post
@@ -73,7 +73,7 @@ function Readthepost() {
         <button
           onClick={() => changePage(1)}
           disabled={currentPage === PageList.length - 1}
-          className={`mx-5 mb-3 text-red-600 transition-opacity duration-300 ${currentPage === PageList.length - 1 ? 'opacity-0 pointer-events-none' : 'opacity-100'
+          className={`mx-3 mb-3 text-red-600 transition-opacity duration-300 ${currentPage === PageList.length - 1 ? 'opacity-0 pointer-events-none' : 'opacity-100'
             }`}
         >
           Next Post <i className="fa-solid fa-arrow-right text-sm px-2"></i>

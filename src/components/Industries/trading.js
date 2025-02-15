@@ -51,18 +51,18 @@ function Trading() {
             <div>
                 <div className="relative bg-cover bg-center h-full" style={{ backgroundImage: `url('https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2022/08/dreamstime_m_3522260-1.jpg.webp')` }}>
                     <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-                    <div className="relative ps-32 py-40">
-                        <h1 className="lg:text-7xl py-4 md:text-5xl sm:text-4xl text-white font-bold lh-xs">Pulp and Paper Trading<br />Software</h1>
+                    <Container className="relative py-40">
+                        <h1 className="text-6xl text-white font-bold lh-xs">Pulp and Paper Trading <br />Software</h1>
                         <a href={'/Btrading'}><button className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 mt-4 leading-tight">Download Brochure <i class="fa-solid fa-arrow-right ps-2"></i></button></a>
-                    </div>
+                    </Container>
                 </div>
-                <img src="https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2023/02/pulp-paper-client-logos-1.png.webp" className='w-100 img-fluid px-20 py-4 bg-light' />
+                <img src="https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2023/02/pulp-paper-client-logos-1.png.webp" className='w-full py-4 bg-light' />
             </div>
 
             <div className='py-5'>
                 <Container>
                     <Row>
-                        <h1 className='lg:text-4xl md:text-4xl sm:text-4xl text-center font-bold py-4'>Benefits of cieTrade's Pulp and Paper Trading Software</h1>
+                        <h1 className='text-4xl text-center font-bold py-4'>Benefits of cieTrade's Pulp and Paper Trading Software</h1>
                         {data.forms.map((item, index) => (
                             <Col lg={4} md={6} sm={12} key={index} className='text-center'>
                                 <div className='p-5 mt-5 hover:shadow-2xl bg-white'>
@@ -77,15 +77,15 @@ function Trading() {
             </div>
 
             <div className='bg-zinc-800 text-center py-5'>
-                <i class="fa-solid fa-quote-left text-white bg-red-600 p-1 rounded-full px-2 text-2xl"></i>
-                <h6 className='text-white text-xl py-3 lh-base'>cieTrade’s intuitive and user friendly platform has made it easier to quickly capture critical information <br />such as documents, emails and photos about each order while their custom integration solutions have <br />streamlined the pickup to delivery lifecycle of each load. Their specialized reports and inquiries have made <br />it easier to view and analyze business trends and their workflow tools have improved overall <br />communication across different departments, elevating service to our customers and suppliers.</h6>
+                   <i class="fa-solid fa-quote-left text-white bg-red-600 p-1 rounded-full px-2 text-2xl"></i>
+                <h6 className='text-white text-xl py-3 lh-base lg:px-80'>cieTrade’s intuitive and user friendly platform has made it easier to quickly capture critical information such as documents, emails and photos about each order while their custom integration solutions have streamlined the pickup to delivery lifecycle of each load. Their specialized reports and inquiries have made it easier to view and analyze business trends and their workflow tools have improved overall communication across different departments, elevating service to our customers and suppliers.</h6>
                 <h6 className='text-white text-xl '>Kathy Hall, VP, Roll Stock Recycled Paperboard & Customer Service</h6>
                 <center><img src={dixie} alt="group" className='h-10/12 img-fluid pt-4' /></center>
             </div>
 
             <Container>
                 <Row>
-                    <h1 className='lg:text-4xl md:text-4xl sm:text-4xl text-center font-bold py-20'>Key Features of cieTrade's Pulp and Paper Trading Software
+                    <h1 className='text-4xl text-center font-bold py-20'>Key Features of cieTrade's Pulp and Paper Trading Software
                     </h1>
                     <Col lg={6} md={6} sm={12} className='py-5'>
                         <h1 className='font-bold text-2xl'>Pricing & Orders</h1>
@@ -151,8 +151,8 @@ function Trading() {
             </Container>
 
             <div className='text-center py-32'>
-                <h1 className='lg:text-4xl md:text-3xl sm:text-3xl font-bold'>Want to see a full list of features?</h1>
-                <h1 className='lg:text-4xl md:text-3xl sm:text-3xl font-bold text-red-600 py-3'>Download our pulp & paper <br />trading software brochure</h1>
+                <h1 className='text-4xl font-bold'>Want to see a full list of features?</h1>
+                <h1 className='text-4xl font-bold text-red-600 py-3'>Download our pulp & paper trading software brochure</h1>
                 <a href={'/Btrading'}><button className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 mt-4 leading-tight">Download Brochure <i class="fa-solid fa-arrow-right ps-2"></i></button></a>
             </div>
 

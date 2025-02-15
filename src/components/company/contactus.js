@@ -45,8 +45,8 @@ function Contact() {
         <div className='bg-light'>
             <div className="relative bg-cover bg-center h-full" style={{ backgroundImage: `url('https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2022/07/2J3A8907-scaled.jpg.webp')` }}>
                 <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-                <div className="relative pt-56 pb-44">
-                    <h1 className="lg:text-7xl py-4 md:text-5xl sm:text-4xl text-white text-center font-bold lh-xs">Contact Us</h1>
+                <div className="relative pt-60 pb-44">
+                    <h1 className="text-6xl text-white text-center font-bold lh-xs">Contact Us</h1>
                 </div>
             </div>
             <Container>
@@ -97,7 +97,7 @@ function Contact() {
                             </form>
                         </div>
                     </Col>
-                    <Col lg={4} md={4} sm={12} className='ps-5 pt-5'>
+                    <Col lg={4} md={4} sm={12} className='lg:ps-5 pt-5'>
                         <h1 className='text-3xl font-bold'>Address</h1>
                         <p className='text-lg py-4 text-gray-500'>15 N. Water St.<br />Norwalk, CT 06854<br />USA</p>
                         <h1 className='text-3xl font-bold'>Phone</h1>

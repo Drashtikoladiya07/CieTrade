@@ -29,17 +29,17 @@ function Ourpartners() {
     };
     return (
         <div>
-            <div className="h-full relative bg-cover bg-center  " style={{ backgroundImage: `url(https://images.unsplash.com/photo-1522202176988-66273c2fd55f)` }}>
+            <div className="h-full relative bg-cover bg-center" style={{ backgroundImage: `url(https://images.unsplash.com/photo-1522202176988-66273c2fd55f)` }}>
                 <div className='absolute inset-0 bg-black opacity-50'></div>
-                <div className="text-center relative  py-40  ">
-                    <h1 className="lg:text-7xl md:text-5xl sm:text-4xl text-white font-bold leading-tight">Our Partners</h1>
-                    <h1 className="lg:text-xl text-white py-3 leading-tight">Customer service is at the core of what we do and our partner relationships help us<br /> provide important capabilities that are key to delivering complete solutions for our clients.<br /> With this in mind, we have chosen selected associates that share our focus on customer <br />success and that have a demonstrated track record for delivering consistent results.</h1>
+                <div className="text-center relative pb-40 pt-52 lg:px-60">
+                    <h1 className="text-6xl text-white font-bold leading-tight">Our Partners</h1>
+                    <h1 className="text-xl text-white py-3 leading-tight">Customer service is at the core of what we do and our partner relationships help us provide important capabilities that are key to delivering complete solutions for our clients. With this in mind, we have chosen selected associates that share our focus on customer success and that have a demonstrated track record for delivering consistent results.</h1>
                 </div>
             </div>
 
             <div className='bg-light'>
-                <Container className=''>
-                    <Row className='py-5'>
+                <Container>
+                    <Row className='py-4'>
                         {data.Logo.map((item, index) => (
                             <Col lg={4} key={index} className='py-5' >
                                 <center><a><img src={item.img} className='w-full h-48'></img></a></center>

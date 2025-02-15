@@ -68,7 +68,6 @@ function Terms() {
                 <h6 className='text-gray-500 text-lg py-2'>4. You may not modify, adapt or hack the Service or modify another website so as to falsely imply that it is associated with the cieTrade.Net Service, cieTrade Systems Inc., or any other cieTrade Systems Inc. service.</h6>
                 <h6 className='text-gray-500 text-lg py-2'>5. You shall grant us a royalty-free, worldwide, transferable, sub-licensable, irrevocable and perpetual license to incorporate into the service or otherwise use any suggestions, enhancement requests, recommendations or other feedback that we receive from you or your agents.</h6>
             </Container>
-
         </div>
     );
 };

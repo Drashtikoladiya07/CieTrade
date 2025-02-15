@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 function FooterP() {
     return (
         <div className='bg-light'>
-            <Container>
+            {/* <Container>
                 <Row className='relative top-60'>
                     <Col lg={12} className=''>
                         <div className="flex flex-col items-center  p-5">
@@ -26,17 +26,20 @@ function FooterP() {
                         </div>
                     </Col>
                 </Row>
-            </Container >
-
+            </Container > */}
             <div className='bg-zinc-900 border-t-8 border-red-600'>
                 <Container>
-                    <Row className='m-0 pt-60 pb-24'>
+                    {/* <Row className='m-0 pt-60 pb-24'> */}
+                    <Row className='m-0 pt-40 pb-24'>
                         <Col lg={2} md={12} className='py-3'>
                             <a href={"/"}><img src="https://www.cietrade.com/wp-content/uploads/2022/12/cietrade_logo.svg" ></img></a>
                         </Col>
                         <Col lg={3} md={12} className='list-none py-3'>
                             <h6 className='text-white font-semibold text-xl'>Solutions</h6>
+                            <a href={'/Management'}><li className='text-neutral-500 text-lg leading-8 hover:text-red-600'>Dispatch Management</li></a>
                             <a href={'/InventoryManagement'}><li className='text-neutral-500 text-lg leading-8 hover:text-red-600'>Inventory Management</li></a>
+                            <a href={'/Booking'}><li className='text-neutral-500 text-lg leading-8 hover:text-red-600'>Booking and Container Management</li></a>
+                            <a href={'/Document'}><li className='text-neutral-500 text-lg leading-8 hover:text-red-600'>Document Management</li></a>
                             <a href={'/SelfServices'}><li className='text-neutral-500 text-lg leading-8 hover:text-red-600'>Self-Service Portal</li></a>
                             <a href={'/Mobileapps'}><li className='text-neutral-500 text-lg leading-8 hover:text-red-600'>Mobile Apps</li></a>
                             <a href={'/Accounting'}><li className='text-neutral-500 text-lg leading-8 hover:text-red-600'>Accounting Integration</li></a>
@@ -70,7 +73,6 @@ function FooterP() {
                             <a href={'/SupportLogin'}><li className='text-neutral-500 text-lg leading-8 hover:text-red-600'>cietrade.freshdesk.com</li></a>
                             <a href={'/Trainning'}><li className='text-neutral-500 text-lg leading-8 hover:text-red-600'>Training and Support</li></a>
                             <a href={'/Faqs'}><li className='text-neutral-500 text-lg leading-8 hover:text-red-600'>FAQ</li></a>
-                            <a href={'/'}><li className='text-neutral-500 text-lg leading-8 hover:text-red-600'>Sitemap</li></a>
                             <a href="https://www.linkedin.com/company/cietrade-systems-inc-/"><i class="fa-brands fa-linkedin text-2xl pt-2 pe-3 hover:text-cyan-600"></i></a>
                             <a href="https://www.youtube.com/user/cieTrade"><i class="fa-brands fa-youtube text-2xl pt-2 hover:text-red-600"></i></a>
                         </Col>

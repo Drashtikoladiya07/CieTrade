@@ -2,8 +2,10 @@ import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
 const Navbar = () => {
-  const [hoveredIndex, setHoveredIndex] = useState(null);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(null);
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+
   const navData = [
     {
       name: "Features",
@@ -53,8 +55,8 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className={`absolute nav-fluid top-0 left-0 right-0 z-10 text-white ${menuOpen ? "bg-dark" : "bg-transparent"}`}>
-      <Container className="py-3 border-b">
+    <nav className={`absolute nav-fluid top-0 left-0 right-0 z-10 text-white ${menuOpen ? "bg-black" : "bg-transparent"}`}>
+      <Container className="py-3 border-b fluid">
         <Row className="align-items-center justify-content-between">
           <Col lg={3} className="d-flex align-items-center">
             <a href="/">
@@ -64,32 +66,24 @@ const Navbar = () => {
                 width={150}
               />
             </a>
-            <button
-              className="text-white border-0 bg-transparent d-lg-none ms-auto"
-              style={{ lineHeight: 1 }}
-              onClick={() => setMenuOpen(!menuOpen)}
-            >
-              <i className={`fa-solid ${menuOpen ? "fa-times" : "fa-bars"} text-xl`}></i>
+            <button onClick={() => setMenuOpen(!menuOpen)} className="text-white text-2xl border-0 p-2 rounded d-lg-none ms-auto">
+              <i className={`fa-solid ${menuOpen ? "fa-times" : "fa-bars"}`}></i>
             </button>
           </Col>
-          <Col lg={9} className={`d-lg-flex ${menuOpen ? "d-block" : "d-none"} text-white font-bold mt-3 mt-lg-0`}>
+          <Col lg={9} className="d-none d-lg-flex justify-content-center px-4">
             {navData.map((item, index) => (
               <div
                 key={index}
-                className="position-relative px-3 py-2"
+                className="relative px-3 py-2"
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
               >
-                <button className="hover:text-red-600 font-bold py-2 d-flex align-items-center w-100">
+                <button className="hover:text-red-600 font-bold py-2 d-flex align-items-center">
                   {item.name}
                   <i className="fa-solid fa-angle-down ps-2 pt-1 text-xs"></i>
                 </button>
                 {hoveredIndex === index && (
-                  <div
-                    className="position-absolute w-60 bg-white rounded shadow-lg"
-                    onMouseEnter={() => setHoveredIndex(index)}
-                    onMouseLeave={() => setHoveredIndex(null)}
-                  >
+                  <div className="absolute w-60 bg-white rounded shadow-lg">
                     <ul className="py-2 bg-red-600 text-white font-semibold list-unstyled m-0">
                       {item.options.map((option, i) => (
                         <li key={i} className="relative group">
@@ -107,19 +101,42 @@ const Navbar = () => {
               </div>
             ))}
             <div className="d-flex flex-column flex-lg-row">
-              <a
-                href="/Requestdemo"
-                className="hover:text-red-600 bg-red-600 hover:bg-white px-3 mt-2 d-flex align-items-center"
-              >
-                Request Demo <i className="fa-solid fa-arrow-right ps-3 pt-1"></i>
-              </a>
-              <a href="/login" className="hover:text-red-600 ps-3 pt-3 mt-2 mt-lg-0">
-                Login to cieTrade.net
-              </a>
+              <a href="/Requestdemo" className="hover:text-red-600 bg-red-600 hover:bg-white px-3 my-2 font-bold d-flex align-items-center"> Request Demo <i className="fa-solid fa-arrow-right ps-2 pt-1"></i></a>
+              <a href="/login" className="hover:text-red-600 ps-3 pt-3 mt-2 mt-lg-0 font-bold">Login to cieTrade.net</a>
             </div>
           </Col>
         </Row>
       </Container>
+      {menuOpen && (
+        <div className="bg-black w-full text-white py-4 px-6 d-lg-none">
+          {navData.map((item, index) => (
+            <div key={index}>
+              <button
+                className="w-full text-left py-2 text-lg font-bold flex justify-between items-center"
+                onClick={() => setDropdownOpen(dropdownOpen === index ? null : index)}
+              >
+                {item.name}
+                <i className={`fa-solid fa-angle-down transition-transform ${dropdownOpen === index ? "rotate-180" : ""}`}></i>
+              </button>
+              {dropdownOpen === index && (
+                <ul className="bg-black text-white ps-3 py-2">
+                  {item.options.map((option, i) => (
+                    <li key={i} className="py-1">
+                      <a href={option.id} className="block hover:text-gray-400">
+                        {option.title}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          ))}
+          <div className="d-flex flex-column flex-lg-row">
+            <a href="/Requestdemo" className="hover:text-red-600 bg-red-600 hover:bg-white w-fit px-3 py-2 mt-2 d-flex align-items-center"> Request Demo <i className="fa-solid fa-arrow-right ps-2 pt-1"></i></a>
+            <a href="/login" className="hover:text-red-600 ps-2 pt-3 mt-2 mt-lg-0">Login to cieTrade.net</a>
+          </div>
+        </div>
+      )}
     </nav>
   );
 };

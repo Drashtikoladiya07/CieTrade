@@ -70,17 +70,17 @@ function Home() {
     const [selectedItem, setSelectedItem] = useState(items[0]);
     return (
         <div>
-            <div className="relative bg-cover h-screen" style={{ backgroundImage: `url('https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2023/02/paper-warehouse-background.png.webp')` }}>
+            <div className="relative bg-cover bg-center w-full" style={{ backgroundImage: `url('https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2023/02/paper-warehouse-background.png.webp')` }}>
                 <div className="text-center pt-40 pb-20">
-                    <h1 className="lg:text-6xl md:text-5xl sm:text-4xl text-white font-bold leading-tight">Recycling Software to <br />Manage and Grow Your Business</h1>
+                    <h1 className="text-5xl text-white font-bold leading-tight">Recycling Software to <br />Manage and Grow Your Business</h1>
                 </div>
-                <img src={laptop} className='absolute' />
+                <img src={laptop} className='' />
             </div>
 
             <div className='bg-light'>
                 <Container>
-                    <h1 className='text-center pt-56 text-4xl font-bold'>Industries We Serve</h1>
-                    <Row className="g-0 p-5">
+                    <h1 className='text-center pt-20 text-4xl font-bold'>Industries We Serve</h1>
+                    <Row className="g-0 p-4 py-5">
                         {data.industries.map((item, index) => (
                             <Col lg={4} key={index} className="text-center">
                                 <a href={item.id} className="text-center">
@@ -108,16 +108,18 @@ function Home() {
             <Slider {...settings}>
                 {data.slider.map((item, index) => (
                     <Col lg={12} md={12} sm={12} key={index}>
-                        <div className="bg-cover h-screen w-auto relative" style={{ backgroundImage: `url('${item.i1}')` }}>
-                            <div className="absolute inset-0 bg-black bg-opacity-50">
-                                <Row className='p-28'>
-                                    <Col lg={7} md={7} sm={7}>
-                                        <img src={item.i2} alt="logo" className='w-96' />
-                                        <p className='py-5 text-3xl text-white'>{item.p}</p>
-                                        <a href={'/'}><button className='bg-red-600 px-4 mt-2 py-3 mx-2 text-white font-bold'>Read the Case Study <i class="fa-solid fa-arrow-right ps-3 pt-1"></i></button></a>
-                                        <a href={'/'}><button className='bg-white px-4 py-3 mx-2 text-black font-bold'>See More Success Stories <i class="fa-solid fa-arrow-right ps-3 pt-1"></i></button></a>
-                                    </Col>
-                                </Row>
+                        <div className="bg-cover w-full relative" style={{ backgroundImage: `url('${item.i1}')` }}>
+                            <div className="pt-20 pb-96 inset-0 bg-black bg-opacity-50">
+                                <Container>
+                                    <Row className='absolute'>
+                                        <Col lg={8} md={12} sm={12}>
+                                            <img src={item.i2} alt="logo" className='w-80' />
+                                            <p className='py-4 lg:text-2xl md:text-xl sm:text-xl text-white'>{item.p}</p>
+                                            <a href={'/'}><button className='bg-red-600 p-2 mx-2 mt-2 text-white font-bold'>Read the Case Study <i class="fa-solid fa-arrow-right ps-2 pt-1"></i></button></a>
+                                            <a href={'/'}><button className='bg-white p-2 mx-2 mt-2 text-black font-bold'>See More Success Stories <i class="fa-solid fa-arrow-right ps-2 pt-1"></i></button></a>
+                                        </Col>
+                                    </Row>
+                                </Container>
                             </div>
                         </div>
                     </Col>
@@ -131,7 +133,7 @@ function Home() {
                     </Col>
                     <Col lg={6} md={12} sm={12} className='pt-4'>
                         <h1 className='text-xl text-uppercase text-red-600 font-bold'>Self-Service Portal</h1>
-                        <h1 className='text-3xl font-bold pe-20 py-3'>Advance customer service, minimize office requests, and reduce operating costs.</h1>
+                        <h1 className='text-3xl font-bold py-3'>Advance customer service, minimize office requests, and reduce operating costs.</h1>
                         <p className='pb-2 text-gray-500 text-lg'>cieTrade’s self-service portal gives customers and supply chain partners 24/7 on-demand access and visibility to recovered material, pricing, shipments, payments, documents and much more.</p>
                         <a href={'/SelfServices'}><button className='bg-red-600 hover:bg-red-700 px-4 mt-2 py-3 text-white font-bold'>See Features <i class="fa-solid fa-arrow-right ps-3 pt-1"></i></button></a>
                     </Col>
@@ -140,10 +142,10 @@ function Home() {
 
             <div className='bg-light'>
                 <Container>
-                    <Row className='py-20 px-5 bg-gray-50'>
+                    <Row className='py-20 bg-gray-50'>
                         <Col lg={7} md={12} sm={12}>
                             <h1 className='text-xl text-uppercase text-red-600 font-bold'>Mobile Apps</h1>
-                            <h1 className='text-3xl font-bold pe-40 py-3'>Our mobile apps save time and keep your team connected.</h1>
+                            <h1 className='text-3xl font-bold py-3'>Our mobile apps save time and keep your team connected.</h1>
                             {data.mobile.map((item, index) => (
                                 <div key={index}>
                                     <a href={item.id}><h1 className='text-lg font-bold text-red-600'>{item.name}</h1></a>
@@ -174,7 +176,7 @@ function Home() {
                         </div>
                     </Col>
                     <Col lg={4} md={12} sm={12} className='pb-5'>
-                        <div className="w-96 h-fit pb-5 bg-white shadow-lg rounded-lg">
+                        <div className="w-full h-fit pb-5 bg-white shadow-lg rounded-lg">
                             <img src={selectedItem.img} className='img-fluid' />
                             <h2 className="text-2xl font-semibold pe-20 ps-4 pb-3">{selectedItem.title}</h2>
                             <p className="text-gray-500 text-lg pe-3 ps-4">{selectedItem.description}</p>
@@ -185,8 +187,8 @@ function Home() {
 
             <div className='bg-light'>
                 <Container>
-                    <h1 className='text-4xl text-center py-4 font-bold '>Latest News & Events</h1>
-                    <Row className='px-4'>
+                    <h1 className='text-4xl text-center py-5 font-bold '>Latest News & Events</h1>
+                    <Row className=''>
                         {data.Events.map((item, index) => (
                             <Col lg={4} md={12} sm={12}>
                                 <div key={index} className='pb-4'>
@@ -195,7 +197,7 @@ function Home() {
                                         <a href={item.id}><h1 className='text-uppercase text-red-600 text-xs font-bold pe-14 pt-3'>{item.head}</h1></a>
                                         <a href={'/Readthepost'}><h1 className='text-2xl font-bold py-2'>{item.title}</h1></a>
                                         <p className='text-gray-500 text-xs'>{item.p1}</p>
-                                        <p className='text-gray-500 text-lg py-4'>{item.p2}</p>
+                                        <p className='text-gray-500 text-lg py-3'>{item.p2}</p>
                                         <a href={'/Readthepost'}><button className='text-red-600 hover:text-red-700 font-bold'>Read the Post <i class="fa-solid fa-arrow-right ms-2 px-2 p-1 text-xs bg-red-600 text-white rounded-full"></i></button></a>
                                     </div>
                                 </div>

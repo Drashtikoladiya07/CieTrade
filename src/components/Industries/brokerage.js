@@ -52,18 +52,18 @@ function Brokerage() {
             <div>
                 <div className="relative bg-cover h-full" style={{ backgroundImage: `url('https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2022/09/Waste-Dumpsters.png.webp')` }}>
                     <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-                    <div className="relative ps-32 py-40">
-                        <h1 className="lg:text-7xl py-4 md:text-5xl sm:text-4xl text-white font-bold lh-xs">Waste Brokerage <br /> Software</h1>
+                    <Container className="relative py-40">
+                        <h1 className="text-6xl py-4 text-white font-bold lh-xs">Waste Brokerage  <br/>Software</h1>
                         <a href={'/Bbrokrage'}><button className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 mt-4 leading-tight">Download Brochure <i class="fa-solid fa-arrow-right ps-2"></i></button></a>
-                    </div>
+                    </Container>
                 </div>
-                <img src="https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2023/02/waste-brokerage-client-logos.png.webp" className='w-100 img-fluid px-20 py-4 bg-light' />
+                <img src="https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2023/02/waste-brokerage-client-logos.png.webp" className='w-full py-4 bg-light' />
             </div>
 
             <div className='py-5'>
                 <Container>
                     <Row>
-                        <h1 className='lg:text-4xl md:text-4xl sm:text-4xl text-center font-bold py-4'>Benefits of cieTrade's Waste Brokerage Software</h1>
+                        <h1 className='text-4xl text-center font-bold py-4'>Benefits of cieTrade's Waste Brokerage Software</h1>
                         {data.forms.map((item, index) => (
                             <Col lg={4} md={6} sm={12} key={index} className='text-center'>
                                 <div className='p-5 mt-5 hover:shadow-2xl bg-white'>
@@ -77,16 +77,16 @@ function Brokerage() {
                 </Container>
             </div>
 
-            <div className='bg-zinc-800 text-center py-5'>
+            <div className='bg-zinc-800 text-center py-5 lg:px-60'>
                 <i class="fa-solid fa-quote-left text-white bg-red-600 p-1 rounded-full px-2 text-2xl"></i>
-                <h6 className='text-white text-xl py-3 lh-base'>cieTrade’s powerful platform organizes our operation and helps us provide better data for our customers. <br />The team behind their software is the best in this space. The constant state of innovation and <br />collaboration is what keeps our company engaged in a long-term partnership with cieTrade.</h6>
+                <h6 className='text-white text-xl py-3 lh-base lg:px-80'>cieTrade’s powerful platform organizes our operation and helps us provide better data for our customers. The team behind their software is the best in this space. The constant state of innovation and collaboration is what keeps our company engaged in a long-term partnership with cieTrade.</h6>
                 <h6 className='text-white text-xl '>Stacey Harralson, President</h6>
                 <center><img src={wasteology} alt="group" className='h-10/12 img-fluid pt-4' /></center>
             </div>
 
             <Container>
                 <Row>
-                    <h1 className='lg:text-4xl md:text-4xl sm:text-4xl text-center font-bold py-20'>Key Features of cieTrade's Waste Brokerage Software</h1>
+                    <h1 className='text-4xl text-center font-bold py-20'>Key Features of cieTrade's Waste Brokerage Software</h1>
                     <Col lg={6} md={6} sm={12} className='py-5'>
                         <h1 className='font-bold text-2xl'>Account & Service Organization</h1>
                         <ul className='py-3 px-4'>
@@ -144,22 +144,22 @@ function Brokerage() {
                 </Row>
             </Container>
 
-            <div className='text-center py-32'>
-                <h1 className='lg:text-4xl md:text-3xl sm:text-3xl font-bold'>Want to see a full list of features?</h1>
-                <h1 className='lg:text-4xl md:text-3xl sm:text-3xl font-bold text-red-600 py-3'>Download our waste brokerage<br />Software brochure today</h1>
+            <div className='text-center py-32 lg:px-80'>
+                <h1 className='text-4xl font-bold'>Want to see a full list of features?</h1>
+                <h1 className='text-4xl font-bold text-red-600 py-3'>Download our waste brokerage Software brochure today</h1>
                 <a href={'/Bbrokrage'}><button className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 mt-4 leading-tight">Download Brochure <i class="fa-solid fa-arrow-right ps-2"></i></button></a>
             </div>
 
             <div className='bg-zinc-800 py-20'>
                 <Container>
                     <Row>
-                        <Col lg={6} md={6} sm={12}>
+                        <Col lg={7} md={7} sm={12}>
                             <h1 className='text-white text-4xl font-bold'>See what other waste brokers have to say about cieTrade</h1>
                             <p className='text-white text-lg py-4'>Learn how Wasteology, a waste and recycling services broker, eliminated double-entry, streamlined dispatch management and improved their billing process with cieTrade’s industry-specific software, tailored to meet evolving needs as their operation scales.</p>
-                            <a href={'/Ourclients'}><button className='bg-red-600 hover:bg-red-700 px-4 mt-2 py-3 text-white font-bold'>See More success tories <i class="fa-solid fa-arrow-right ps-3 pt-1"></i></button></a>
+                            <a href={'/Ourclients'}><button className='mb-5 bg-red-600 hover:bg-red-700 px-4 mt-2 py-3 text-white font-bold'>See More success tories <i class="fa-solid fa-arrow-right ps-3 pt-1"></i></button></a>
                         </Col>
-                        <Col lg={6} md={6} sm={12}>
-                            <Youtube videoId="mwtsCFbxXa4" className='w-full img-fluid' />
+                        <Col lg={5} md={5} sm={12}>
+                            <Youtube videoId="mwtsCFbxXa4" className='img-fluid w-full' opts={{ width: 400, height: 300, }} />
                         </Col>
                     </Row>
                 </Container>

@@ -32,8 +32,8 @@ function WhyCieTrade() {
         <div>
             <div className="relative bg-cover bg-center h-full" style={{ backgroundImage: `url('https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2022/07/2J3A8856-1-scaled.jpg.webp')` }}>
                 <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-                <div className="relative pt-56 pb-44">
-                    <h1 className="lg:text-7xl py-4 md:text-5xl sm:text-4xl text-white text-center font-bold lh-xs">Why cieTrade?</h1>
+                <div className="relative pt-60 pb-44">
+                    <h1 className="text-6xl text-white text-center font-bold lh-xs">Why cieTrade?</h1>
                 </div>
             </div>
 

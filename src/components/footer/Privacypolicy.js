@@ -7,7 +7,7 @@ function Privacypolicy() {
         <div className='bg-light'>
             <h1 className="bg-black">.<br />.<br />.<br />.<br />.</h1>
             <Container className='py-5'>
-                <h1 className='font-bold text-7xl py-4'>Privacy Policy</h1>
+                <h1 className='font-bold text-6xl py-4'>Privacy Policy</h1>
                 <h6 className='text-gray-500 text-lg'>CIETRADE SYSTEMS INC. (“us”, “we”, or “our”) operates the www.cietrade.com website (the “Service”).</h6>
                 <h6 className='text-gray-500 text-lg pb-3'>This page informs you of our policies regarding the collection, use and disclosure of Personal Information when you use our Service. We will not use or share your information with anyone except as described in this Privacy Policy. We use your Personal Information for providing and improving the Service. By using the Service, you agree to the collection and use of information in accordance with this policy.</h6>
                 <h1 className='font-bold text-4xl py-3'>Information Collection and Use</h1>

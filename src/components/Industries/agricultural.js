@@ -52,18 +52,18 @@ function Agricultural() {
             <div>
                 <div className="relative bg-cover h-full" style={{ backgroundImage: `url('https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2022/08/dreamstime_m_34659237-scaled.jpg.webp')` }}>
                     <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-                    <div className="relative ps-32 py-40">
-                        <h1 className="lg:text-7xl py-4 md:text-5xl sm:text-4xl text-white font-bold">Agricultural <br />Commodities Software</h1>
+                    <Container className="relative py-40">
+                        <h1 className="text-6xl py-4 text-white font-bold">Agricultural <br />Commodities Software</h1>
                         <a href={'/Bagricultural'}><button className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 mt-4 leading-tight">Download Brochure <i class="fa-solid fa-arrow-right ps-2"></i></button></a>
-                    </div>
+                    </Container>
                 </div>
-                <img src="https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2023/02/agriculture-trading-clients-logos-DARK.png.webp" className='w-100 img-fluid px-20 py-4 bg-light' />
+                <img src="https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2023/02/agriculture-trading-clients-logos-DARK.png.webp" className='w-full py-4 bg-light' />
             </div>
 
             <div className='py-5'>
                 <Container>
                     <Row>
-                        <h1 className='lg:text-4xl md:text-4xl sm:text-4xl text-center font-bold py-4'>Benefits of cieTrade's Agricultural Commodities Software</h1>
+                        <h1 className='text-4xl text-center font-bold py-4'>Benefits of cieTrade's Agricultural Commodities Software</h1>
                         {data.forms.map((item, index) => (
                             <Col lg={4} md={6} sm={12} key={index} className='text-center'>
                                 <div className='p-5 mt-5 hover:shadow-2xl bg-white'>
@@ -77,16 +77,16 @@ function Agricultural() {
                 </Container>
             </div>
 
-            <div className='bg-zinc-800 text-center py-5'>
-                <i class="fa-solid fa-quote-left text-white bg-red-600 p-1 rounded-full px-2 text-2xl"></i>
-                <h6 className='text-white text-xl py-3 lh-base'>cieTrade's platform has helped streamline our sales and purchase activity while providing extensive <br />profitability reporting, ensuring the success of our trading business.<br />Their support team is top notch and is always available to our business needs.</h6>
+            <div className='bg-zinc-800 text-center py-5 lg:px-60'>
+                 <i class="fa-solid fa-quote-left text-white bg-red-600 p-1 rounded-full px-2 text-2xl"></i>
+                <h6 className='text-white text-xl py-3 lh-base lg:px-80'>cieTrade's platform has helped streamline our sales and purchase activity while providing extensive profitability reporting, ensuring the success of our trading business.Their support team is top notch and is always available to our business needs.</h6>
                 <h6 className='text-white text-xl '>Al Gerrard, Director of Operations</h6>
                 <center><img src={group} alt="group" className='h-10/12 img-fluid pt-4' /></center>
             </div>
 
             <Container>
                 <Row>
-                    <h1 className='lg:text-4xl md:text-4xl sm:text-4xl text-center font-bold py-20'>Key Features of cieTrade's Agricultural Commodities Software</h1>
+                    <h1 className='text-4xl text-center font-bold py-20'>Key Features of cieTrade's Agricultural Commodities Software</h1>
                     <Col lg={6} md={6} sm={12} className='py-5'>
                         <h1 className='font-bold text-2xl'>Pricing & Orders</h1>
                         <ul className='py-3 px-4'>
@@ -146,10 +146,10 @@ function Agricultural() {
                 </Row>
             </Container>
 
-            <div className='text-center py-32'>
-                <h1 className='lg:text-4xl md:text-3xl sm:text-3xl font-bold'>Want to see a full list of features?</h1>
-                <h1 className='lg:text-4xl md:text-3xl sm:text-3xl font-bold text-red-600 py-3'>Download our agricultural <br />commodities software brochure</h1>
-                <a href={'/Bagricultural'}><button className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 mt-4 leading-tight">Download Brochure <i class="fa-solid fa-arrow-right ps-2"></i></button></a>
+            <div className='text-center py-28 lg:px-80'>
+                <h1 className='text-4xl font-bold'>Want to see a full list of features?</h1>
+                <h1 className='text-4xl font-bold text-red-600 py-3'>Download our agricultural commodities software brochure</h1>
+                <a href={'/Bagricultural'}><button className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 mt-3 leading-tight">Download Brochure <i class="fa-solid fa-arrow-right ps-2"></i></button></a>
             </div>
 
             <div className='bg-light pt-20'>

@@ -37,58 +37,57 @@ function SelfServices() {
         <div>
             <div className="h-full relative bg-cover" style={{ backgroundImage: `url(https://www.cietrade.com/wp-content/webp-express/webp-images/uploads/2022/05/Mask-Group-30.jpg.webp)` }}>
                 <div className='absolute inset-0 bg-black opacity-50'></div>
-                <div className="text-center relative  pb-40 pt-56">
-                    <h1 className="lg:text-7xl md:text-5xl sm:text-4xl text-white font-bold leading-tight">Self-Service Portal</h1>
-                    <h1 className="lg:text-xl text-white py-3 leading-tight">Empower your customers and vendors with a 24/7 digital support center</h1>
-                    <div className='my-5'>
-                        <a href={'/Bself'} className="text-white bg-red-600 hover:bg-red-700 px-4 py-3  font-bold text-base ">Download Brochure<i class="fa-solid fa-arrow-right ps-3 pt-1"></i></a>
+                <div className="text-center relative pb-40 pt-56">
+                    <h1 className="text-5xl text-white font-bold leading-tight">Self-Service Portal</h1>
+                    <h1 className="text-lg text-white py-3 leading-tight">Empower your customers and vendors with a 24/7 digital support center</h1>
+                    <div className='my-3'>
+                        <a href={'/Bself'} className="text-white bg-red-600 hover:bg-red-700 px-4 py-3 font-bold text-tight ">Download Brochure<i class="fa-solid fa-arrow-right ps-3 pt-1"></i></a>
                     </div>
-
                 </div>
             </div>
 
-            <Container>
-                <Row className='py-20'>
+            <Container className='ps-0'>
+                <Row className='py-12'>
                     <Col lg={6}>
-                        <YouTube videoId="lq8selkqAtE" />
+                        <YouTube videoId="lq8selkqAtE" className='img-fluid w-full'/>
                     </Col>
                     <Col lg={6} className='px-4'>
-                        <h6 className='lg:text-4xl md:text-3xl sm:text-2xl font-bold'>Reduce call volume, decrease operating costs & improve customer service</h6>
-                        <h6 className='text-gray-600 text-lg py-4'>ciePortal is a single service web portal that integrates seamlessly with your cieTrade system. It provides your customers with secure and immediate access to their service, payments, pricing information and more from anywhere. It helps save time and adds value to your relationship with your customers and recycling partners, while minimizing requests to your back office.</h6>
+                        <h6 className='text-3xl font-bold py-4'>Reduce call volume, decrease operating costs & improve customer service</h6>
+                        <h6 className='text-gray-600 text-lg'>ciePortal is a single service web portal that integrates seamlessly with your cieTrade system. It provides your customers with secure and immediate access to their service, payments, pricing information and more from anywhere. It helps save time and adds value to your relationship with your customers and recycling partners, while minimizing requests to your back office.</h6>
                     </Col>
                 </Row>
             </Container>
 
-            <div className='bg-zinc-800 text-center py-5 my-20'>
+            <div className='bg-zinc-800 text-center py-5'>
                 <i class="fa-solid fa-quote-left text-white bg-red-600 p-1 rounded-full px-2 text-2xl"></i>
-                <h6 className='text-white text-xl py-3 lh-base'>We have partnered with cieTrade for over 10 years as an early adopter of their software. The introduction<br />of their integrated web portal has proven critical in meeting the needs of our trading partners and has far<br />surpassed our expectations.</h6>
+                <h6 className='text-white text-xl py-3 lh-tight lg:px-80'>We have partnered with cieTrade for over 10 years as an early adopter of their software. The introduction of their integrated web portal has proven critical in meeting the needs of our trading partners and has far surpassed our expectations.</h6>
                 <h6 className='text-white text-xl py-1'>Noah Goodman, President</h6>
                 <center><img src={Northstar} alt="Norkol" className='h-10/12 img-fluid pt-4' /></center>
             </div>
             <Container>
-                <Row className='g-0 py-20'>
-                    <Col lg={6} className='py-20'>
-                        <h6 className='lg:text-4xl md:text-3xl sm:text-2xl font-bold py-4'>Provide Real-time Information</h6>
+                <Row className='py-12'>
+                    <Col lg={6} className='py-12'>
+                        <h6 className='text-4xl font-bold py-4'>Provide Real-time Information</h6>
                         <h6 className='text-xl text-gray-500 '>On-demand access to shipment details, service requests, charges and payments, and summary reporting is available for customers and suppliers directly from your website. You can drill down to view important details, including load details, statuses, contract terms and more. You can also export to Microsoft Excel for further analysis.</h6>
                     </Col>
                     <Col lg={6}><img src={Portalshipment} className=''></img></Col>
                 </Row>
             </Container>
             <Container>
-                <Row className='g-0 py-20'>
+                <Row className='py-12'>
                     <Col lg={6}><img src={Environmental} className='pt-24'></img></Col>
-                    <Col lg={6} className='py-20'>
-                        <h6 className='lg:text-4xl md:text-3xl sm:text-2xl font-bold py-4'>
+                    <Col lg={6} className='py-12'>
+                        <h6 className='text-4xl font-bold py-4'>
                             Help Measure Recycling Efforts</h6>
-                        <h6 className='text-xl text-gray-500 '>Your trading and recycling partners can instantly evaluate their recycling efforts with a material distribution chart that displays recycled tonnage with user definable categories. Information is gathered based on actual tonnage and distribution of recycled commodities. It also features an Environmental Impact Statement based on EPA guidelines that makes it easier for customers to measure the performance of their recycling program.</h6>
+                        <h6 className='text-xl text-gray-500 '>Your trading and recycling partners can instantly evaluate their recycling efforts with a material distribution chart that displays recycled tonnage with user definable categories. Information is gathered tightd on actual tonnage and distribution of recycled commodities. It also features an Environmental Impact Statement tightd on EPA guidelines that makes it easier for customers to measure the performance of their recycling program.</h6>
                     </Col>
                 </Row>
             </Container>
 
-            <div className='bg-gray-900'>
+            <div className='bg-zinc-800'>
                 <Container >
-                    <Row className='py-3'>
-                        <h1 className='lg:text-5xl md:text-3xl sm:text-2xl font-bold lh-base text-center text-white py-5'>Key Features </h1>
+                    <Row className='py-5'>
+                        <h1 className='text-5xl font-bold lh-tight pb-3 text-center text-white'>Key Features </h1>
                         <Col lg={6}>
                             <div className='flex py-3'><i class="fa-solid fa-check text-red-600 font-extrabold text-2xl pe-3"></i><h6 className='text-lg text-white font-semibold '>Provides your customers with fast, real-time access to information on their recycling program</h6></div>
                             <div className='flex py-3'><i class="fa-solid fa-check text-red-600 font-extrabold text-2xl pe-3"></i><h6 className='text-lg text-white font-semibold '> Reduces calls and emails to your back-office while improving customer service</h6></div>
@@ -108,27 +107,26 @@ function SelfServices() {
                 </Container>
             </div>
             <Container className='py-24'>
-                <h1 className='lg:text-4xl md:text-3xl sm:text-2xl font-bold lh-base text-center py-2'>Want to see a full list of features? </h1>
-                <h1 className='lg:text-4xl md:text-3xl sm:text-2xl font-bold lh-base text-center text-red-600 '>Download our self-service </h1>
-                <h1 className='lg:text-4xl md:text-3xl sm:text-2xl font-bold lh-base text-center text-red-600'>portal brochure</h1>
-                <div className='py-5'> <center><a href={'/Bself'} className="text-white bg-red-600 hover:bg-red-700 px-4 py-3  font-bold text-base ">Download Brochure<i class="fa-solid fa-arrow-right ps-3 pt-1"></i></a></center></div>
+                <h1 className='text-4xl font-bold lh-tight text-center py-2'>Want to see a full list of features? </h1>
+                <h1 className='text-4xl font-bold lh-tight text-center text-red-600 '>Download our self-service portal brochure</h1>
+                <div className='py-5'> <center><a href={'/Bself'} className="text-white bg-red-600 hover:bg-red-700 px-4 py-3  font-bold text-tight ">Download Brochure<i class="fa-solid fa-arrow-right ps-3 pt-1"></i></a></center></div>
             </Container>
             <Container>
                 <Row className='py-10'>
-                    <h1 className='lg:text-4xl md:text-3xl sm:text-2xl font-bold lh-base text-center py-4'>Additional Tools</h1>
+                    <h1 className='text-4xl font-bold lh-tight text-center py-4'>Additional Tools</h1>
                     <Col lg={6} className='py-3' >
                         <center><img src={Ciedispatchtwophones} className='w-2/3'></img></center>
                         <h1 className='font-bold text-red-600 text-xl pt-3'>MOBILE APPS</h1>
                         <h1 className='font-bold  text-3xl py-2'>cieMobile</h1>
                         <h6 className='text-gray-600 text-lg py-3'>cieTrade’s mobile reporting app provides sales reps and managers with real-time access to cieTrade account information and key management reports from the road or anywhere else.</h6>
-                        <div className='py-3'> <a href={'/Ciemobile'} className="text-red-600 font-bold text-base py-1 ">Learn More<i class="fa-solid fa-arrow-right text-white bg-red-600 text-sm px-1 rounded-3xl ms-2"></i></a></div>
+                        <div className='py-3'> <a href={'/Ciemobile'} className="text-red-600 font-bold text-tight py-1 ">Learn More<i class="fa-solid fa-arrow-right text-white bg-red-600 text-sm px-1 rounded-3xl ms-2"></i></a></div>
                     </Col>
                     <Col lg={6} className='py-3'>
                         <center><img src={Ciedispatch} className='w-2/3'></img></center>
                         <h1 className='font-bold text-red-600 text-xl pt-3'>MOBILE APPS</h1>
                         <h1 className='font-bold  text-3xl py-2'>cieDispatch</h1>
                         <h6 className='text-gray-600 text-lg py-3'>cieDispatch lets your drivers retrieve a list of assigned tickets, get directions to service locations, update job status, record notes, and even capture photos.</h6>
-                        <div className='py-3'> <a href={'/Ciedispatch'} className="text-red-600 font-bold lg:text-base md:text-center sm:text-center">Learn More<i class="fa-solid fa-arrow-right text-white bg-red-600 text-sm px-1 rounded-3xl ms-2"></i></a></div>
+                        <div className='py-3'> <a href={'/Ciedispatch'} className="text-red-600 font-bold lg:text-tight md:text-center sm:text-center">Learn More<i class="fa-solid fa-arrow-right text-white bg-red-600 text-sm px-1 rounded-3xl ms-2"></i></a></div>
                     </Col>
                 </Row>
             </Container>
