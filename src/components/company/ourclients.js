@@ -4,9 +4,13 @@ import YouTube from 'react-youtube';
 import Casestudy from '../../assets/img/casestudypng.webp';
 import Pasharecycling from '../../assets/img/pasharecycling.png';
 import Commercialplasticscase from '../../assets/img/CommercialPlasticscase.png';
-import YoutubeWidget from '../../widgets/youtubeWidget';
 
 function Ourclients() {
+    const YouTubeEmbed = ({ videoId }) => (
+        <div className="w-full h-[330px] ">
+            <YouTube videoId={videoId} className="w-full h-full" opts={{ width: '100%', height: '100%' }} />
+        </div>
+    );
 
     const data = {
         Client: [
@@ -30,12 +34,10 @@ function Ourclients() {
 
             <Container>
                 <Row className='g-0 py-16'>
-                    {/* <Col lg={6}>
-                        <YouTube videoId="mwtsCFbxXa4" opts={{ width: 600, height: 300, }} />
-                    </Col> */}
-
-                    <YoutubeWidget videoId={"mwtsCFbxXa4"} />
-                    <Col lg={6} >
+                    <Col lg={6}>
+                        <YouTubeEmbed videoId="mwtsCFbxXa4" />
+                    </Col>
+                    <Col lg={6} className='lg:ps-10'>
                         <h6 className='pt-3 font-bold text-xl text-red-600'>SUCCESS STORY</h6>
                         <h6 className='text-3xl font-bold py-3'>Wasteology</h6>
                         <h6 className='text-gray-600 text-lg'>Learn how Wasteology, a waste and recycling services broker, eliminated double-entry, streamlined dispatch management and improved their billing process with cieTrade’s industry-specific software, tailored to meet evolving needs as their operation scales.</h6>
@@ -47,9 +49,9 @@ function Ourclients() {
 
                 <Row className='g-0 py-16'>
                     <Col lg={6}>
-                        <YouTube videoId="mehip29GhNI" opts={{ width: 600, height: 300, }} />
+                        <YouTubeEmbed videoId="mehip29GhNI" />
                     </Col>
-                    <Col lg={6} >
+                    <Col lg={6} className='lg:ps-10'>
                         <h6 className='pt-3 font-bold text-xl text-red-600'>SUCCESS STORY</h6>
                         <h6 className='text-3xl font-bold py-3'>AP&J Recycling</h6>
                         <h6 className='text-gray-600 text-lg'>As a rapidly growing plastics recycling business, AP&J Recycling needed an industry-specific solution to be able to manage their operation. Learn how cieTrade helped eliminate manual spreadsheets, improve inventory tracking and increase accuracy of COGS.</h6>
@@ -60,7 +62,7 @@ function Ourclients() {
                 </Row>
                 <Row className='g-0 py-16'>
                     <Col lg={6}><img src={Casestudy} className='pe-4 w-full h-80'></img></Col>
-                    <Col lg={6} >
+                    <Col lg={6} className='lg:ps-10'>
                         <h6 className='pt-3 font-bold text-xl text-red-600'>CASE STUDY</h6>
                         <h6 className='text-3xl font-bold py-3'>iSustain Recycling</h6>
                         <h6 className='text-gray-600 text-lg'>Prior to using cieTrade, iSustain ran their company solely on manual spreadsheets; however, their team struggled to keep up as the business grew and expanded. Without a proper software system in place, challenges quickly began to arise, prompting iSustain to connect with cieTrade as a solution.</h6>
@@ -71,7 +73,7 @@ function Ourclients() {
                 </Row>
                 <Row className='g-0 py-16'>
                     <Col lg={6}><img src={Pasharecycling} className='pe-4 w-full h-80'></img></Col>
-                    <Col lg={6} >
+                    <Col lg={6} className='lg:ps-10'>
                         <h6 className='pt-3 font-bold text-xl text-red-600'>CASE STUDY</h6>
                         <h6 className='text-3xl font-bold py-3'>Pasha Recycling</h6>
                         <h6 className='text-gray-600 text-lg'>In their continued commitment to embrace new technology and introduce leading-edge techniques to speed up and refine their operations, Pasha Recycling sought a comprehensive software that could provide complete traceability throughout their supply chain.</h6>
@@ -82,7 +84,7 @@ function Ourclients() {
                 </Row>
                 <Row className='g-0 py-16'>
                     <Col lg={6}><img src={Commercialplasticscase} className='pe-4 w-full h-80'></img></Col>
-                    <Col lg={6} >
+                    <Col lg={6} className='lg:ps-10'>
                         <h6 className='pt-3 font-bold text-xl text-red-600'>CASE STUDY</h6>
                         <h6 className='text-3xl font-bold py-3'>Commercial Plastics Recycling Inc.</h6>
                         <h6 className='text-gray-600 text-lg'>Before cieTrade, Commercial Plastics developed its own custom Microsoft Access database to track inventory and manage operations. However, their team soon realized the system wasn’t as efficient as they’d hoped and it’d become difficult and time-consuming to maintain a home-grown program</h6>
@@ -93,9 +95,9 @@ function Ourclients() {
                 </Row>
                 <Row className='g-0 py-16'>
                     <Col lg={6}>
-                        <YouTube videoId="oBY6wR2FAqk" opts={{ width: 600, height: 300, }} />
+                        <YouTubeEmbed videoId="oBY6wR2FAqk" />
                     </Col>
-                    <Col lg={6} >
+                    <Col lg={6} className='lg:ps-10'>
                         <h6 className='pt-3 font-bold text-xl text-red-600'>SUCCESS STORY</h6>
                         <h6 className='text-3xl font-bold py-3'>Canusa Hershman</h6>
                         <h6 className='text-gray-600 text-lg'>Lack of real-time integration with accounting software proved to be problematic for Canusa Hershman. cieTrade helped by handling transactions faster, allowing them to grow from a domestic to an international trader.</h6>
@@ -106,9 +108,9 @@ function Ourclients() {
                 </Row>
                 <Row className='g-0 py-16'>
                     <Col lg={6}>
-                        <YouTube videoId="yxcsJQlRxAk" opts={{ width: 600, height: 300, }} />
+                        <YouTubeEmbed videoId="yxcsJQlRxAk" />
                     </Col>
-                    <Col lg={6} >
+                    <Col lg={6} className='lg:ps-10'>
                         <h6 className='pt-3 font-bold text-xl text-red-600'>SUCCESS STORY</h6>
                         <h6 className='text-3xl font-bold py-3'>The Paper Tigers</h6>
                         <h6 className='text-gray-600 text-lg'>Having started with a custom solution, The Paper Tigers quickly began to realize the redundancies and loss of productivity. Learn how cieTrade helped grow their business while reducing operational costs by 35-40%.</h6>
@@ -134,7 +136,7 @@ function Ourclients() {
                 </Container>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default Ourclients;

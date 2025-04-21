@@ -7,11 +7,15 @@ import i5 from '../../assets/img/i5.png';
 import wasteology from '../../assets/logo/wasteology.webp';
 import mobile from '../../assets/img/mobile1.webp';
 import laptop from '../../assets/img/laptop2.webp';
-import Youtube from 'react-youtube';
+import YouTube from 'react-youtube';
 
 function Brokerage() {
     const [activeIndex, setActiveIndex] = useState(null);
-
+    const YouTubeEmbed = ({ videoId }) => (
+        <div className="w-full h-[330px] ">
+            <YouTube videoId={videoId} className="w-full h-full" opts={{ width: '100%', height: '100%' }} />
+        </div>
+    );
     const data = {
         forms: [
             { img: i1, head: "Lets You Work More Effectively", p: "cieTrade helps agriculture traders manage their critical business data and operations from one place that can be instantly and securely accessed from anywhere." },
@@ -159,7 +163,7 @@ function Brokerage() {
                             <a href={'/Ourclients'}><button className='mb-5 bg-red-600 hover:bg-red-700 px-4 mt-2 py-3 text-white font-bold'>See More success tories <i class="fa-solid fa-arrow-right ps-3 pt-1"></i></button></a>
                         </Col>
                         <Col lg={5} md={5} sm={12}>
-                            <Youtube videoId="mwtsCFbxXa4" className='img-fluid w-full' opts={{ width: 400, height: 300, }} />
+                            <YouTubeEmbed videoId="mwtsCFbxXa4" className='img-fluid w-full'  />
                         </Col>
                     </Row>
                 </Container>
