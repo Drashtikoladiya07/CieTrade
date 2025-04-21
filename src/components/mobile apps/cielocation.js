@@ -14,7 +14,11 @@ import YouTube from 'react-youtube';
 
 function Cielocationn() {
     const [activeIndex, setActiveIndex] = useState(null);
-
+    const YouTubeEmbed = ({ videoId }) => (
+        <div className="w-full h-[500px] ">
+            <YouTube videoId={videoId} className="w-full h-full" opts={{ width: '100%', height: '100%' }} />
+        </div>
+    );
     const faqs = [
         {
             question: "What kinds of details can I view for each inventory item through cieLocation?",
@@ -66,7 +70,7 @@ function Cielocationn() {
             <Container>
                 <Row>
                     <Col lg={12}>
-                        <YouTube videoId="jK6Tft7rzfM" opts={{ width: 1250, height: 600, }} />
+                        <YouTubeEmbed videoId="jK6Tft7rzfM" />
                     </Col>
                 </Row>
             </Container>

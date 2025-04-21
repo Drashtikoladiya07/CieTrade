@@ -9,7 +9,11 @@ import YouTube from 'react-youtube';
 
 function SelfServices() {
     const [activeIndex, setActiveIndex] = useState(null);
-
+    const YouTubeEmbed = ({ videoId }) => (
+        <div className="w-full h-[330px] ">
+            <YouTube videoId={videoId} className="w-full h-full" opts={{ width: '100%', height: '100%' }} />
+        </div>
+    );
     const faqs = [
         {
             question: "Can the portal be custom branded for my company?",
@@ -47,9 +51,9 @@ function SelfServices() {
             </div>
 
             <Container className='ps-0'>
-                <Row className='py-12'>
+                <Row className='py-20'>
                     <Col lg={6}>
-                        <YouTube videoId="lq8selkqAtE" className='img-fluid w-full'/>
+                        <YouTubeEmbed videoId="lq8selkqAtE"/>
                     </Col>
                     <Col lg={6} className='px-4'>
                         <h6 className='text-3xl font-bold py-4'>Reduce call volume, decrease operating costs & improve customer service</h6>
